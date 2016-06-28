@@ -1,0 +1,24 @@
+A {
+	COLOR: #3366cc
+}
+A:visited {
+	COLOR: #213f7d
+}
+A.base {
+	FONT-SIZE: x-small; COLOR: #999999; TEXT-DECORATION: none
+}
+A.base:hover {
+	COLOR: #3366cc
+}
+A.base:active {
+	COLOR: #999999
+}
+A.base:visited {
+	COLOR: #999999
+}
+A.base:hover {
+	COLOR: #3366cc
+}
+CODE {
+	FONT-STYLE: normal; FONT-FAMILY: 'monotype.com', courier, monospace
+}

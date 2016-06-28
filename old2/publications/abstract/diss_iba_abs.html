@@ -1,0 +1,156 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Soichi Ibaraki">
+   <title>Abstract: Soichi Ibaraki</title>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../../mschomepage.css">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+<FONT SIZE=2 FACE="arial, helvetica">
+&nbsp;
+<center><b><tt><font color="#999999">
+Mechanical Systems Control Laboratory Homepage</font></tt></b><br>
+<img SRC="pixel.gif" ALT="" height=1 width=500></center><br>
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+
+<caption><center><font face="arial, helvetica" size=-1>
+Dissertations<br></font></center>
+<center><font face="arial, helvetica" font color="#999999">
+<a href="../../index.html" class="base">Home</a> | 
+<a href="../../people/people.html" class="base">People</a> | 
+<a href="../../research.html" class="base">Research</a> | 
+<a href="../publications.html" class="base">Publications</a> | 
+<a href="../../resources/resources.html" class="base">Resources</a> | 
+<a href="../../misc/misc.html" class="base">Misc</a><br>
+</font></center>
+
+<p><br>
+<br>&nbsp;
+
+<tr>
+<center>
+<td width="10"></td>
+<td WIDTH="480">
+
+<center>
+<FONT FACE="helvetica,arial" SIZE="2" color="#000000"><b>
+Nonconvex Optimization Problems in H-infinity Control and Their Applications
+</b></font>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+Soichi Ibaraki<br>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE="2" color="#000498"><b>
+Abstract<br></b></font>
+&nbsp;<br>
+</center>
+
+<div align=left><left>
+<FONT FACE="helvetica,arial" SIZE="2">
+<p>The LMI (linear matrix inequality)-based H-infinity controller
+synthesis theory guarantees that if the controller is allowed to
+have the same order as the plant, and every system matrix of the
+controller is freely tunable, then the H-infinity optimization
+problem can be solved by convex optimization and the global
+optimum can be always found. This dissertation focuses on an
+extension of H-infinity optimization theories to the problems
+that cannot be parameterized as a convex optimization problem.
+
+<p>This dissertation first presents an extension of the LMI-based
+H-infinity controller synthesis
+algorithm for full-order controllers to fixed structure
+controllers. A critical limitation of the LMI-based full-order H-infinity
+controller synthesis algorithm is that it allows no additional
+constraint to be imposed on the problem; the closed-loop H-infinity 
+norm constraint must be the only
+constraint imposed on the problem in order for it to be globally
+solvable by convex optimization. In the case where the controller has
+a fixed structure and only its parameters are tunable, the problem
+cannot be reparameterized as a convex optimization problem. The
+proposed algorithm starts from the transformation of the fixed-structure
+H-infinity controller optimization problem into an H-infinity
+optimization problem of a static output feedback controller. Then, the
+cone complementarity linearization algorithm is used to locally solve
+the H-infinity optimization problem of a static output feedback controller.
+
+<p>Based on the proposed H-infinity optimization
+algorithm, this dissertation demonstrates a tuning method of
+controller parameters to explicitly design frequency responses of the
+closed-loop system. The proposed approach offers an intuitive and efficient
+way to re-tune controller parameters, which were finely tuned by an
+expert engineer, and improve the control performance. 
+The following three practical application examples are presented:
+1) the tuning of a single-input single-output (SISO) PID (Proportional
+plus Integral plus Derivative) controller for head positioning of a magnetic hard disk
+drive (HDD), 2) the tuning of a discrete-time observer feedback
+controller for head positioning of an HDD, and 3) the tuning of a
+multi-input single-output (MISO) PI (Proportional plus Integral)
+controller for the lateral control of an automated heavy-duty vehicle
+(HDV). The effectiveness of the proposed re-tuning method is demonstrated by
+simulation and experimentation.
+
+<p>Secondly, this dissertation considers the BMI (bilinear matrix inequalities)
+formulation of H-infinity optimization problems. The BMI framework offers an unified approach to
+formulate a further general class of H-infinity optimization
+problems with arbitrary constraints or additional optimization objectives. 
+BMI problems are generally
+nonconvex optimization problems and are proven to be NP-hard.
+This dissertation proposes a novel local search approach for solving
+general BMI problems. The proposed algorithm is based on the
+semidefinite programming (SDP)
+relaxation approach to BMI problems and the linearization-based local
+search algorithm, which is analogous to the algorithm employed to
+solve reduced-order H-infinity controller synthesis problems.
+Four numerical experiments are conducted to show the
+search performance of the proposed approach.
+
+<p>Finally, the proposed fixed-structure H-infinity optimization algorithm is
+applied to the H-infinity optimization problem of state
+observers. First, the H-infinity optimization algorithm of Luenberger-type state
+observers is presented. The proposed approach is applied to the design of fault
+detection filters for lateral control of automated passenger
+vehicles. The H-infinity optimization of Luenberger state observers is
+then extended to the design of more general
+mismatched state observers (i.e. system matrices of the observer do
+not necessarily coincide with those of the plant model), and a novel
+application of H-infinity-optimal mismatched state observers to
+the observer-based feedback control is presented. 
+The mismatched state observer is tuned by using H-infinity
+optimization such that it not only provides
+good estimation of state variables of the plant, but also stabilizes
+the overall closed-loop system under the feedback linearization
+control scheme. As an application example, the
+proposed approach is applied to lateral control of
+HDVs.
+</font>
+</left></div>
+
+&nbsp;<br>
+&nbsp;<br>
+</td>
+
+<td width="10"></td>
+</center>
+</tr>
+
+
+</caption>
+</table></center>
+
+<center><img SRC="pixel.gif" ALT="" height=1 width=500>
+<br><font face="arial, helvetica" font color="#666666" size=1>MSC
+Lab. Homepage is created and maintained by Soichi Ibaraki and Shashikanth
+Suryanarayanan.<br>
+Please feel free to send comments to us at <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+</center>
+
+<p><br>
+</body>
+</html>

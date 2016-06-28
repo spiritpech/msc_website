@@ -1,0 +1,290 @@
+
+
+
+PROFILE AND OBJECTIVES OF THE UNIVERSITY
+
+
+The Polytechnic University of Valencia is a young institution. The basic rules which established the University were laid down in 1971. At the beginning of the academic year 1996/97 the academic community of the Polytechnic encompassed 35000 members, 32000 of them were undergraduate students, 600 were graduate students, 1800 were teaching staff and 800 formed the administrative body of the various Schools, Colleges, Faculties and Departments.
+
+
+Academic Organisation:
+
+The academic activities of the PUV take place in fifteen institutions: five Superior Technical Schools, two Faculties, eight Technical Colleges and some other private Faculties. Teaching and research are carried out by forty-one academic departments, while other academic activities are managed by five Institutes of the University. Fifteen Master-Programmes are instructed by various departments, extending the academic activities to specific fields of postgraduate studies.
+
+
+Collaboration with Industry and other Universities:
+
+The University is engaged in Research & Development Programmes designed to contribute to the implementation of the necessary social and industrial changes in a modern society. The research in the University aims at achieving results in those fields which are essential for society and industries within the framework of the European Union. The target is to deliver know-how to the public sector, services and industries.
+
+The PUV provides the means, instruments and human resources, both individual and collective, for co-operation among industries, the service sector and other Universities.
+
+
+Exploitation of Results:
+
+The PUV does not exploit Research & Development (R&D) results by itself. Its policy is that R&D carried out at PUV should be transferred to companies under commercial conditions, so that they may exploit these results. For that purpose an active technology transfer unit (Centro de Transferencia de Tecnologia - CTT) is working within the University. CTT negotiates R&D and license contracts with companies, carries out the financial and administrative aspects of those contracts and encourages the transfer of R&D results to industries.
+ 
+
+RESEARCHERS/STAFF:
+
+
+The department has a staff of more than 70 full-time members involved in two basic areas: computer architecture and automatic control. 
+
+The group of automatic control is covering research in a wide range of topics, such as intelligent control, fuzzy and neuronal control, expert systems, adaptive control, robotics and artificial vision.
+
+Pedro Albertos (Professor) 
+     (Intelligent Control, Digital Control)
+Francisco Morant (Professor) 
+     (Adaptive Control & Neural Networking)
+Josep Tornero (Professor) 
+     (Motion Planning and Control of Robot Arms and AGV's, Digital Control)
+Julian Salt (Associate Professor)
+     (Digital Control)
+Martin Mellado (Asistant Professor)
+     (Robot Programming and Motion Planning)
+Eduardo Vendrell (Asistant Professor)
+     (Robot Programming and Simulation)
+Angel Valera (Asistant Professor)
+     (Robot Control. Control of Non-rigid bodies)
+Lourdes Peñalver (Asistant Professor)
+     (Robot Control and Simulation)
+José Luis Muñoz (Visisting Researcher)
+     (AGV's Control Software Architectures)
+
+
+The group of computer architecture works in parallel computing, real-time operating systems, fault tolerant systems and intelligent instrumentation among others.
+
+Alfons Crespo (Professor, Head of Department)
+     (Real-time Systems)
+Jose Duato (Professor)
+     (Parallel Computing)
+Juanjo Serrano (Professor)
+     (Fault-tolerant systems)
+Gines Benet (Associate Professor) 
+     (Intelligent Instrumentation)
+ AREAS OF PARTICULAR EXPERTISE
+
+
+In terms of robotic systems, the interest is concentrated in two main areas: modelling, identification and control of robot manipulators; and motion planning. Other areas of interest are CAD/CAM systems, auto-guided vehicles and artificial vision.
+
+
+1.- Modelling, Identification and Control of Robot Manipulators
+
+The increasing performance of industrial robots requires the use of the most complete dynamic models of robot-arms. Identification and control are two essential  fields in robotics. Dynamic simulation can be applied in order to analyse the behaviour of both,  the robot and the controller. 
+
+In many robot control problems, it is necessary to know the inertial parameters of the robot. Inertial parameters  can be obtained by means of on-line identification using adaptive control or by applying off-line identification using the total energy theorem. For solving those problems, a linear relationship need to be generated in terms of the inertial parameters. We have developed a general procedure for obtaining the linear relation for the energy and torque equation using Lagrange-Euler formulation. In this approach several definitions and properties have been introduced in order to get a new mathematical formulation of the dynamic model for the robot-arm.
+Conventional control and non-linear control techniques such as  passivity strategies, feedback linearization, observer design and adaptive control have been developed and compared. Many of them have been implemented on educational robot arms as well as on industrial robots (e.g. Cartesian robot and robot-arm).
+
+In addition, a collaboration with the Parallel Computation Group of the Computer Science Department several parallel algorithms have been implemented on different types of architectures (Systolic Arrays, Shared Memory Multi-processors and Multi-computers) in order to solve control problems. 
+
+
+2.- Motion Planning
+
+Trajectory and path planning in robotics systems can be described in the following hierarchical way: planning problem (higher level), collision avoidance, distance computation and object model representation (lower level). 
+
+Most of the developed methods for solving the above-listed sub-problems, as well as other robotic applications, use a geometric modelling of real robotic systems. 
+
+A novel object representation for the geometric modelling of objects, like obstacles, robot links, mobile robots, etc., in industrial robotic systems has been developed. The geometric modelling generates envelopes of minimum volume for all object in the working environment. An optimal modeler is used to envelop any real object using different types of geometries in accordance with the model requirements. This procedure is based on the Hough Transform. After having used this geometric designer, the robotic system will be ready to be used for trajectory-path planning application.
+
+Based on a novel object representation technique very fast collision checking procedures have been implemented. In trajectory generation, the discrete joint space and the artificial potencial fields are been considered.
+
+
+3.- CAD/CAM systems
+
+These area deals with the design and implementation of CAD/CAM systems. In particular NC-machines programming interfaces based on CAD systems are developed. Control units based on industrial computers and microprocessor are also made. Higher level aspects, such as shop, floor control are consider.
+
+Furthermore  Several software have been developed, some of them based on commercial CAD and using  C++ for Windows. These software has been now updated to include an output in international standards such as ICR, allowing interconnection between all the software developed. Special interest are being focused on in topics such as environment integration with vision systems and friend interface developing for robot programming. The software has been applied to the programming of several industrial robots such as ABB IRB L6 and IRB 1500.
+
+For some of the above commented  software, the first step was to model kinematically the robot- arm as well as the whole flexible cell. For this purpose, a specific package has been developed which allows to model geometrically and kinematically any kind of robotic system, with its simulation. All the results (elements, links, direct and inverse kinematical resolution) can be transported to the software of previous section.
+
+
+4.- Control de Vehículos Autoguíados:
+
+These area is concentrated in aplication of previously defined areas such as modelling, identification and control and motion planing to these particular problem.
+
+The AGV Robouter II is a mobile robot from Robosoft, based on a platform powered by two DC motors of 300W. Is controlled by CPU system based on VME bus, with two Motorola 68020. This computer runs with a real time operating system, Albatros. The sensorization consists of an odometric system Nd a local area ultrasonic network.
+
+On this vehicle several applications has been developed concerning to adaptive control, sensoring integration, path planing (artificial potencial fields and road map), control and Architecture, and teleoperation.
+ 
+5.-Artificial Vision:
+
+Conventional 2D computer vision and image processing techniques, on grey level or colour images, for tasks involving feature extraction, object detection and object classification. Also applications requiring non-contact measurement and Automatic Visual Inspection. Several works have been carried out on 3D computer vision techniques for range map estimation and pattern recognition and unsupervised learning techniques.
+
+Se trabaja en los siguientes aspectos:
+
+- Inspección y control de cálidad.
+- Identificación y clasificación de patrones.
+- Modelado tridimensional del entorno mediante estereoscopía e iluminación estructurada.
+
+ CURRENT RESEARCH ACTIVITIES 
+
+
+CIM System with Improved Capabilities for Furniture Industry (CIMTOFI) BRITE-EURAM Project (1991-1993)
+
+The basic objective of this project is to adapt existing CIM  architectures and CIM technologies to the area of furniture industries and study the problems arisen in the integration. 
+
+Adaptation of CIM architecture and CIM technologies means to design a specific furniture system functional architecture and information architecture based on the use of existing tools, selected from the market standards in order to produce a system prototype to be implemented in a real furniture industry. This project was developed in collaboration with the following partners:
+ -Asociacion de Investigacion y Desarrollo en la Industria del Mueble y Afines (AIDIMA) 
+-GOPAS Software GmbH
+-Forschungzentrum Informatik (FZI)
+-UNINOVA 
+-Saint-Clair Industria de Mobiliario, LDA
+
+
+Designed of CAD/CAM system for the furniture industry. 
+CICYT Project (1987-1988)
+
+These project  consist in the design and implementation of complete CAD/CAM system for a complex processing center for the furniture industry. The CAD system was based on PC and specific software in Modula II as a user friendly interface. And the CAM system has been compound  for the CAD/CAM control unit based on industrial microprocessor as well as the software applications and interfaces with the CAD system were developed.
+
+
+EUREKA-ROSAL. EUREKA Project (1993-1996)
+
+In the context of this European project, we collaborated with the company INELCOM S.A. during 12 months (1990-1991), researching basis techniques for eyes detection and location on rose stems. The algorithms developed were based on adaptive thresholding techniques for eye detection, and pattern matching techniques for fine eye location.
+
+
+Intelligent Inspection and Automation of non-Rigid Products: Agricultural and Food Industry Automation. (1991-1994)
+
+We are involved in developing 3D computer vision techniques in order to obtain a workspace description suitable to compute robot trajectories and object identification.
+ PATCHWORK. 
+
+European project in the field of agriculture and agro-industry: "Reducing or Eliminating Agro-Chemical Inputs in Efficient Production of High Quality Produce with Conventional, Sustainable and Organic Farming Systems" AIR3-CT93-1299 (1994 - 1996). We are focused on developing image analysis techniques to identify crop/plants features with particular emphasis on the discrimination of weed and weed-patches within cropped areas.
+
+
+Planning of Movements of Autonomous Mobil Vehicles in industrial environments based on sensorial perception. CICYT Proyect TAP95-1086-C02-01 (1995-1998)
+
+A control architecture has been designed for robot-arms in a dynamic structured and partially known environment.
+Taking into account the system requirement has been divided into 3 levels: the functional, the structural and the implementation level.
+The architecture of the control system is based on a black-board approach that may be accessed by several behaviour modules: obstacle avoidance, trajectory following, go to free zone, etc.. 
+
+In this project colaborate three research groups the Polytechnic University of Valencia, the University of Murcia and the Robotic Institute of the University of Valencia.
+
+
+Simulación Dinámica y Control de Robots Industriales Utilizando Computación Paralela. Proyect CICYT TAP95 (1995-1998)
+
+Este proyecto se desarrolla con la financiación del Estado Español y en el participan tres departamento de la Universidad. Tiene como objetivos principales el estudio de la dinámica de los robots de brazo, el desarrollo de herramientas de simulación, el desarrollo de algoritmos de identificación y control y el estudio de las posibilidades de aplicación de la computación en paralelo para la implementación eficiente de las distintas técnicas desarroladas. 
+
+En concreto en lo que respecta a las tareas directamente asignadas a nuestro departamento, estan se concretan en:  
+? Caracterización de la dinámica del brazo robot basada en la ecuación de la energía total del sistema.
+? Obtención de la ecuación de energía para el brazo robot y su relación lineal con el conjunto de parámetros inerciales.
+? Estimación de un conjunto mínimo de parámetros del modelo dinámico.
+? Validación del modelo dinámico mediante simulación.
+? Sensibilidad de la estimación de parámetros ante diferentes trayectorias de excitación.
+? Desarrollo e implementación de algoritmos de control proporcionales derivativos y doblemente integral.
+? Estudio e implementación de los algoritmos de control basados en los términos del modelo dinámico general.
+? Control autoajustable de brazos robot.
+? Estudio y desarrollo de sistemas de control autoajustables basados en técnicas multifrecuenciales.
+
+
+Técnicas avanzadas en sistemas informáticos para el control de procesos industriales. Aplicación a un sistema experto de control de una planta de fabricación de cemento. CAICYT (1987-1990). en colaboración con Control Inteligente y Sistemas en Tiempo Real.
+
+En este proyecto, la aportación en esta línea de investigación consistió en el análisis, concepción y desarrollo de un sistema de control inteligente con diversos niveles: PID, adaptativo y supervisor, con incorporación de técnicas de I.A.
+
+
+Control Supervisor de Procesos Industriales basado en el conocimiento. Aplicación a la Automatización Integral de una fábrica para la producción de cemento. Proyecto CAICYT (1990-1993).
+
+En el presente proyecto se pretende hacer uso de estas nuevas técnicas para el diseño de un "nivel supervisor" en un control industrial. En concreto, este nivel se encargaría, entre otras cosas, de la supervisión de un control adaptativo.
+
+Se utilizarán los Sistemas Expertos en la implementación de este nivel. La utilización de esta herramienta permitirá considerar las cuestiones heurísticas que aparecen en los Controles Industriales. Se dotará al sistema de la capacidad de aprendizaje, de manera que sea capaz de mejorar considerando sus propios errores.
+
+
+REAKT: Environment and methodology for real-time knowledge based systems. 
+Proyecto ESPRIT 5146 (1990-1994)
+
+Este proyecto se desarrolla en el marco de ESPRIT y se participa junto con otros 6 socios de distintos países. El proyecto tiene como objetivo el desarrollar una nueva herramienta basada en sistemas expertos para su uso en sistemas de tiempo real.  Los principales puntos de aportación del proyecto son la definición de una arquitectura de sistemas expertos basada en "blackboard", requisitos de tiempo real ligados a las tareas, razonamiento progresivo, objetos de aplicación temporales, así como la garantía del tiempo de respuesta en la reacción del sistema.
+
+
+ Sistema Distribuído Orientado a Objetos para Control Industrial. Proyecto CICYT, PRONTIC 90.
+
+El objetivo del proyecto se enmarca en el desarrollo de un prototipo de sistema distribuído mutinivel para aplicaciones de sistemas de control industrial, que sirva de banco de pruebas para estudiar e investigar en todos aquellos puntos de interés como: sistemas operativos distribuídos orientados a objetos, arquitectura de computadores y técnicas de tolerancia a fallos tanto a nivel de software como de hardware, técnicas de análisis, modelado y simulación para la evaluación de prestaciones y fiabilidad, así como las herramientas de medidas como monitores para estudiar el comportamiento real de estos sistemas, comunicaciones, sobre todo a nivel de redes de área local industriales de tiempo real y bases de datos distruibuídas orientadas a objetos y su aplicación a sistemas de tiempo real.
+
+
+FASST Fault-Tolerant Architecture with Stable Storage Technology. Proyecto ESPRIT.
+
+El objetivo de este proyecto es el desarrollo de un Multiprocesador Tolerante a Fallos para aplicaciones transaccionales, UNIX y tiempo real. El grupo de trabajo participa en la tarea de Evaluación y modelado de prestaciones y fiabilidad, con un subcontrato de la Universidad Politécnica de Madrid.
+
+ CURRENT AND FUTURE AREAS OF INTEREST
+
+We are especially interested in model identification and control, computer aided robot programming and monitoring, motion planning" for robot arms and mobile robots.
+
+In terms of dynamic modelling and identification, we have developed efficient algorithms based on theoretical approach.  We are applying conventional and non-linear control technique to several educational and industrial robots.
+
+Related to motion planning, integration of robot environment with different sensors to develop techniques for collision- avoidance is a main objective of the research group. Methods for robot-arms and environment modelling to make collision-detection and distance computation easier and faster is another of the group goals. 
+
+Several planning techniques at different levels ( path, trajectory and tasck are being developed and applied on both, robot arms and AGVs.
+
+In terms of computer aided robot programming and monitoring, our interest is focused on robot languages standardisation process using IRL (Industrial Robot Languages) as high level languages and ICR (Intermediate Code for Robots) as lower level code. Included in this point, improving IRL to consider task and object oriented properties is one of our goals. The design and development of man-machine software interfaces for monitoring including a wide range of sensor information is also a current topic of research.
+
+In computer vision, we are interested in 3D computer vision techniques suitable in applications involving object position estimation, object surface inspection, object manipulation, changing environmets, collision avoiding obstacles, etc. We are also interested in pattern recognition and unsupervised learning, specifically using self-organised feature maps for image segmentation and pattern recognition in natural products like plants, fruits and food. Optical processing, optical correlation. Further techniques in computer vision, medical imaging and parallel architectures for image processing are considered.
+
+We are also interested in the application of parallel computing to solve the processes from the programming to control of robots systems in the context of "High Performance Computing”. It is also applicable to Computer Integrated Manufacturing Applications and other Engineering Basic Research".
+
+An immediate objective is to extend the work done so far to two important multi-computer types: Massively Parallel Machines and Clusters of Workstations. The former can be considered as one of the most powerful machines available nowadays. The second type of machines intends to provide computation power at a moderate price because they can exploit existing installations, but research will be necessary to adapt the algorithm design techniques to the specific characteristics of these configurations.
+
+
+ 
+PRESENT INDUSTRIAL LINKS
+
+Some industrial projects have been developed for furniture machine manufacturing industries. In these projects, the goal was the design and implementation of user-oriented systems in which the computer would be employed to support the different stages in the CAD/CAM process. From the CAD point-of-view, the design of suitable interactive computer graphics subsystems is required. The development of microprocessor-based control units for the machines as well as the comunication with the design unit have also been developed. MRP, quality testing and delivery to customers have not been considered.
+
+The group has been working for a long time as supporter of IBM-factory located in Valencia. In this context some equipment, such as NC-Machines and robot-arms, from the IBM-CIM department have been donated to the university.
+
+The Department is involved with big technical companies (e.g. cement factories and oil plants) in the development of applications: data acquisition, data logging, monitoring and supervision based on expert systems.
+
+GRES Project. (Ceramic Industry)
+Collaborating with the company KERABEN S.A. we are developing a prototype of Automatic Visual Inspection System for detecting geometric defects of tile pieces on the production line.
+
+In terms of parallel computing, through the RECITE program and in collaboration with the IMPIVA (Valencian Institute of Medium and Small Size Companies), we are working to introduce High Pelformance Computing into these companies.
+
+In addition some for small and medium size enterprises are being developed in the areas of automation and control. 
+
+
+Present Educational programs at level of Master and PhD
+
+Since 1988, the Department is running a Master of Science in Computer Aided Design, Computer Aided Manufacturing and Computer Integrated Manufacturing. In this context many students have developped treir Master Thesis in local industries as well as national and foreign research centers. The Master includes topis such as Shop Floor Control, Robotics in Manufacturing, N.C. Machine  Programming, Modeling and Simulation of Flexible Manufacturing Systems, Communication Networking, Management of Integrated Manufacturing Systems, Computed Aided Design Commercial Packages, etc.
+
+ EQUIPMENT
+
+
+Flexible Manufacturing System Cell:
+-Two NC-Machines
+-A Co-ordinate Measurement Machine
+-A five axes industrial robot-arm ABB IRB L6 
+-A six axes PUMA robot arm
+-Robuter-II Mobile vehicle with pallets exchanger
+-Several SUN-3 Workstations
+
+
+Computer Aided Robot Programming Laboratory:
+- Five axes industrial robot-arm ABB IRB L6 with S3 control system.
+- Six axes industrial robot-arm ABB IRB 1400 with S4 control system.
+- Five axes industrial robot-arm CRS A465.
+- KHIPERA AGV
+- A two LCD cameras vision system ABB IVR 2600
+- Several storage and transport devices such as conveyors.
+- A local area network with 15 PC-Pentium
+- Robot control software
+
+
+Computer Vision Laboratory:
+-Workstations: HP9000/720, HP9000/710  and HP9000/705. 2 GB
+disks, 2 GB DAT and CD-ROM.
+-PC-based Vision Systems: display boards, real-time processing
+modules, colour digitalizars, and comercial software
+-Laser-Scans
+
+
+Robot Control Laboratory:
+-Several educational RHINO-robots and elements
+-Hardware for the control of robots with PC 
+-An Industrial Cartesian Robot
+-Industrial Computer based on the Motorola 68020
+
+
+Several Parallel Machines are available at our University:
+- Supernode Parsys SN-1000: Distributed Memory Multiprocessor
+with a basic configuration consisting of 23 T800 transputers
+and a reconfigurable interconnection network.
+- Alliant FX/80: Shared Memory Multiprocessor consisting of 8
+Process Elements with vector capability.
+- Several personal computers with T800 transputers boards that
+are used to develop, test and debug parallel codes. 
+

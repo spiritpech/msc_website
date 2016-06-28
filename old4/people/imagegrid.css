@@ -1,0 +1,209 @@
+/**** Image Grid Formatting ******************************/
+.imagegrid{
+	padding: 0px 0px 15px 5px;
+}
+
+.lilabmember{
+	display: inline;
+	width: 200px;
+	text-align: center;
+	height: 220px;
+	float: left;
+	margin-left: 8px;
+	margin-right: 14px;
+	margin-top: 15px;
+	margin-bottom: 85px;
+	padding: 0px;
+}
+
+.imgcaption{
+	font-size: 0.7em;
+	color:#444;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	width: 200px;
+}
+
+/**** No Photo ******************************/
+.nophoto{ height:100%; width:100%; background-image:url(photos/nophoto.png); background-position:center; background-repeat:no-repeat;}
+
+/**** Current Students ******************************/
+.Seonghan{ height:100%; width:100%; background-image:url(photos/Seonghan.jpg); background-position:center; background-repeat:no-repeat;}
+.Seonghan:hover{ background-image:url(photos/Seonghan1.jpg);}
+.Chen-Yu{ height:100%; width:100%; background-image:url(photos/Chen-Yu.jpg); background-position:center; background-repeat:no-repeat;}
+.Chen-Yu:hover{ background-image:url(photos/Chen-Yu1.jpg);}
+.Jianyu{ height:100%; width:100%; background-image:url(photos/Jianyu.jpg); background-position:center; background-repeat:no-repeat;}
+.Jianyu:hover{ background-image:url(photos/Jianyu1.jpg);}
+.Yongxiang{ height:100%; width:100%; background-image:url(photos/Yongxiang.jpg); background-position:center; background-repeat:no-repeat;}
+.Yongxiang:hover{ background-image:url(photos/Yongxiang1.jpg);}
+.Kevin{ height:100%; width:100%; background-image:url(photos/Kevin.jpg); background-position:center; background-repeat:no-repeat;}
+.Kevin:hover{ background-image:url(photos/Kevin1.jpg);}
+.Daisuke{ height:100%; width:100%; background-image:url(photos/Daisuke.jpg); background-position:center; background-repeat:no-repeat;}
+.Daisuke:hover{ background-image:url(photos/Daisuke1.jpg);}
+.Shuyang{ height:100%; width:100%; background-image:url(photos/Shuyang.jpg); background-position:center; background-repeat:no-repeat;}
+.Shuyang:hover{ background-image:url(photos/Shuyang1.jpg);}
+.Chung-Yen{ height:100%; width:100%; background-image:url(photos/Chung-Yen.jpg); background-position:center; background-repeat:no-repeat;}
+.Chung-Yen:hover{ background-image:url(photos/Chung-Yen1.jpg);}
+.Hsien-Chung{ height:100%; width:100%; background-image:url(photos/Hsien-chung.jpg); background-position:center; background-repeat:no-repeat;}
+.Hsien-Chung:hover{ background-image:url(photos/Hsien-chung1.jpg);}
+.Changliu{ height:100%; width:100%; background-image:url(photos/changliu.jpg); background-position:center; background-repeat:no-repeat;}
+.Changliu:hover{ background-image:url(photos/changliu1.jpg);}
+.Junkai{ height:100%; width:100%; background-image:url(photos/Junkai.jpg); background-position:center; background-repeat:no-repeat;}
+.Junkai:hover{ background-image:url(photos/Junkai1.jpg);}
+.Robert{ height:100%; width:100%; background-image:url(photos/Robert.jpg); background-position:center; background-repeat:no-repeat;}
+.Robert:hover{ background-image:url(photos/Robert1.jpg);}
+.Cheng{ height:100%; width:100%; background-image:url(photos/Cheng.jpg); background-position:center; background-repeat:no-repeat;}
+.Cheng:hover{ background-image:url(photos/Cheng1.jpg);}
+.Kiwoo{ height:100%; width:100%; background-image:url(photos/Kiwoo.jpg); background-position:center; background-repeat:no-repeat;}
+.Kiwoo:hover{ background-image:url(photos/Kiwoo1.jpg);}
+.Liting{ height:100%; width:100%; background-image:url(photos/Liting.jpg); background-position:center; background-repeat:no-repeat;}
+.Liting:hover{ background-image:url(photos/Liting1.jpg);}
+.Raechel{ height:100%; width:100%; background-image:url(photos/Raechel.jpg); background-position:center; background-repeat:no-repeat;}
+.Raechel:hover{ background-image:url(photos/Raechel1.jpg);}
+.Te{ height:100%; width:100%; background-image:url(photos/Te.jpg); background-position:center; background-repeat:no-repeat;}
+.Te:hover{ background-image:url(photos/Te1.jpg);}
+.Dennis{ height:100%; width:100%; background-image:url(photos/Dennis.png); background-position:center; background-repeat:no-repeat;}
+.Dennis:hover{ background-image:url(photos/Dennis1.png);}
+.Zining{ height:100%; width:100%; background-image:url(photos/Zining.jpg); background-position:center; background-repeat:no-repeat;}
+.Zining:hover{ background-image:url(photos/Zining1.jpg);}
+.Alice{ height:100%; width:100%; background-image:url(photos/Alice.jpg); background-position:center; background-repeat:no-repeat;}
+.Alice:hover{ background-image:url(photos/Alice1.jpg);}
+.WeiZhan{ height:100%; width:100%; background-image:url(photos/WeiZhan.jpg); background-position:center; background-repeat:no-repeat;}
+.WeiZhan:hover{ background-image:url(photos/WeiZhan1.jpg);}
+.YuZhao{ height:100%; width:100%; background-image:url(photos/YuZhao.jpg); background-position:center; background-repeat:no-repeat;}
+.YuZhao:hover{ background-image:url(photos/YuZhao1.jpg);}
+.Minghui{ height:100%; width:100%; background-image:url(photos/Minghui.png); background-position:center; background-repeat:no-repeat;}
+.Minghui:hover{ background-image:url(photos/Minghui1.jpg);}
+.Shiying{ height:100%; width:100%; background-image:url(photos/shiying.jpg); background-position:center; background-repeat:no-repeat;}
+.Shiying:hover{ background-image:url(photos/shiying1.jpg);}
+
+/**** Current Visitors ******************************/
+.Hidaka{ height:100%; width:100%; background-image:url(photos/hidaka.jpg); background-position:center; background-repeat:no-repeat;}
+.Hidaka:hover{ background-image:url(photos/hidaka1.jpg);}
+.JosepTornero{ height:100%; width:100%; background-image:url(photos/JosepTornero.jpg); background-position:center; background-repeat:no-repeat;}
+.JosepTornero:hover{ background-image:url(photos/JosepTornero1.png);}
+.Kenji{ height:100%; width:100%; background-image:url(photos/Kenji.jpg); background-position:center; background-repeat:no-repeat;}
+.Kenji:hover{ background-image:url(photos/Kenji.jpg);}
+.TaoTang{ height:100%; width:100%; background-image:url(photos/TaoTang.jpg); background-position:center; background-repeat:no-repeat;}
+.TaoTang:hover{ background-image:url(photos/TaoTang1.jpg);}
+.Dawei{ height:100%; width:100%; background-image:url(photos/Dawei.jpg); background-position:center; background-repeat:no-repeat;}
+.Dawei:hover{ background-image:url(photos/Dawei1.jpg);}
+.Yahui{ height:100%; width:100%; background-image:url(photos/yahui.jpg); background-position:center; background-repeat:no-repeat;}
+.Yahui:hover{ background-image:url(photos/yahui1.jpg);}
+.GaoFei{ height:100%; width:100%; background-image:url(photos/GaoFei.jpg); background-position:center; background-repeat:no-repeat;}
+.GaoFei:hover{ background-image:url(photos/GaoFei1.jpg);}
+
+/**** Alumni ******************************/
+.Wenlong{ height:100%; width:100%; background-image:url(photos/Wenlong.jpg); background-position:center; background-repeat:no-repeat;}
+.Wenlong:hover{ background-image:url(photos/Wenlong1.jpg);}
+.Yizhou{ height:100%; width:100%; background-image:url(photos/Yizhou.jpg); background-position:center; background-repeat:no-repeat;}
+.Yizhou:hover{ background-image:url(photos/Yizhou.jpg);}
+.Chi-Shen{ height:100%; width:100%; background-image:url(photos/Chi-Shen.jpg); background-position:center; background-repeat:no-repeat;}
+.Chi-Shen:hover{ background-image:url(photos/Chi-Shen1.jpg);}
+.WangCong{ height:100%; width:100%; background-image:url(photos/WangCong.jpg); background-position:center; background-repeat:no-repeat;}
+.WangCong:hover{ background-image:url(photos/WangCong1.jpg);}
+.Oak{ height:100%; width:100%; background-image:url(photos/Oak.jpg); background-position:center; background-repeat:no-repeat;}
+.Oak:hover{ background-image:url(photos/Oak1.jpg);}
+.Mike{ height:100%; width:100%; background-image:url(photos/Mike.jpg); background-position:center; background-repeat:no-repeat;}
+.Mike:hover{ background-image:url(photos/Mike1.jpg);}
+.Chenxu{ height:100%; width:100%; background-image:url(photos/Chenxu.jpg); background-position:center; background-repeat:no-repeat;}
+.Chenxu:hover{ background-image:url(photos/Chenxu1.jpg);}
+.Evan{ height:100%; width:100%; background-image:url(photos/Evan.jpg); background-position:center; background-repeat:no-repeat;}
+.Evan:hover{ background-image:url(photos/Evan1.jpg);}
+.Wenjie{ height:100%; width:100%; background-image:url(photos/Wenjie.jpg); background-position:center; background-repeat:no-repeat;}
+.Wenjie:hover{ background-image:url(photos/Wenjie1.jpg);}
+.Sanggyum{ height:100%; width:100%; background-image:url(photos/Sanggyum.jpg); background-position:center; background-repeat:no-repeat;}
+.Sanggyum:hover{ background-image:url(photos/Sanggyum1.jpg);}
+.Haifei{ height:100%; width:100%; background-image:url(photos/Haifei.jpg); background-position:center; background-repeat:no-repeat;}
+.JB{ height:100%; width:100%; background-image:url(photos/JB.jpg); background-position:center; background-repeat:no-repeat;}
+.JB:hover{ background-image:url(photos/JB1.jpg);}
+.Nancy{ height:100%; width:100%; background-image:url(photos/Nancy.jpg); background-position:center; background-repeat:no-repeat;}
+.Nancy:hover{ background-image:url(photos/Nancy1.jpg);}
+.KC{ height:100%; width:100%; background-image:url(photos/KC.jpg); background-position:center; background-repeat:no-repeat;}
+.KC:hover{ background-image:url(photos/KC1.jpg);}
+.Steve{ height:100%; width:100%; background-image:url(photos/Steve.jpg); background-position:center; background-repeat:no-repeat;}
+.Nora{ height:100%; width:100%; background-image:url(photos/Nora.jpg); background-position:center; background-repeat:no-repeat;}
+.Ahmed{ height:100%; width:100%; background-image:url(photos/Ahmed.jpg); background-position:center; background-repeat:no-repeat;}
+.Sandipan{ height:100%; width:100%; background-image:url(photos/Sandi.jpg); background-position:center; background-repeat:no-repeat;}
+.Sandipan:hover{ background-image:url(photos/Sandi1.jpg);}
+.Soo{ height:100%; width:100%; background-image:url(photos/Soo.jpg); background-position:center; background-repeat:no-repeat;}
+.MA{ height:100%; width:100%; background-image:url(photos/MA.jpg); background-position:center; background-repeat:no-repeat;}
+.MA:hover{ background-image:url(photos/MA1.jpg);}
+.Hclee{ height:100%; width:100%; background-image:url(photos/Hclee.jpg); background-position:center; background-repeat:no-repeat;}
+.Phillips{ height:100%; width:100%; background-image:url(photos/Phillips.jpg); background-position:center; background-repeat:no-repeat;}
+.Yao{ height:100%; width:100%; background-image:url(photos/Yao.jpg); background-position:center; background-repeat:no-repeat;}
+.Chiu{ height:100%; width:100%; background-image:url(photos/Chiu.jpg); background-position:center; background-repeat:no-repeat;}
+.Huei{ height:100%; width:100%; background-image:url(photos/Huei.jpg); background-position:center; background-repeat:no-repeat;}
+.Langari{ height:100%; width:100%; background-image:url(photos/Langari.jpg); background-position:center; background-repeat:no-repeat;}
+.Jshu{ height:100%; width:100%; background-image:url(photos/jshu.jpg); background-position:center; background-repeat:no-repeat;}
+.Horowitz{ height:100%; width:100%; background-image:url(photos/Horowitz.jpg); background-position:center; background-repeat:no-repeat;}
+.Shanti{ height:100%; width:100%; background-image:url(photos/Shanti.jpg); background-position:center; background-repeat:no-repeat;}
+.Hiroshi{ height:100%; width:100%; background-image:url(photos/Hiroshi.jpg); background-position:center; background-repeat:no-repeat;}
+.Hiroshi:hover{ background-image:url(photos/Hiroshi1.jpg);}
+.Omar{ height:100%; width:100%; background-image:url(photos/Omar.jpg); background-position:center; background-repeat:no-repeat;}
+.Omar:hover{ background-image:url(photos/Omar1.jpg);}
+
+/**** Previous Visitors ******************************/
+.Mathias{ height:100%; width:100%; background-image:url(photos/mathias.jpg); background-position:center; background-repeat:no-repeat;}
+.Mathias:hover{ background-image:url(photos/mathias1.jpg);}
+.dmeyer{ height:100%; width:100%; background-image:url(photos/dmeyer.jpg); background-position:center; background-repeat:no-repeat;}
+.dmeyer:hover{ background-image:url(photos/dmeyer1.jpg);}
+.Jianfu{ height:100%; width:100%; background-image:url(photos/Jianfu.jpg); background-position:center; background-repeat:no-repeat;}
+.Jianfu:hover{ background-image:url(photos/Jianfu1.jpg);}
+.Hironori{ height:100%; width:100%; background-image:url(photos/hironori.jpg); background-position:center; background-repeat:no-repeat;}
+.Hironori:hover{ background-image:url(photos/hironori1.jpg);}
+.PanSong{ height:100%; width:100%; background-image:url(photos/PanSong.jpg); background-position:center; background-repeat:no-repeat;}
+.PanSong:hover{ background-image:url(photos/PanSong1.jpg);}
+.Shige{ height:100%; width:100%; background-image:url(photos/Shige.png); background-position:center; background-repeat:no-repeat;}
+.Shige:hover{ background-image:url(photos/Shige1.jpg);}
+.Shunta{ height:100%; width:100%; background-image:url(photos/Shunta.jpg); background-position:center; background-repeat:no-repeat;}
+.Shunta:hover{ background-image:url(photos/Shunta1.jpg);}
+.Zhenwei{ height:100%; width:100%; background-image:url(photos/Zhenwei.jpg); background-position:center; background-repeat:no-repeat;}
+.Zhenwei:hover{ background-image:url(photos/Zhenwei1.jpg);}
+.YanZhi{ height:100%; width:100%; background-image:url(photos/YanZhi.jpg); background-position:center; background-repeat:no-repeat;}
+.YanZhi:hover{ background-image:url(photos/YanZhi1.jpg);}
+.NgoHin{ height:100%; width:100%; background-image:url(photos/NgoHin.jpg); background-position:center; background-repeat:no-repeat;}
+.NgoHin:hover{ background-image:url(photos/NgoHin1.jpg);}
+.WangDi{ height:100%; width:100%; background-image:url(photos/WangDi.jpg); background-position:center; background-repeat:no-repeat;}
+.WangDi:hover{ background-image:url(photos/WangDi1.jpg);}
+.Ernesto{ height:100%; width:100%; background-image:url(photos/Ernesto.png); background-position:center; background-repeat:no-repeat;}
+.Ernesto:hover{ background-image:url(photos/Ernesto.png);}
+.Wonhee{ height:100%; width:100%; background-image:url(photos/Wonhee.jpg); background-position:center; background-repeat:no-repeat;}
+.Wonhee:hover{ background-image:url(photos/Wonhee1.jpg);}
+.Shuro{ height:100%; width:100%; background-image:url(photos/Shuro.jpg); background-position:center; background-repeat:no-repeat;}
+.Shuro:hover{ background-image:url(photos/Shuro1.jpg);}
+.Zong{ height:100%; width:100%; background-image:url(photos/Zong.jpg); background-position:center; background-repeat:no-repeat;}
+.Zong:hover{ background-image:url(photos/Zong1.jpg);}
+.Nadai{ height:100%; width:100%; background-image:url(photos/nadai.jpg); background-position:center; background-repeat:no-repeat;}
+.Nadai:hover{ background-image:url(photos/nadai1.jpg);}
+.Kumazawa{ height:100%; width:100%; background-image:url(photos/kumazawa.jpg); background-position:center; background-repeat:no-repeat;}
+.Kumazawa:hover{ background-image:url(photos/kumazawa1.jpg);}
+.Yu{ height:100%; width:100%; background-image:url(photos/Yu.jpg); background-position:center; background-repeat:no-repeat;}
+.Atsushi{ height:100%; width:100%; background-image:url(photos/Atsushi.jpg); background-position:center; background-repeat:no-repeat;}
+.Atsushi:hover{ background-image:url(photos/Atsushi1.jpg);}
+.Mori{ height:100%; width:100%; background-image:url(photos/Mori.jpg); background-position:center; background-repeat:no-repeat;}
+.Mori:hover{ background-image:url(photos/Mori1.jpg);}
+.Yiliang{ height:100%; width:100%; background-image:url(photos/yiliang.jpg); background-position:center; background-repeat:no-repeat;}
+.Yiliang:hover{ background-image:url(photos/yiliang1.jpg);}
+.Fabien{ height:100%; width:100%; background-image:url(photos/Fabien.jpg); background-position:center; background-repeat:no-repeat;}
+.Fabien:hover{ background-image:url(photos/Fabien1.jpg);}
+.Youn{ height:100%; width:100%; background-image:url(photos/Youn.jpg); background-position:center; background-repeat:no-repeat;}
+.Youn:hover{ background-image:url(photos/Youn1.jpg);}
+.ChongShen{ height:100%; width:100%; background-image:url(photos/ChongShen.jpg); background-position:center; background-repeat:no-repeat;}
+.ChongShen:hover{ background-image:url(photos/ChongShen1.jpg);}
+.SteveYang{ height:100%; width:100%; background-image:url(photos/SteveYang.jpg); background-position:center; background-repeat:no-repeat;}
+.SteveYang:hover{ background-image:url(photos/SteveYang1.jpg);}
+.Kai{ height:100%; width:100%; background-image:url(photos/Kai.jpg); background-position:center; background-repeat:no-repeat;}
+.Kai:hover{ background-image:url(photos/Kai1.jpg);}
+.Kuo-Hsiang{ height:100%; width:100%; background-image:url(photos/Kuo-Hsiang.jpg); background-position:center; background-repeat:no-repeat;}
+.Liao{ height:100%; width:100%; background-image:url(photos/Liao.jpg); background-position:center; background-repeat:no-repeat;}
+.Liao:hover{ background-image:url(photos/Liao.jpg);}
+.YunJung{ height:100%; width:100%; background-image:url(photos/YunJung.jpg); background-position:center; background-repeat:no-repeat;}
+.YunJung:hover{ background-image:url(photos/YunJung1.jpg);}
+.Yongjoon{ height:100%; width:100%; background-image:url(photos/Yongjoon.jpg); background-position:center; background-repeat:no-repeat;}
+.Yongjoon:hover{ background-image:url(photos/Yongjoon1.jpg);}
+.Ryuzo{ height:100%; width:100%; background-image:url(photos/Ryuzo.jpg); background-position:center; background-repeat:no-repeat;}
+.Ryuzo:hover{ background-image:url(photos/Ryuzo1.jpg);}
+.SJung{ height:100%; width:100%; background-image:url(photos/SJung.jpg); background-position:center; background-repeat:no-repeat;}
+.Zheming{ height:100%; width:100%; background-image:url(photos/Zheming.jpg); background-position:center; background-repeat:no-repeat;}
+.Jacqueline{ height:100%; width:100%; background-image:url(photos/Jacqueline.jpg); background-position:center; background-repeat:no-repeat;}

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../../style.css" media="all" />
+	<title>MSC Lab - Kinematic Visual Servoing</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../../index.html">Home</a></li>
+			<li><a href="../../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../../people/students.html">Students</a></li>
+                    <li><a href="../../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../../robotics.html">Robotics</a></li>
+                    <li><a href="../../human.html">Human Mechatronics</a></li>
+                    <li><a href="../../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../../research.html">Research</a> &gt; <a href="../../robotics.html">Robotics</a> &gt; <a href="../robot_manip.html">Intelligent Control of Robot Manipulators</a> &gt; <a href="robot_manip_KVS.html">Kinematic Visual Servoing</a></p>
+		</div>
+    
+	  <div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+					<li><a href="#motivation">Motivation and Approach</a></li>
+                    <li><a href="#results">Main Results</a></li>
+                    <li><a href="#pub">Recent Key Publications</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Kinematic Visual Servoing</h2>
+	    <h3 id="motivation">Motivation and Approach</h3>
+		  <p>Currently, in most applications of vision guided industrial manipulators, the workpiece is either stationary (e.g., bin picking) or in simple motion (e.g., picking from a conveyor belt). In such applications, a simple look-then-move control strategy gives good performance. There are, however, desirable applications in which the workpieces are in more complex motion. Guiding the robot to approach and track a moving target based on vision feedback is oen termed as visual servoing. Compared to conventional tasks (e.g. welding and palletizing) where reference trajectory is known in advance, the motion of the robot is planned in real-time.</p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="35%" align="center"><img src="FANUC_VIS_motivation_cardoor.png" width="250" height="300" alt="car door" /></td>
+              <td width="65%" align="center"><img src="FANUC_VIS_general_closedloop1.png" width="520" height="300" alt="VDS closed loop" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+        <ol class="listparagraph">
+          <li>Rather than the look-then-move scheme, a real-time vision guidance control algorithm is desired.</li>
+          <li>Most industrial robots in use are controlled by trajectory tracking control algorithms. In order to improve usability for the end user, the conventional trajectory tracking control algorithm should be preserved and the vision guidance control algorithm should be designed to be an add-on.</li>
+          <li>In order to apply to real-world industrial robots, the limited sampling speed of the vision system and the limited dynamics response of the actuators should be fully considered.</li>
+        </ol>
+        <p>&nbsp;</p>
+		<h3 id="results">Main Results          </h3>
+		<ol class="listparagraph">
+          <li>Based on the compensated vision feedback from the visual sensing dynamics compensation (VSDC) algorithm, a two-layer control strategy [1] consisting of kinematic visual servoing (KVS) and robot dynamics compensation (RDC) is developed using the theory of multi-surface sliding control. The KVS control law acts as an online motion planner, whereas the RDC control law preserves the structure of a conventional trajectory tracking controller.</li>
+          <li>Constrained optimal control is applied to address the limited dynamics capability of the robot.</li>
+        </ol>
+		<p align="center"><img src="FANUC_KVS effect.png" width="750" height="224" alt="KVS effect" /></p>
+		<p>&nbsp;</p>
+<h3 id="pub">Recent Key Publications</h3>
+		<ol>
+		  <li>C. Wang, C.-Y. Lin, and M. Tomizuka, "Visual Servoing Considering Sensing Dynamics and Robot Dynamics," in <em>Proceedings of the 6th IFAC Symposium on Mechatronic Systems</em>, pp. 45-52, 2013 <strong>(Best Student Paper Finalist)</strong></li>
+		  <li>C. Wang, C.-Y. Lin, and M. Tomizuka, "Visual Servoing for Robot Manipulators Considering Sensing and Dynamics Limits," in <em>Proceedings of the Sixth ASME Dynamic Systems and Control Conference (DSCC)</em>, 2013</li>
+	    </ol>
+      </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

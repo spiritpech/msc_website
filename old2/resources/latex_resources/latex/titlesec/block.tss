@@ -1,0 +1,12 @@
+\ProvidesFile{block.tss}[1999/02/20]
+
+\gdef\ttlh@block#1#2#3#4#5#6#7#8{%
+  \gdef\ttl@makeline##1{\hspace{#6}##1\hspace{#7}}%
+  \setlength\leftskip{#6}%
+  \setlength\rightskip{#7}%
+  \interlinepenalty\@M
+  #1%
+  \parindent\z@
+  \leavevmode
+  \ifttl@numsec{#2}\ifdim#3=\z@\else\hspace{#3}\fi\fi
+  #4{#8}\kern\z@\strut\@@par\nobreak\ttl@savewrite#5\@@par}

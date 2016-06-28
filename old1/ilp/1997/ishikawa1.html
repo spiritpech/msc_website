@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>PIVOT FRICTION COMPENSATION USING ACCELEROMETER AND DISTURBANCE
+OBSERVER FOR HARD DISK DRIVES</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=US-ASCII">
+<LINK REV="made" HREF="mailto:www@mechatro2.ME.Berkeley.EDU">
+</HEAD>
+<BODY>
+<H2 ALIGN=CENTER>PIVOT FRICTION COMPENSATION USING ACCELEROMETER AND
+DISTURBANCE OBSERVER FOR HARD DISK DRIVES</H2>
+
+<P ALIGN=CENTER>Jun Ishikawa</P>
+
+<H3>PROJECT DESCRIPTION</H3>
+
+<P>The embedded sector servo system has become common for hard disk
+drives (HDDs) with higher track densities. In this servo system, servo
+information is embedded in circular data tracks at equally spaced
+angles, i.e., sectors, so that the magnetic head may be controlled
+directly relative to the target track. The number of serctors should
+be minimized for securing the maximum data storage area, but this will
+lower the sampling frequency for digital control based on position
+error feedback. Thus, it is a challenge to design a controller which
+provides a necessary positioning accuracy to match the track density
+at low frequency sampling of the error. While disk manufacturers have
+successfully utilized modern approaches such as model following
+control and multi-rate control to achieve the goal, an obstacle for
+further enhancement of performance is represented by nonlinearities
+and uncertainties in the drive unit such as pivot friction. This
+research will present a friction compensator using the combination of
+accelerometer and disturbance observer.</P>
+
+<H3>METHODOLOGY</H3>
+
+<UL>
+  <LI>Estimate the pivot friction torque using the scaled voice coil
+       motor (VCM) current and the scaled carriage arm acceleration
+       (Disturbance Observer).
+  <LI>Linearize the dynamics between the VCM current, <I>c</I>, and
+       the carriage arm acceleration, <I>a</I>, to be a constant gain
+       within an observer bandwidth by feeding back the filter output,
+       which is the friction estimate, into a VCM amplifier (Friction
+       Compensator).
+  <LI>Design the low pass filter in Fig.JI-1 using the stocahstic
+       estimation theory (Kalman Filter). See Fig.JI-2 for the whole
+       configuration of the friction compensator.
+  <LI>Implement the proposed observer as an analog system to enlarge
+       the observer bandwidth and reduce the load on a lower sampling rate
+       positioning loop.
+</UL>
+
+<H3>RESULTS TO DATE</H3>
+
+<UL>
+  <LI>Showed by simulatioin that the mechanical nonlinearity resulting
+       form pivot friction can be eliminated by the proposed method.
+       <UL>
+	 <LI>The mechanical system under the influence of friction
+	      exhibits varying low frequency gain depending on the input magnitude,
+	      or more precisely depending on the carriage arm displacement (Fig.JI-3
+	      a). This kind of perturbation causes not only the gain reduction at
+	      frequencies, but also critical modeling errors for model-based
+	      control.
+	 <LI>The pivot friction compensator linearized the
+	      characteristics of the mechanical system as a double integrator, i.e.,
+	      as a pure inertia system, no matter what the input magnitude was
+	      (Fig.JI-3 b).
+       </UL>
+  <LI>Investigate the practicality of the proposed approach by experimentation.
+</UL>
+
+<H3>SPONSORS</H3>
+
+<P>Computer Mechanics Laboratory; NEC Corporation</P>
+
+<HR>
+&copy;1997
+<A HREF="http://mechatro2.ME.Berkeley.EDU/">M.Tomizuka Research Group</A>
+<ADDRESS>
+<A HREF="mailto:www@mechatro2.ME.Berkeley.EDU">www@mechatro2.ME.Berkeley.EDU</A>
+</ADDRESS>
+</BODY>
+</HTML>

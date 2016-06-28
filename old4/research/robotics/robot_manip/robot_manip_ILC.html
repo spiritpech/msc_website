@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../../style.css" media="all" />
+	<title>MSC Lab - Iterative Learning Control</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../../index.html">Home</a></li>
+			<li><a href="../../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../../people/students.html">Students</a></li>
+                    <li><a href="../../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../../robotics.html">Robotics</a></li>
+                    <li><a href="../../human.html">Human Mechatronics</a></li>
+                    <li><a href="../../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../../research.html">Research</a> &gt; <a href="../../robotics.html">Robotics</a> &gt; <a href="../robot_manip.html">Intelligent Control of Robot Manipulators</a> &gt; <a href="robot_manip_ILC.html">Iterative Learning Control</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+					<li><a href="#motivation">Motivation and Approach</a></li>
+                    <li><a href="#results">Main Results</a></li>
+                    <li><a href="#pub">Recent Key Publications</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Iterative Learning Control</h2>
+		  <h3 id="motivation">Motivation and Approach</h3>
+<p>To compensate for the repetitive tracking error of automated systems in repetitive industrial applications, the feedforward control inputs (&tau;<sub>nl</sub> and r<sub>q</sub> below) are updated iteratively by processing the error information from previous iterations.</p>
+		  <p align="center"><img src="FANUC_Fig03-ILC_CtrlStruct.png" width="600" height="167" alt="ILC" /></p>
+		  <ol class="listparagraph">
+		    <li>Model industrial robot (blue shaded area "Robot Plant") as a MIMO system, where</li>
+           	<ol class="listparagraphletters">
+           	  <li>disturbance "d" is in a dierent channel from the control input "u", an</li>
+           	  <li>real-time feedback signal "q<sub>m</sub>" is not the output of interest "q<sub>l</sub>"</li>
+            </ol>
+            <li>Design a hybrid dual-stage ILC scheme</li>
+             	<ol class="listparagraphletters">
+                	<li>Torque ILC (TrqILC, yellow shaded area "&tau;<sub>nl</sub>") to compensate for the model uncertainty& disturbances to make the inner plant (orange shaded area) behave as a nominal model</li>
+                    <li>Reference ILC (RefILC, yellow shaded area "r<sub>q</sub>") to compensate for the joint exibilit</li>
+                    <li>Ad hoc hybrid scheme: iteration-varying gain for dual-stage transition</li>
+             	</ol>
+		  </ol>
+          <h3 id="results">Main Results</h3>
+          <p align="center"><img src="FANUC_Fig04-IMUAccErrAllTime3D.png" width="500" height="278" alt="acceleration error" /></p>
+          <ol class="listparagraph">
+            <li>Position tracking and vibration reduction: applications to both single-joint and multi-joint robots with joint elasticity [1, 4, 5] (above figure: proposed hybrid dual stage ILC scheme (RefILC(L)+TrqILC(L)) outperforms either single stage ILC (RefILC(L) or TrqILC(L)) or dual stage ILC with mismatched learning (RefILC(M)+TrqILC(M)) in the vibration suppression of FANUC M-16iB robot).</li>
+            <li>Considering link (beam) exibility: application to large size LCD substrate transfer robot for vibration reduction [2].</li>
+            <li>Learning for general motions: train multiple neural networks for predicting the model following error in a multi-joint robot without further learning or sensing afterer training stage [3].</li>
+          </ol>
+		<h3 id="pub">Recent Key Publications</h3>
+		<ol>
+		  <li>W. Chen, and M. Tomizuka, "Dual-Stage Iterative Learning Control for MIMO Mismatched System with Application to Robots with Joint Elasticity," <em>IEEE Transactions on Control Systems Technology</em>, DOI: 10.1109/TCST.2013.2279652</li>
+		  <li>C-S. Tsai, W. Chen, D-K. Yun, and M. Tomizuka, "Iterative Learning Control for Vibration Reduction in Industrial Robots with Link Flexibility," in <em>Proceedings of the 2013 American Control Conference (ACC)</em>, Washington, DC, June 17-19, 2013</li>
+		  <li>J. Asensio, W. Chen, and M. Tomizuka, "Robot Learning Control Based on Neural Network Prediction," in <em>Proceedings of the 2012 ASME Dynamic Systems and Control Conference (DSCC)</em>, pp. 1489-1497, October 17-19, 2012</li>
+		  <li>W. Chen, and M. Tomizuka, "Iterative Learning Control with Sensor Fusion for Robots with Mismatched Dynamics and Mismatched Sensing," in <em>Proceedings of the 2012 ASME Dynamic Systems and Control Conference (DSCC)</em>, pp. 1480-1488, October 17-19, 2012</li>
+		  <li>W. Chen, and M. Tomizuka, "A Two-Stage Model Based Iterative Learning Control Scheme for a Class of MIMO Mismatched Linear Systems," in <em>Proceedings of the 2012 ASME International Symposium on Flexible Automation (ISFA)</em>, paper No. ISFA2012-7199, June 18-20, 2012</li>
+		  </ol>
+      </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

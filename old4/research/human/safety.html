@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../style.css" media="all" />
+	<title>MSC Lab - Safety for Human-Robot Collaboration</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../people/students.html">Students</a></li>
+                    <li><a href="../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../robotics.html">Robotics</a></li>
+                    <li><a href="../human.html">Human Mechatronics</a></li>
+                    <li><a href="../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../research.html">Research</a> &gt; <a href="../human.html">Human Mechatronics</a> &gt; <a href="safety.html">Safety for Human-Robot Collaboration</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#setup">Experimental Setup</a></li>
+                    <li><a href="#BI-Jacket">BI-Jacket & Potential Field Based Methods</a></li>
+                    <li><a href="#trajectory">Dynamic Trajectory Generation via Safety Index</a></li>
+                    <li><a href="#researchers">Researchers</a></li>
+                    <li><a href="#sponsor">Sponsor</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Safety for Human-Robot Collaboration</h2>
+		  <h3 id="intro">Introduction</h3>
+		  <p>With the growing need for humans and robots to share a workspace and/or task, the safety of human-robot collaboration/cooperation has been gaining increased research attention. To 
+		    guarantee the safety of human workers, robot systems should be able to perceive the complex environment, react to any unexpected human workers on its planned trajectory, and continue on the task if possible. It involves on-line path planning and reactive control. Experiments on a two-link planar robot and simulations on an ITRI 7-DOF robot are conducted for validation. Furthermore, the algorithm may be applied with little change to the dynamic trajectory generation in robot-robot cooperation under a decentralized master-slave control structure.</p>
+		  <p>&nbsp;</p>
+		  <h3 id="setup">Experimental Setup</h3>
+		  <p>&nbsp;</p>
+		  <p align="center"><img src="SafetyR_Experimental_setup.png" width="500" height="371" alt="Planar robot setup" /></p>
+          <p align="center"><strong>Two-link planar robot setup</strong><br />
+            (servo motor, LabVIEW Real-Time, and FPGA modules)</p>
+          <p>&nbsp;</p>
+          <h3 id="BI-Jacket">BI-Jacket &amp; Potential Field Based Methods</h3>
+		  <p><strong>Motivation and Approach</strong></p>
+		  <p>In human-robot collaboration, the safety of the human worker has higher priority than achieving the task in<br />
+	      the robot system. Hence the robot safety system should be able to:</p>
+		  <ol>
+		    <li>Detect the human worker and the potential collisions via non-contact sensor.</li>
+		    <li>Avoid the potential collision and detour to the goal if possible.</li>
+		    <li>Provide the last shield of protection as the fail-safe mechanism if the detection algorithm fails.		  </li>
+		  </ol>
+		  <p><strong>Main Results</strong></p>
+		  <p>The ultrasonic sensors mounted on the robot are used to build the local map, in which the approximate positions of objects in the vicinity of the robot can be extracted. With the position information, the potential eld method is implemented to control the robot and achieve collision avoidance in real-time.</p>
+		  <p align="center"><img src="SafetyR__BI-Jacket_Ultrasonic_onRobot.png" width="500" height="377" alt="Two-link robot with BI-Jacket" /></p>
+		  <p align="center">Two-link robot with the BI-Jacket and an array of ultrasonic sensors</p>
+		  <p>The BI-Jacket, consisting of a so deformable substance and air pressure sensors, is mounted on the critical part of the link on the robot. The BI (Berkeley-ITRI)-Jacket not only provides a buffer between the human worker and the robot when a collision actually happens, but also detects the occurrence of the collision by monitoring the air pressure change inside the BI-Jacket.</p>
+		  <p align="center"><img src="SafetyR__obstacle-avoidance-in-motioin-picture.png" width="800" height="138" alt="Obstacle avoidance" /></p>
+		  <p align="center">Two-link robot to achieve obstacle (white tube) avoidance in motion pictures</p>
+		  <p>&nbsp;</p>
+		  <h3 id="trajectory">Dynamic Trajectory Generation via Safety Index</h3>
+		  <p><strong>Motivation and Approach</strong></p>
+		  <p>In order for the robot to react to the complex environment and unexpected objects properly, an effective quantitative measure about the safety in the vicinity of the robot is necessary. For this, the safety index is defined, which consists of distance safety index (DSI) and momentum safety index (MSI). DSI is self-explanatory, i.e., a shorter distance between the robot and an object indicating a higher DSI value. MSI, on the other hand, accounts for the linear momentum of every link on the robot towards an object in the workspace of the robot. The robot reacts to those objects, either a human worker or another robot, by generating a new trajectory on-line. The trajectory generation is based on solving an optimization problem which penalizes the safety index and the time to accomplish the original task.</p>
+<p>&nbsp;</p>
+<h3 id="researchers">Researchers</h3>
+		  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="researchers">
+		    <tr>
+		      <td width="31%">Chi-Shen Tsai</td>
+		      <td width="38%">Graduate Student</td>
+		      <td width="15%"><a href="mailto:cs.tsai@berkeley.edu" target="_new">Email</a></td>
+		      <td width="16%">&nbsp;</td>
+	        </tr>
+		    <tr>
+		      <td>&nbsp;</td>
+		      <td>&nbsp;</td>
+		      <td>&nbsp;</td>
+		      <td>&nbsp;</td>
+	        </tr>
+		    <tr>
+		      <td><strong>Recent graduates:</strong></td>
+		      <td>&nbsp;</td>
+		      <td>&nbsp;</td>
+		      <td>&nbsp;</td>
+	        </tr>
+		    <tr>
+		      <td>Shu-Wen Yu</td>
+		      <td>Areva Solar</td>
+		      <td><a href="mailto:emmayu@berkeley.edu" target="_new">Email</a></td>
+		      <td>&nbsp;</td>
+	        </tr>
+	      </table>
+          <p>&nbsp;</p>
+		  <h3 id="sponsor">Sponsor</h3>
+		  <p><a href="https://www.itri.org.tw/eng/" target="_new">Industrial Technology Research Institute (ITRI), Taiwan</a></p>
+	  </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

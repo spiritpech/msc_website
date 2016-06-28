@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>M. Tomizuka Research Group Summary Reports - Data Storage Systems</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=US-ASCII">
+<LINK REV="made" HREF="mailto:www@mechatro2.me.berkeley.edu">
+</HEAD>
+<BODY>
+<H2 ALIGN=CENTER>Data Storage Systems</H2>
+
+<P>The date storage industry integrates technology from several areas,
+most notably electronics, magnetics, materials, and
+mechanics. Products include magnetic disk drives, optical disk drives,
+and tape drives. The current industry trend is to continue to refine
+the existing technologies. A key aspect of this refinement is the
+reduction of the physical size of drive systems. As the size is
+reduced and the number of portable applications increases, the
+robustness of the drive system becomes increasingly important.</P>
+
+<P>As the size decreases, the performance of the servo system must
+increase to accomodate the more dense track spacing. Futhermore, the
+drive must maintain a rapid seek and settle performance. To increase
+tracking servo performance, novel methods for position encoding and
+detection are current research areas. Control methods such as the use
+of robust design tools, algorithms for runout cancellation,
+self-calibration and tuning, and disturbance sensing and rejection are
+current topics. For larger systems such as tape drives and disk
+arrays, control techniques for multi-input and multi-output systems
+and control algorithm for motion synchronization hold promice.</P>
+
+<P>Our group has been or is currently investigating several of these
+control techniques. This work is in collaboration with the
+<A HREF="http://cml.ME.Berkeley.EDU/">Computer Mechanics Laboratory</A>
+within the
+<A HREF="http://www.ME.Berkeley.EDU/">Mechanical Engineering Department</A>,
+which addresses mechanical issues in data storage devices. Current
+projects are described in this section.</P>
+
+<HR>
+Back To: | <A HREF="http://mechatro2.ME.Berkeley.EDU/">MSC Home</A>
+| <A HREF="http://mechatro2.ME.Berkeley.EDU/ILP/1997/">Table of Contens</A>
+|
+<HR>
+&copy;1997
+<A HREF="http://mechatro2.ME.Berkeley.EDU/">M.Tomizuka Research Group</A>
+<ADDRESS>
+<A HREF="mailto:www@mechatro2.ME.Berkeley.EDU">www@mechatro2.ME.Berkeley.EDU</A>
+</ADDRESS>
+</BODY>
+</HTML>

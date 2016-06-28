@@ -1,0 +1,30 @@
+%%
+%% This is file `mathpi.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% mathtime.dtx  (with options: `package,mathpi')
+%% 
+%% Copyright 1996 1997 Frank Mittelbach and David Carlisle.
+%%
+%% Development of this package was commissioned by Y&Y Inc.
+%% http://www.yandy.com
+\NeedsTeXFormat{LaTeX2e}[1995/01/01]
+\ProvidesPackage{mathpi}
+ [1997/10/10 v1.0e %
+ mathpi
+ font support (FMi/DPC)]
+\DeclareOption{mathfrak}{%
+  \DeclareMathAlphabet\mathfrak{U}{mh2}{m}{n}}
+\DeclareOption{mathcal}{%
+  \DeclareMathAlphabet\mathcal{U}{mh2scr}{m}{n}}
+\DeclareOption{mathscr}{%
+  \DeclareMathAlphabet\mathscr{U}{mh2scr}{m}{n}}
+\DeclareOption{mathbb}{%
+  \DeclareMathAlphabet\mathbb{U}{mh6}{m}{n}}
+\ProcessOptions
+
+\endinput
+%%
+%% End of file `mathpi.sty'.

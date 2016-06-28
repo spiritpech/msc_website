@@ -1,0 +1,19 @@
+Hi, Soichi:
+    I think it is nice to update my publication now...if you have time...
+
+1. J.-Y. Wang and M. Tomizuka, "Reachability Analysis of Hybrid Lateral Control Problem for Automated Heavy-Duty Vehicles", Submitted to American Control Conference, 2001.
+
+2. J.-Y. Wang and M. Tomizuka, "Dynamic Analyses and Robust Lateral Control Design for Automated Lane Guidance of Heavy Vehicles", Asia Journal of Control, Vol.2, No.3, September, 2000.
+
+3. J.-Y. Wang and M. Tomizuka, "Robust Steering and Differential Braking Control For Automated Guidance of Tractor-Semitrailer Combination Vehicles", International Mechanical Engineering Congress & Exposition, Orlando, December 2000.
+
+4. J.-Y. Wang and M. Tomizuka, "Gain-Scheduled H¥ Loop-Shaping Control for Automated Lane Guidance of Tactor-Semitrailer Combination Vehicles", American Control Conference, Chicago, June 2000.
+
+5. M. Tomizuka, P. Hingwe, M. Tai and J.-Y. Wang, "Automated Lane Guidance of Commercial Vehicles." IEEE International Conference on Control Applications, Kohala Coast, Hawaii, pp.1359-64, 1999.
+
+6. P. Hingwe, M. Tai, J.-Y. Wang and M. Tomizuka, "Lateral Control of Tractor-Semitrailer Combination for Automated Highway Systems--An Experimental Study." International Mechanical Engineering Congress & Exposition, Arizona, 1999.
+
+7. J.-Y. Wang and M. Tomizuka, "Robust H¥ Lateral Control of Heavy-Duty Vehicles in Automated Highway System." American Control Conference, San Diego, California, pp.3671-5, 1999.
+
+8. J.-Y. Wang and M. Tomizuka, "Analysis and Control Design Based on Linear Model for Heavy-Duty Vehicles" International Mechanical Engineering Congress & Exposition , Anaheim, California, pp.729-35, 1998.
+

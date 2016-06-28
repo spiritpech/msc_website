@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="Description" content="MSC Lab. Homepage" />
+	<meta name="Keywords" content="mechanical, control, systems" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Author" content="Wenjie Chen" />
+    <link rel="icon" href="../../mscicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../../images/style.css" />
+	<title>Mechanical Systems Control Laboratory, Precision Motion Control</title>
+</head>
+<body>
+	<div id="content">
+		<div class="header">
+				<h1><a name="Top"></a><a href="../../index.html"><img src="../../images/msclogo_2dc.jpg" alt="" border="none" /><a href="../../index.html">Mechanical Systems Control Laboratory</a></h1>
+		</div>
+
+		<div class="subheader">
+			<div class="subheader_right">
+				<a href="../../index.html">Home</a>
+				<a href="../../people/people.html">People</a>
+				<a href="../../research/research.html">Research</a>
+				<a href="../../publications/publications.html">Publication</a>
+				<a href="../../resources/resources.html">Resources</a>
+				<a href="../../misc/misc.html">Miscellaneous</a>
+				<a href="../../contact/contact.html">Contact Us</a>
+			</div>
+			<div class="subheader_left">
+				<a href="http://www.me.berkeley.edu/">ME Department</a>
+			</div>
+		</div>
+  		
+		<div class="left">
+			<h2 align="left">Current Projects</h2>
+			<ul>
+				<li><h3><a href="../vehicle/vehicle.html">Advanced Vehicle Control Systems</a></h3></li>
+				<li><h3><a href="../disk/disk.html">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../human/human.html">Human Mechatronics</a></h3></li>
+				<li><div class="left_currentpage"><h3><a href="../precision/precision.html">Precision Motion Control</a></h3></div></li>
+				<li><h3><a href="../robot/robot.html">Robotics</a></h3></li>
+			</ul>
+			<h2 align="left">Past Projects</h2>
+			<ul>
+				<li><h3><a href="../../old2/research/vehicle/vehicle.html" target="new">Advanced Vehicle Control Systems</a></h3></li>
+				<li><h3><a href="../../old2/research/copy/copy.html" target="new">Copier Paperpath Control</a></h3></li>
+				<li><h3><a href="../../old2/research/disk/disk.html" target="new">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../../old2/research/machine/machine.html" target="new">Intelligent Machining</a></h3></li>
+				<li><h3><a href="../../old2/research/ilp97/index.html" target="new">ILP Summary '96-'97</a></h3></li>
+			</ul>		
+			<div class="line"></div>
+			<p><center><font size="1">Last updated on August 07, 2010</font></center></p>						
+		</div>
+			
+		<div class="right">
+
+			<h4 style="padding:5px 0 20px 0; margin:0;">
+				<img src="../../images/comment.gif" alt="" /><a href="precision.html">Precision Motion Control</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="wafer.html">Control of High-Performance Wafer Scanning Systems</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="KACST.html">System Theoretic Calibration of an Array of MEMS Gyroscopes for Satellite Attitude Determination Systems</a><br>			
+			</h4>
+			<h2>Control of High-Performance Wafer Scanning Systems</h2>
+			<h4 class="bottomline">
+				<img src="../../images/comment.gif" alt="" /><a href="#Overview">Overview</a> 
+				| <img src="../../images/comment.gif" alt="" /><a href="#Hardware">Experimental Hardware</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Topics">Research Topics</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Researchers">Researchers</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Sponsors">Sponsors</a>
+			</h4>
+			
+		</div>
+			
+		<div class="right">
+
+			<div class="content_right">
+				<p><img src="introduction.jpg"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Overview"></a>Overview</h2>
+			</div>
+			
+			<br><br>
+			<p>Photolithography is a critical step in the manufacture of integrated circuits (ICs).  In the process of photolithography, a pattern is transferred from a photomask (reticle) to a chemical photoresist coating a silicon wafer by shining a light source through the pattern. The pattern is later engraved into the resist through chemical etching.  This process is repeated to create the circuit layer by layer.</p>
+			<p>In order to achieve small feature sizes for ICs, it is important to have high precision control of the wafer stage.  This research focuses on improving the mechanical performance of the wafer stage through developing innovative control strategies, modeling methods, and metrology solutions.</p>
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="ico_precision.jpg"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Hardware"></a>Experimental Hardware</h2>
+			</div>
+			
+			<br><br><br>
+			<p>A single-axis wafer scanner setup is available at our lab for experiments.  The system consists of a stage and counter mass, both driven by linear permanent magnet motors (LPMM).  The stage is mounted on air-bearings, resulting in extremely low friction.  The system is equipped with sensors such as encoder, accelerometers, and a laser interferometry system.</p>
+			<p align="center"><img SRC="waferstage.jpg" ALT="Hardware"></p>
+			<p>The system is controlled by a combination of LabVIEW Real-Time and FPGA. The FPGA interfaces with the stage actuators and measurement systems and provides accurate timing for Real-Time control. The Real-Time system runs the stage control algorithms and data logging operations. The LabVIEW development environment enables users to quickly design, implement and analyze control strategies.</p>
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="project.jpg" ALT="Research Topics"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Topics"></a>Research Topics</h2>
+			</div>
+			
+			<br><br>
+			<h3>Input Shaping</h3>
+			<p>Small positioning errors, suppression of vibration, and small settling times are some performance requirements for the wafer stage. This research investigates the use of input shaping techniques to reduce residual vibration while preserving fast settling time. Methods such as low-pass filtering, jerk-limited profiles, and input shaping will be applied.  Mixed time-frequency constrained optimization techniques will be used to generate trajectories with minimum settling time, and limited frequency bandwidth to prevent residual vibrations.</p>
+			<h3>Force Ripple Compensation</h3>
+			<p>Linear permanent magnet motors have found widespread application in precision positioning. However, the force ripples which are caused by irregular magnetic field and varience of winding self-inductance between the premanent magnets and the translator can cause significant tracking errors. A composite controller is proposed which consists of PID feedback controller and an adaptive feedforward compensator.</p>
+			<h3>Iterative Learning Control</h3>
+			<p>Considering the repetitive nature of scanning, ILC has been used extensively for improving trajectory tracking and repetitive disturbance rejection in wafer scanners. ILC uses information from previous trials of a process to reject periodic disturbances iteratively. We implemented a simple P-type ILC algorithm for wafer stage control. It is especially attractive because of its simple design and implementation.</p>
+			<h3>Automatic Tuning Techniques</h3>
+			<p>Every wafer stage has slightly different plant and disturbance model characteristics, necessitating fine-tuning of controllers for each wafer stage. One of our research aims is to develop techniques to automate the iterative process of controller tuning. Iterative Feedback Tuning (IFT) is being investigated as a method for tuning. The automation of controller tuning will simplify the installation of new machines in the future.</p>
+			<h3>Two-axis Synchronization</h3>
+			<p>In modern wafer scanner setups, both the wafer and reticle are scanned in opposite directions to increase the scanning resolution. The movement of the wafer and reticle stages must be synchronized to avoid alignment errors. Areas of investigation include modeling the cross-coupling between the stages, synchronization, and MIMO control.</p>
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="researcher.jpg" ALT="Researchers"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Researchers"></a>Researchers</h2>
+				<ul>
+					<li><p><b>Abdul-hadi, Omar</b> &nbsp; | Homepage | <a href="mailto:omarabdul-hadi@hotmail.com">Email</a></p></li>
+					<li><p><b>Mishra, Sandipan</b> (Graduated) &nbsp; | Homepage | <a href="mailto:sandipan@me.berkeley.edu">Email</a></p></li>
+					<li><p><b>Fine, Benjamin</b> (Graduated) &nbsp; | Homepage | <a href="mailto:benjamin.t.fine@gmail.com">Email</a></p></li>
+					<li><p><b>Stearns, Hoday</b> (Graduated) &nbsp; | Homepage | <a href="mailto:hodayx@uclink.berkeley.edu">Email</a></p></li>
+					<li><p><b>Yu, Shuwen</b> (Graduated) &nbsp; | Homepage | <a href="mailto:emmayu@berkeley.edu">Email</a></p></li>
+					<li><p><b>Yeh, William</b> (Graduated) &nbsp; | Homepage | <a href="mailto:wyeh47@gmail.com">Email</a></p></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="sponsor.jpg" ALT="Related Links"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Sponsors"></a>Sponsors</h2>
+				<ul><li><p><b><a href="http://www.nikon.com/">Nikon, Ltd.</a></b></p></li></ul>
+				<ul><li><p><b><a href="http://www.home.agilent.com/">Agilent Technologies</a></b></p></li></ul>
+			</div>
+		
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="footer">
+			<p><a href="http://www.me.berkeley.edu/">ME Department Home</a> | <a href="http://www.berkeley.edu/">UC Berkeley Home</a></p>	
+			<p>Copyright &copy; 2008-2010, Mechanical Systems Control Laboratory, UC Berkeley | <a href="../../contact/contact.html">Contact Us</a></p>
+			<p>Designed & Maintained by Wenjie Chen | <a href="mailto:wjchen@me.berkeley.edu">Comments to the website</a></p>
+		</div>
+	</div>
+</body>
+</html>

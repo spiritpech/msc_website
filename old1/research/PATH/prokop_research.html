@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.06 [en] (X11; I; Linux 2.0.35 i686) [Netscape]">
+   <META NAME="AUTHOR" CONTENT="Guenther Prokop">
+   <META NAME="CREATED" CONTENT="19990329;22225529">
+   <META NAME="CHANGEDBY" CONTENT="Guenther Prokop">
+   <META NAME="CHANGED" CONTENT="19990329;22225530">
+<STYLE>
+	<!--
+	-->
+	</STYLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EF" VLINK="#51188E" ALINK="#FF0000">
+
+<CENTER>
+<H1>
+<FONT SIZE=+1>Modeling human vehicle driving - an optimization approach</FONT></H1></CENTER>
+
+<CENTER>Dr.-Ing. G&uuml;nther Prokop</CENTER>
+
+<BR>&nbsp;
+<H1>
+1 Research objective</H1>
+
+<DIV STYLE="margin-bottom: 0.00cm">When driving a vehicle, the driver acts
+as a controller of a dynamic plant. Modern driver support systems have
+a strong influence on the vehicle's dynamic behavior, in order to help
+the driver sta&shy;bi&shy;lize the car, particularly in critical situations.
+To help assess the impact of such systems on the over&shy;all safety, realistic
+driver models are indispensable. Fur&shy;ther&shy;more, tremendous progresses
+in com&shy;pu&shy;ter technology and in the theory of optimization and
+control enable us to describe human behavior in the loop ever realistically.</DIV>
+
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+
+
+<P STYLE="margin-bottom: 0.00cm">Consequently, the aim of the research
+is to develop a driver model, which relates the driver's action to his
+perception, driving experience, and preferences over a wide range of possible
+traffic si&shy;tua&shy;tions. An enhanced understanding of driver behavior
+in the dynamic control loop can as well give major contributions to the
+design of driver support systems within the California PATH program.
+<H1>
+2 Concept</H1>
+
+<DIV STYLE="margin-bottom: 0.00cm">As a starting point, three basic assumptions
+are made concerning human behavior, which are de&shy;duced from every day's
+experience:</DIV>
+
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+
+<UL>
+<DIV STYLE="margin-bottom: 0.00cm">The human uses his sensory perception
+to estimate the current state of motion of his ve&shy;hi&shy;cle. (<B>perception</B>)</DIV>
+</UL>
+
+<UL>
+<DIV STYLE="margin-bottom: 0.00cm">With rising driving experience the human
+can learn intuitively the dynamic behavior of his vehicle ever more precisely.
+(<B>prediction</B>)</DIV>
+</UL>
+
+<UL>
+<DIV STYLE="margin-bottom: 0.00cm">Given that the human is able to predict
+the behavior of the plant to be controlled, he will at every time instance
+optimize his behavior with respect to criteria chosen by himself. (<B>op&shy;ti&shy;mi&shy;zation</B>)</DIV>
+
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+</UL>
+
+<DIV STYLE="margin-bottom: 0.00cm">Based on already known concepts the
+driver is modelled as a three-stage controller, in the core of which there
+is an optimization problem, which is solved at every time instance:</DIV>
+
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+
+
+<P STYLE="margin-bottom: 0.00cm">The "cognitive decision layer" is constituted
+by a fuzzy decision chain, in which the driver deli&shy;be&shy;rately determines
+his optimization criteria (speed, comfort, emergency, etc.), boun&shy;dary
+values for the constraints, and - depending on the driving experience -
+the accuracy of the prediction model used. In the "planning layer", these
+quantities are used to formulate an optimization problem, the so&shy;lution
+of which is an optimized course of driver inputs (accelerator pedal, steering
+angle, braking force, gear sequence) over the predicted period. In the
+"stabilization layer" these input signals are again corrected at a higher
+sampling rate to meet the predicted vehicle trajectory.
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+
+
+<P STYLE="margin-bottom: 0.00cm">Effects such as learning, imperfect perception,
+and fatigue are conceptionally included.
+<H1>
+3 Simulation results</H1>
+
+<DIV STYLE="margin-bottom: 0.00cm">In undisturbed driving our model was
+able to predict behavioral patterns, which are commonly known by every
+driver: braking before curves with sensible gear sequences. Cornering at
+the line of minimal curvature, if sight distance and traffic situation
+allow it. The driver starts accelerating again at the vertex of the curve.</DIV>
+
+
+<P STYLE="margin-bottom: 0.00cm"><SPAN ID="Rahmen1" STYLE="float: left; width: 7.66cm; height: 6.34cm; border: none; padding: 0.00cm; background: #ffffff">
+
+<P STYLE="margin-bottom: 0.00cm"><IMG SRC="sv9kb9kc.gif" NAME="Grafik1" BORDER=0 HEIGHT=197 WIDTH=289 ALIGN=BOTTOM>
+<BR><FONT SIZE=-1><B>Fig. 2: </B>Engine speed during undisturbed acceleration</FONT>
+<BR><FONT SIZE=-1>for various preferences</FONT>
+<BR></SPAN><SPAN ID="Rahmen2" STYLE="float: left; width: 10.65cm; height: 11.17cm; border: none; padding: 0.00cm; background: #ffffff">
+
+<P STYLE="margin-bottom: 0.00cm"><IMG SRC="sv9kb9kd.gif" NAME="Grafik2" BORDER=0 HEIGHT=367 WIDTH=411 ALIGN=BOTTOM><FONT SIZE=-1><B>Fig.
+3: </B>Trajectories for different preferences during undisturbed cornering</FONT>
+<BR></SPAN>
+
+<P STYLE="margin-bottom: 0.00cm"><B>Undisturbed driving: straight road</B>
+
+<P STYLE="margin-bottom: 0.00cm"><SPAN ID="Rahmen3" STYLE="float: left; width: 7.56cm; height: 6.34cm; border: none; padding: 0.00cm; background: #ffffff">
+
+<P STYLE="margin-bottom: 0.00cm"><IMG SRC="sv9kb9ke.gif" NAME="Grafik3" BORDER=0 HEIGHT=200 WIDTH=287 ALIGN=BOTTOM><FONT SIZE=-1><B>Fig.
+1:</B> Velocity profiles for undisturbed acceleration for various preferences</FONT>
+<BR></SPAN>Undisturbed driving on a straight road reflects mainly the driver's
+behavior in longitudinal control. Figs. 1 and 2 show velocity and engine
+speed of a manually shifted vehicle under various pre&shy;fe&shy;ren&shy;ces.
+In the "time-optimal" case the driver tries to do as long a distance as
+possible per time. The model reflects this by accelerating with a fully
+open throttle and gear shifts only, if the engine's ma&shy;xi&shy;mal engine
+speed is reached, so that its maximal power is applied. The "acceleration-optimal"
+be&shy;ha&shy;vior tries mainly to minimize accelerations on the passengers
+with a small weight imposed on time optimality. The result is a very smooth
+acceleration, reaching only 80 km/h after a distance of 1000 m. In the
+"rpm-optimal" case an engine speed of 2500 rpm should be maintained, whereas
+the "velocity-optimal" driver wants to maintain a speed of 60 km/h.
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+
+
+<P STYLE="margin-bottom: 0.00cm"><B>Undisturbed driving: 90&deg; cornering</B>
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+
+
+<P STYLE="margin-bottom: 0.00cm">In Fig. 3 various vehicle trajectories
+are shown for cornering at 90&deg; using different pre&shy;fe&shy;rences.
+Most of the trajectories are close to the curve of smallest curvature.
+The trajectory corresponding to the "keep right" criterion however, stays
+mostly in the middle of the right line as posted by the dri&shy;ver's preference
+to keep his lane.
+
+<P STYLE="margin-bottom: 0.00cm"><SPAN ID="Rahmen4" STYLE="float: left; width: 16.59cm; height: 0.37cm; border: none; padding: 0.00cm; background: #ffffff">
+
+<P STYLE="margin-bottom: 0.00cm"><IMG SRC="sv9kb9kf.gif" NAME="Grafik4" BORDER=0 HEIGHT=217 WIDTH=627 ALIGN=BOTTOM>
+<BR>&nbsp;
+<P><BR>
+<CENTER>
+<P><FONT SIZE=-1><B>Fig. 4: </B>Velocity profiles during undisturbed cornering
+for various preferences</FONT></CENTER>
+
+<P></SPAN>In the velocity diagram (Fig. 4) the "time-optimal" driver can
+be seen to accelerate as fast as pos&shy;si&shy;ble before the curve. He
+brakes applying the maximal possible deceleration, so that side forces
+can still be transmitted to the road. At the curve's vertex he starts accelerating
+again at full-open throt&shy;tle. The "acceleration-optimal" driver brakes
+gently before the curve to minimize speed and thus la&shy;te&shy;ral accelerations
+during cornering. In the "brake-optimal" case, the driver tries to minimize
+the usage of brakes to avoid unnessecary energy dissipation. He decelerates
+gently at very high engine speed using the engine's haul torque. If the
+driver wants to stay in his own lane ("keep right" case), the curvature
+of the vehicle's trajectory is comparatively large, so that his minimum
+speed is con&shy;si&shy;de&shy;rably lower than those of the other preferences.
+<BR>&nbsp;
+<DIV STYLE="margin-bottom: 0.00cm"></DIV>&nbsp;
+
+<P>The model is conceptually able to simulate more complex situations as
+well, such as car following and overtaking. The simulation of "critical"
+(emergency) situations and an experimental verification of the results
+are planned for the near future.
+</BODY>
+</HTML>

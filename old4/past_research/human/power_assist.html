@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../style.css" media="all" />
+	<title>MSC Lab - Auto-Adaptive Power Assist Systems</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../people/students.html">Students</a></li>
+                    <li><a href="../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../robotics.html">Robotics</a></li>
+                    <li><a href="../human.html">Human Mechatronics</a></li>
+                    <li><a href="../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../research.html#past">Past Research</a> &gt; <a href="../human.html">Human Mechatronics</a> &gt; <a href="power_assist.html">Auto-Adaptive Power Assist Systems</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+					<li><a href="#intro">Introduction</a></li>
+                    <li><a href="#objective">Technical Objectives</a></li>
+                    <li><a href="#setup">Experimental Setup</a></li>
+                    <li><a href="#topics">Research Topics</a></li>
+                    <li><a href="#researchers">Researchers</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Auto-Adaptive Power Assist Systems</h2>
+		  <h3 id="intro">Introduction</h3>
+		  <p>This project investigates a class of power assistive systems that add assistive power or force to the power or force input supplied by a human. Such systems involve bilateral coupling between the human, actuator (power assisting device) and environment, which makes the present problem unique when compared with the human-machine interaction in robotics applications. The application addressed in this project involves an electric bicycle.</p>
+		  <p>&nbsp;</p>
+		  <h3 id="objective">Technical Objectives</h3>
+<p>The technical objectives of this research are as follows: </p>
+          <ul>
+            <li>Study intelligent power assist systems, which adaptively handle interaction between human-machine-environment.</li>
+            <li>Develop signal processing and control algorithms for the machine to assist the human by sensing the human's intention and augmenting assistive power in optimal manners and to isolate human from undesired environmental disturbance inputs while retaining essential bilateral physical coupling between the human and the environment.</li>
+            <li>Demonstrate the advantages of signal processing and control algorithms experimentally.</li>
+          </ul>
+          <p>&nbsp;</p>
+          <h3 id="setup">Experimental Setup</h3>
+          <p align="center"><img src="bicycle.jpg" width="610" height="424" alt="bicycle" /></p>
+          <p>The electric bicycle used for the experimental investigation for this project is equipped with a human input torque sensor, a velocity sensor and an encoder measuring the crank angle. The motor is mounted in the front wheel hub and is controlled through a laptop computer during experiments. NI Labview platform and NI usb-DAQ products are used for implementing the control schemes.</p>
+          <p>&nbsp;</p>
+          <h3 id="topics">Research Topics</h3>
+          <p><strong>Robust disturbance observer (DOB) based power-assist system</strong></p>
+          <p>A robust disturbance observer based power-assist scheme is proposed to deal with the environmental disturbances, such as gravitational force and frictional force, under uphill riding condition. The robust design guarantees the robust stability of the overall system under plant uncertainties. The disturbance observer provides flexible assistive power through estimating and compensating for the environmental disturbances.          </p>
+          <p><strong>Out-of-phase power-assist system</strong></p>
+          <p>Research work is being done to investigate the out-of-phase power-assistance scheme for uphill riding condition. The aim of the proposed scheme is to address the unsmooth velocity profile issue at low speeds caused by the non-uniformity of the rider's torque input. Through implementing this approach, we are expecting improved human comfort during low-speed uphill riding.</p>
+          <p>&nbsp;</p>
+			<h3 id="researchers">Researchers</h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="40%"><p>Fan, Xuan (graduated)</p></td>
+              <td width="10%"><p><a href="mailto:xfan@berkeley.edu" target="_new">Email</a></p></td>
+              <td width="50%"><p>&nbsp;</p></td>
+            </tr>
+          </table>
+	  </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

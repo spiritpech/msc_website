@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../../style.css" media="all" />
+	<title>MSC Lab - Motorized Exoskeleton Design for Macaque Upper-limb</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../../index.html">Home</a></li>
+			<li><a href="../../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../../people/students.html">Students</a></li>
+                    <li><a href="../../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../../robotics.html">Robotics</a></li>
+                    <li><a href="../../human.html">Human Mechatronics</a></li>
+                    <li><a href="../../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="file:///C|/Users/Raechel 2/Dropbox/research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../../research.html">Research</a> &gt; <a href="../human.html">Human Mechatronics</a> &gt; <a href="../BMI_exo.html">Exoskeleton Design &amp; Control for BMI Study</a> &gt; <a href="BMI_exo_motorized.html">Motorized Exoskeleton Design for Macaque Upper-limb</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+					<li><a href="#motivation">Motivation and Approach</a></li>
+                    <li><a href="#kinematic">Kinematic Design</a></li>
+                    <li><a href="#actuator">Actuator Design</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Motorized Exoskeleton Design for Macaque Upper-limb</h2>
+		  <h3 id="motivation">Motivation and Approach</h3>
+		  <p>The proposed motorized exoskeleton is able to work in three control modes: 1) torque control mode to passively collect kinematic data as the exoskeleton tracks macaques’ voluntary arm movements; 2) position control mode to bring the arm and exoskeleton to spatial targets following decoded neural signals; and 3) impedance control mode to act as a source of mechanical perturbations that macaques should resist by stiffening their arms. To achieve safe, natural motion, the following two subtopics from kinematic and dynamic aspects of the exoskeleton design are conducted.</p>
+		  <p>&nbsp;</p>
+		  <h3 id="kinematic">Kinematic Design</h3>
+		  <p>To allow for safe interaction between an external mechanism and biological joints, care must be taken to apply external torques along the axis imposed by the biological joint. Due to the structure of most biological joints, the instantaneous center of rotation (e.g., monkey’s shoulder center) may vary according to the angle of the joint.</p>
+		  <p>To characterize the behavior of the shoulder center in macaques, analysis was performed on the motion of the upper arm. Motion capture data was obtained for a sedated monkey (with markers along the upper arm and torso), as the arm was moved through a variety of postures. This data was partitioned according to the elevation of the arm (roughly speaking, the angle made between the humerus and the spine). The shoulder center was then found by comparing the position of arm markers in multiple frames, and finding the intersection of axes which describe the rigid body transformation between them. A kinematic design matching with this kinematic/morphological analysis is currently being investigated.</p>
+          <table width="100%" border="0">
+            <tr>
+              <td width="54%" align="center" valign="top"><p><img src="BMI_shoulder_elevation1.png" width="447" height="400" alt="shoulder elevation" /></p>
+              <p>The approximate position of the shoulder center was<br />
+              found at various arm elevation ranges</p></td>
+              <td width="46%" align="center" valign="top"><p><img src="BMI_shoulder_render.png" width="380" height="400" alt="CAD render" /></p>
+              <p>A mechanism was designed which uses a cam to more<br />
+              closely follow the vertical motion of the shoulder</p></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <h3 id="actuator">Actuator Design</h3>
+          <p>Due to limited space at the macaque’s joint side, a cable-driven mechanism is most ideal for lightweight and compact joint side design. To achieve back-drivability and torque-reflecting, serial elastic mechanisms will be adopted at each of the designed upper-limb joint sides. Bowden cables connecting from the joint side will be driven remotely by the geared DC motors. To reduce sensing complexity and cost at the motor side, friction characteristics of the transmission train will be first identified and then robust/adaptive controllers will be synthesized for output torque estimation and generation.</p>
+	  </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

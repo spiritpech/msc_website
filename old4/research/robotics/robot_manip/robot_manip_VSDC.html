@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../../style.css" media="all" />
+	<title>MSC Lab - Vision Sensing Dynamics Compensation (VSDC)</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../../index.html">Home</a></li>
+			<li><a href="../../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../../people/students.html">Students</a></li>
+                    <li><a href="../../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../../robotics.html">Robotics</a></li>
+                    <li><a href="../../human.html">Human Mechatronics</a></li>
+                    <li><a href="../../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../../research.html">Research</a> &gt; <a href="../../robotics.html">Robotics</a> &gt; <a href="../robot_manip.html">Intelligent Control of Robot Manipulators</a> &gt; <a href="robot_manip_VSDC.html">Vision Sensing Dynamics Compensation</a></p>
+		</div>
+    
+	  <div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+					<li><a href="#motivation">Motivation and Approach</a></li>
+                    <li><a href="#results">Main Results</a></li>
+                    <li><a href="#pub">Recent Key Publications</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Vision Sensing Dynamics Compensation (VSDC)</h2>
+		  <h3 id="motivation">Motivation and Approach</h3>
+		  <p>In order to compensate for the large feedback time delay, slow sampling rate, lens distortion, and measurement noise in industrial machine vision systems, a target motion (i.e., position and orientation) estimation scheme (blue shaded area), Vision Sensing Dynamics Compensation (VSDC) scheme, is developed.</p>
+		  <ol class="listparagraph">
+			  <li>A look-up table was built (green shaded area "Camera calibration") to map the feature information (contaminated by the lens distortion) from the sensing plane to a virtual plane where the nonlinear effects are fully corrected [1].</li>
+			  <li>A Kalman filter based state estimator was designed (green shaded area “Motion estimation and prediction”) to provide a real-time state feedback (i.e., target motion in Cartesian space) via delayed measurements in the image space.</li>
+			  <li>The observer was optimized (model and gains, green shaded area “Parameter learning”) to improve the estimation results.</li>
+		  </ol>
+		<p align="center"><img src="FANUC_fig_vsdc_1.png" width="600" height="204" alt="observer" /></p>
+		<p>&nbsp;</p>
+		<h3 id="results">Main Results          </h3>
+		<ol class="listparagraph">
+          <li>Learning target motion characteristics: combining the motion estimation block and the parameter learning block as an incomplete data Maximum Likelihood estimation problem [2].</li>
+          <li>VSDC in Position based visual servoing (PBSV): application to the multiple-marker-single-camera conguration.</li>
+        </ol>
+		<p align="center"><img src="FANUC_fig_vsdc_2.png" width="600" height="284" alt="VSD effectiveness" /></p>
+		<p>Above figure: the proposed VSDC scheme greatly improves the estimation results by both compensating for the sensor dynamics (i.e., delay compensation) and correctly modeling the target motion characteristics (i.e., parameter learning)</p>
+		<p>&nbsp;</p>
+<h3 id="pub">Recent Key Publications</h3>
+		<ol>
+		  <li>C. Wang, W. Chen, and M. Tomizuka, "Robot End-effector Sensing with Position Sensitive Detector and Inertial Sensors," in <em>Proceedings of the 2012 IEEE International Conference on Robotics and Automation (ICRA)</em>, pp. 5252-5257, 2012</li>
+		  <li>C.-Y. Lin, C. Wang, and M. Tomizuka, "Visual tracking with sensing dynamics compensation using the Expectation-Maximization algorithm," in <em>Proceedings of the 2013 American Control Conference (ACC), Washington, DC</em>, June 17-19, 2013</li>
+		  <li>C. Wang, C.-Y. Lin, and M. Tomizuka, "Visual Servoing Considering Sensing Dynamics and Robot Dynamics," in <em>Proceedings of the 6th IFAC Symposium on Mechatronic Systems</em>, pp. 45-52, 2013 <strong>(Best Student Paper Finalist)</strong></li>
+		  <li>C. Wang, C.-Y. Lin, and M. Tomizuka, "Visual Servoing for Robot Manipulators Considering Sensing and Dynamics Limits," in <em>Proceedings of the Sixth ASME Dynamic Systems and Control Conference (DSCC)</em>, 2013</li>
+		  </ol>
+      </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

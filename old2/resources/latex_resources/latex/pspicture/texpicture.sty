@@ -1,0 +1,63 @@
+%% 
+%% This is file `texpicture.sty', generated on <1999/3/11> 
+%% with the docstrip utility (2.2i).
+%% 
+%% The original source files were:
+%% 
+%% pspicture.doc  (with options: `texsty')
+%% 
+%% IMPORTANT NOTICE:
+%% You are not allowed to distribute this file.
+%% For distribution of the original source see
+%% the copyright notice in the file pspicture.doc .
+%% 
+%%% ====================================================================
+%%%  @LaTeX-style-file{
+%%%     author          = "David Carlisle",
+%%%     version         = "2.01",
+%%%     date            = "16 June 1992",
+%%%     time            = "18:30:53 BST",
+%%%     filename        = "pspicture.sty",
+%%%     address         = "Computer Science Department
+%%%                        Manchester University
+%%%                        Oxford Road
+%%%                        Manchester
+%%%                        England
+%%%                        M13 9PL",
+%%%     telephone       = "+44 61 275 6139",
+%%%     FAX             = "+44 61 275 6236",
+%%%     checksum        = "56975 755 2882 22245",
+%%%     email           = "carlisle@cs.man.ac.uk (Internet)",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "LaTeX, pictures, PostScript",
+%%%     supported       = "yes",
+%%%     docstring       = "
+%%%
+%%%     pspicture.sty
+%%%
+%%%     A LaTeX style option that reimplements most of the picture
+%%%     environment commands to use PostScript \special's, rather than
+%%%     the line and circle fonts. This allows lines to have arbitrary
+%%%     slope and thickness, and circles to be any size.
+%%%
+%%%     The checksum field above was produced by
+%%%     Robert Solovay's checksum utility.",
+%%%  }
+%%% ====================================================================
+
+
+
+
+\@warning{texpicture.sty in operation:^^J\@spaces
+LaTeX document with pspicture.sty before printing}
+\def\Line(#1,#2){}
+\def\Vector(#1,#2){}
+\def\arrowlength#1{}
+\def\Curve(#1,#2)#3{}
+\def\@badlinearg{}
+\let\@@v@l\oval
+\def\@@@v@l[#1]{\@@v@l}
+\def\oval{\@ifnextchar[{\@@@v@l}{\@@v@l}}
+\endinput
+%% 
+%% End of file `texpicture.sty'.

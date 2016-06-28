@@ -1,0 +1,63 @@
+<tr><td> Chen, Li </td><td> USTC Pickup/housing </td><td> Monte Y. Wang
+Monte Y. Wang myw@uclink4 642-6906 (o) 527-8371 (h) </td></tr>
+
+<tr><td> Chen, Xiao </td><td> Beijing Pickup/housing </td><td> Eaming
+Huang Eaming Huang </td></tr>
+
+<tr><td> Dong, Huiping </td><td> Beijing hpdong@pubms.pku.edu.cn
+Pickup/housing </td><td> Jeff Lowe Jeff Lowe </td></tr>
+
+<tr><td> Guo, Fanqin </td><td> Pickup/housing </td><td> ? ? </td></tr>
+
+<tr><td> He, Li </td><td> Beijing Pickup/housing </td><td> Yadong Liu
+Yadong Liu </td></tr>
+
+<tr><td> Huang, Jie </td><td> China lj@est4.cs.tsinghua.edu.cn
+Pickup/housing </td><td> Shuang Li Shuang Li </td></tr>
+
+<tr><td> Jin, Yanhong </td><td> Beijing Tel/Fax 8610-64204463
+bainsh@pcux.ied.ac.cn Pickup/housing </td><td> Changqing Sun Changqing Sun
+</td></tr>
+
+<tr><td> Jing, Youhao </td><td> Penn State (814)238-6981
+yhj@euler.aero.psu.edu "about 8-10 arrive at San Francisco, need pickup.
+Notify result before Aug 5." </td><td> ? ? </td></tr>
+
+<tr><td> Li, Liangshu </td><td> USTC mys@dchp.chp.ustc.edu.cn
+Pickup/housing </td><td> ? ? </td></tr>
+
+<tr><td> Lin, Yun </td><td> Nanjing Pickup/housing </td><td> Jumin Zhou
+Jumin Zhou </td></tr>
+
+<tr><td> Liu, Zhendong </td><td> Beijing Pickup/housing </td><td>
+"Jiulong, Meng" "Jiulong, Meng" </td></tr>
+
+<tr><td> Liu, Zhuping </td><td> Beijing chengja@mail.bjpeu.edu.cn
+Pickup/housing </td><td> Li Yi Li Yi </td></tr>
+
+<tr><td> Ma, Xiaomei </td><td> Shanghai hxgu@shmu.eu.cn Pickup/housing
+</td><td> Naxin Yao Naxin Yao </td></tr>
+
+<tr><td> Niu, Xiaoting </td><td> Beijing 8610-62783814(0)
+wjf@pwrs.eea.tsinghua.edu.cn Pickup/housing </td><td> Lei Li Lei Li
+</td></tr>
+
+<tr><td> Peng, Zhi </td><td> Beijing Pickup/housing </td><td> Jiangang
+Weng Jiangang Weng </td></tr>
+
+<tr><td> Wang, Fugui </td><td> Beijing wfg@nsep.tsinghua.edu.cn
+Pickup/housing </td><td> Su Wang Su Wang </td></tr>
+
+<tr><td> Wang, Lei </td><td> Beijing 8610-62757157 fax
+leiwang@chemms.chem.pku.cn Pickup/housing </td><td> "Zhihua, Shen"
+"Zhihua, Shen" </td></tr>
+
+<tr><td> Zhang, Xiaogang </td><td> Changsha Pickup/housing </td><td> Dan
+Li Dan Li </td></tr>
+
+<tr><td> Zhang, Xiaoru </td><td> Beijing
+wangjx@hannah.ee.tsinghua.edu.cn Pickup/housing </td><td> Hui Zhang Hui
+Zhang </td></tr>
+
+<tr><td> Zhen, Lizhong </td> China lzheng@hotmail.com Pickup/housing
+</td><td> Qiang Lu Qiang Lu </td></tr>

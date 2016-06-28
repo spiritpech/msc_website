@@ -1,0 +1,20 @@
+Gain-Scheduled H1 Loop-Shaping Controller for Automated 
+Guidance of Tractor-Semitrailer Combination Vehicles 1 
+Jeng-Yu Wang and Masayoshi Tomizuka 
+Department of Mechanical Engineering 
+University of California at Berkeley, Berkeley, CA 94720-1740 
+jengyu@newton.berkeley.edu and tomizuka@me.berkeley.edu 
+Abstract 
+This paper deals with the robust, gain-scheduled, later- 
+al control problem for tractor-semitrailer combination ve- 
+hicles (TSCVs) using an observer-structured H1 loop- 
+shaping controller. Vehicle longitudinal speed is chosen as 
+the scheduling parameter since variations of speeds dra- 
+matically change system dynamics in dierent frequency 
+ranges. By utilizing the vehicle speed as the scheduling 
+parameter, the controller minimizes the eect of uncer- 
+tainties and nonlinearities, which depends mainly on the 
+velocity. Two scheduling techniques are applied to evalu- 
+ate the eectiveness of the proposed controller. Simulation 
+shows that the gain-scheduled controller generally sustains 
+a larger robstness region than the xed-gain 199 420 239 433

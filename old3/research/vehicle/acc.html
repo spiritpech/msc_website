@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="Description" content="MSC Lab. Homepage" />
+	<meta name="Keywords" content="mechanical, control, systems" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Author" content="Wenjie Chen" />
+    <link rel="icon" href="../../mscicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../../images/style.css" />
+	<title>Mechanical Systems Control Laboratory, Adaptive Cruise Control</title>
+</head>
+<body>
+	<div id="content">
+		<div class="header">
+				<h1><a name="Top"></a><a href="../../index.html"><img src="../../images/msclogo_2dc.jpg" alt="" border="none" /><a href="../../index.html">Mechanical Systems Control Laboratory</a></h1>
+		</div>
+
+		<div class="subheader">
+			<div class="subheader_right">
+				<a href="../../index.html">Home</a>
+				<a href="../../people/people.html">People</a>
+				<a href="../../research/research.html">Research</a>
+				<a href="../../publications/publications.html">Publication</a>
+				<a href="../../resources/resources.html">Resources</a>
+				<a href="../../misc/misc.html">Miscellaneous</a>
+				<a href="../../contact/contact.html">Contact Us</a>
+			</div>
+			<div class="subheader_left">
+				<a href="http://www.me.berkeley.edu/">ME Department</a>
+			</div>
+		</div>
+  		
+		<div class="left">
+			<h2 align="left">Current Projects</h2>
+			<ul>
+				<li><div class="left_currentpage"><h3><a href="../vehicle/vehicle.html">Advanced Vehicle Control Systems</a></h3></div></li>
+				<li><h3><a href="../disk/disk.html">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../human/human.html">Human Mechatronics</a></h3></li>
+				<li><h3><a href="../precision/precision.html">Precision Motion Control</a></h3></li>
+				<li><h3><a href="../robot/robot.html">Robotics</a></h3></li>
+			</ul>
+			<h2 align="left">Past Projects</h2>
+			<ul>
+				<li><h3><a href="../../old2/research/vehicle/vehicle.html" target="new">Advanced Vehicle Control Systems</a></h3></li>
+				<li><h3><a href="../../old2/research/copy/copy.html" target="new">Copier Paperpath Control</a></h3></li>
+				<li><h3><a href="../../old2/research/disk/disk.html" target="new">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../../old2/research/machine/machine.html" target="new">Intelligent Machining</a></h3></li>
+				<li><h3><a href="../../old2/research/ilp97/index.html" target="new">ILP Summary '96-'97</a></h3></li>
+			</ul>		
+			<div class="line"></div>
+			<p><center><font size="1">Last updated on February 9, 2009</font></center></p>						
+		</div>
+			
+		<div class="right">
+
+			<h4 style="padding:5px 0 20px 0; margin:0;">
+				<img src="../../images/comment.gif" alt="" /><a href="vehicle.html">Advanced Vehicle Control Systems</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="acc.html">Adaptive Cruise Control Systems with Stop-and-Go</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="turbo.html">Turbocharged Spark-Ignition Engine Control</a><br>
+			</h4>
+			<h2>Adaptive Cruise Control Systems with Stop-and-Go</h2>
+			<h4 class="bottomline">
+				<img src="../../images/comment.gif" alt="" /><a href="#Introduction">Introduction</a> 
+				| <img src="../../images/comment.gif" alt="" /><a href="#Research">Research Topics</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Researchers">Researchers</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Acknowledgement">Acknowledgement</a>
+				<br><br>
+			</h4>
+			
+		</div>
+			
+		<div class="right">
+
+			<div class="content_right">
+				<p><img src="ico_nissan.jpg"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Introduction"></a>Introduction</h2>
+			</div>
+			
+			<br><br><br>
+			<p>Modern automobiles are equipped with a number of drive assistance functions for safety and reduction in driver fatigue. Cruise control is such a function. It was originally introduced as a function to maintain the speed of an automobile at a reference value selected by the driver. In recent years, it has evolved to adaptive cruise control (ACC) or intelligent cruise control, which has an additional function of car following when the preceding vehicle is driven at a speed lower than the reference speed. ACC has become reality because of advances in sensor technologies and other enabling technologies. Research and development efforts are continuing in both the academic and industrial sectors to further enhance the capability of ACC.</p>
+			<p>One importance enhancement is the car following capability at low speeds including stop-and-go capability. In case of heavy traffic, the driver has to keep driving over hours and cannot use the cruise control function. With a stop-and-go capability, the driver`s fatigue can be immensely reduced. Also, with a further advance, this function can be expended to be used in a city driving.</p>
+			<p align="center"><a href="acc_system.jpg" target="new"><img src="acc_system.jpg" height="301"></a><br>Fig. 1: Overall System Flow Diagram</p>
+			<br>
+			<p align="center"><a href="acc_system_ctrl.jpg" target="new"><img src="acc_system_ctrl.jpg" height="301"></a><br>Fig. 2: Detail Control Flow Diagram</p>
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="ico_acc.jpg" ALT="Research Topics"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Research"></a>Research Topics</h2>
+			</div>
+			
+			<br><br><br>
+
+			<h3>Environmental parameter estimation</h3>
+			<p>With a good estimation of the environmental parameters, a smoother and safer control of the vehicle can be achieved. For a smooth driving, an appropriate cancellation of disturbances is required. At low speeds, the gravitational disturbance due to the road slope is a dominant resistance, while at high speeds the effect of the aerodynamic disturbance is the most important. Also, the information of the environmental parameters like the road friction coefficient can be utilized for a safe control of the vehicle.</p> 
+
+			<h3>Controller tuning</h3>
+			<p>Many methods can be used for the tuning of the feedback controllers. One of the promising methods is Iterative Feedback Tuning which can autonomously tune the gains of the controller. By adding the quadratic function of the acceleration, passengers' comfort can be additionally considered in the design of the controller.</p> 
+
+			<h3>Switching</h3>
+			<p>Since the ACC controller consists of different modes, and the vehicle itself uses two different power sources - an engine and a brake, it is important to guarantee soft and stable transients between different modes. For example, the controller has to work safely in case of a sudden lane change - cut-in or cut-out- of a lead vehicle.</p> 
+
+			<h3>Smooth stop</h3>
+			<p>Due to the compliance of tires, a hard braking can cause an undesirable oscillation of the vehicle during a complete stop. This undesirable motion can be captured with some tire models including Dynamic Deflection Tire model. The controller should minimize the oscillation to enhance the comfort of passengers.</p> 
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="researcher.jpg" ALT="Researchers"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Researchers"></a>Researchers</h2>
+				<ul>
+					<li><p><b>Kim, Sanggyum</b> &nbsp; | Homepage | <a href="mailto:sgkim@berkeley.edu">Email</a></p></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="sponsor.jpg" ALT="Acknowledgement"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Acknowledgement"></a>Acknowledgement</h2>
+				<p>This project is a collaboration between <a href="http://www.berkeley.edu", target="new">University of California, Berkeley</a> and <a href="http://www.itri.org.tw", target="new">Industrial Technology Research Institute in Taiwan.</a></p>
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="footer">
+			<p><a href="http://www.me.berkeley.edu/">ME Department Home</a> | <a href="http://www.berkeley.edu/">UC Berkeley Home</a></p>	
+			<p>Copyright &copy;  2008-2010, Mechanical Systems Control Laboratory, UC Berkeley | <a href="../../contact/contact.html">Contact Us</a></p>
+			<p>Designed & Maintained by Wenjie Chen | <a href="mailto:wjchen@me.berkeley.edu">Comments to the website</a></p>
+		</div>
+	</div>
+</body>
+</html>

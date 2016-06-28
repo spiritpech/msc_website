@@ -1,0 +1,6 @@
+AuthUserFile /var/www/html/htdocs-groups/msc/old2/people/phone/.htpasswd
+AuthGroupFile /dev/null
+AuthName MSC Lab Phonebook
+AuthType Basic
+
+require user tomi_group

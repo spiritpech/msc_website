@@ -1,0 +1,179 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Soichi Ibaraki">
+   <title>Copier Paperpath Control</title>
+<link REL=STYLESHEET TYPE="text/css" HREF="../../mschomepage.css">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+<center>
+<br><b><tt><font face="arial, helvetica"><font color="#999999"><font size=-1>Mechanical Systems Control Laboratory Homepage</font></font></font></tt></b>
+<br><img SRC="pixel.gif" ALT="" height=1 width=500></center>
+
+<p>
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+<caption>
+<center><font face="arial, helvetica"><font size=-1>Copier Paperpath Control
+</font></font>
+<br><font face="arial, helvetica"><font color="#999999"><font size=-1>
+<a href="../../index.html" class="base">Home</a> | 
+<a href="../../people/people.html" class="base">People</a> | 
+<a href="../research.html" class="base">Research</a> | 
+<a href="../../publications/publications.html" class="base">Publications</a> | 
+<a href="../../resources/resources.html" class="base">Resources</a> | 
+<a href="../misc/misc.html" class="base">Misc</a>
+</font></font></font></center>
+<p>&nbsp;
+<p>&nbsp;
+
+<center>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+<tr>
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+bordercolordark="#FFFFFF" valign="top" width="128">
+<center>
+<img SRC="../../misc/ico_camera.jpg" ALT="Photos" height=90 width=120>
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+Photos</font></b></center>
+</td>
+
+<td WIDTH="30"></td>
+
+<td VALIGN=TOP WIDTH="342">
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+<tr>
+<td VALIGN=CENTER WIDTH=100>
+<a href="clo_photo1.html"><img SRC="ico_bench.jpg" height=80 
+width=100 align=ABSCENTER BORDER=0 alt="f_bench1.jpg"></a></td>
+<td WIDTH=5></td>
+<td WIDTH=237>
+<FONT FACE="helvetica,arial" SIZE="2"><b>
+<a href="clo_photo1.html">Experimental Setup</a>
+</b></font><br>
+<FONT FACE="helvetica,arial" SIZE="2">
+Overview picture of the experimental setup.</font>
+</td></tr>
+
+<tr>
+<td VALIGN=CENTER WIDTH=100>
+<a href="clo_photo2.html"><img SRC="ico_paperpath.jpg" height=80 
+width=100 align=ABSCENTER BORDER=0 alt="f_paperpath1.jpg"></a></td>
+<td WIDTH=5></td>
+<td WIDTH=200>
+<FONT FACE="helvetica,arial" SIZE="2"><b>
+<a href="clo_photo2.html">Paperpath</a>
+</b></font><br>
+<FONT FACE="helvetica,arial" SIZE="2">
+Three independently driven sections form a loop shaped
+paperpath. ...
+</font>
+</td></tr>
+
+<tr>
+<td VALIGN=CENTER WIDTH=100>
+<a href="clo_photo3.html"><img SRC="ico_feeder.jpg" height=80 
+width=100 align=ABSCENTER BORDER=0 alt="f_feeder.jpg"></a></td>
+<td WIDTH=5></td>
+<td WIDTH=200>
+<FONT FACE="helvetica,arial" SIZE="2"><b>
+<a href="clo_photo3.html">Feeder</a>
+</b></font><br>
+<FONT FACE="helvetica,arial" SIZE="2">
+A feeder unit inserts sheets into the paperpath.
+</font>
+</td></tr>
+
+<tr>
+<td VALIGN=CENTER WIDTH=100>
+<a href="clo_photo4.html"><img SRC="ico_exit2.jpg" height=80 
+width=100 align=ABSCENTER BORDER=0 alt="f_exit_2.jpg"></a></td>
+<td WIDTH=5></td>
+<td WIDTH=200>
+<FONT FACE="helvetica,arial" SIZE="2"><b>
+<a href="clo_photo4.html">Exit station</a>
+</b></font><br>
+<FONT FACE="helvetica,arial" SIZE="2">
+A solenoid actuated exit station is used to remove
+sheets from the loop.
+</font>
+</td></tr>
+
+<tr>
+<td VALIGN=CENTER WIDTH=100>
+<a href="clo_photo5.html"><img SRC="ico_sensors2.jpg" height=80 
+width=100 align=ABSCENTER BORDER=0 alt="f_sensors2.jpg"></a></td>
+<td WIDTH=5></td>
+<td WIDTH=200>
+<FONT FACE="helvetica,arial" SIZE="2"><b>
+<a href="clo_photo5.html">Sensors</a>
+</b></font><br>
+<FONT FACE="helvetica,arial" SIZE="2">
+Optical sensors detect sheet positions along the paperpath.
+</font>
+</td></tr>
+
+<tr>
+<td VALIGN=CENTER WIDTH=100>
+<a href="clo_photo6.html"><img SRC="ico_dspace.jpg" height=80 
+width=100 align=ABSCENTER BORDER=0 alt="f_dspace.jpg"></a></td>
+<td WIDTH=5></td>
+<td WIDTH=200>
+<FONT FACE="helvetica,arial" SIZE="2"><b>
+<a href="clo_photo6.html">Controller board</a>
+</b></font><br>
+<FONT FACE="helvetica,arial" SIZE="2">
+The setup is controlled by a dSpace PowerPC controller
+board. ...
+</font>
+</td></tr>
+
+<tr>
+<td VALIGN=CENTER WIDTH=100>
+<a href="clo_photo7.html"><img SRC="ico_swebel2.jpg" height=80 
+width=100 align=ABSCENTER BORDER=0 alt="f_swebel2.jpg"></a></td>
+<td WIDTH=5></td>
+<td WIDTH=200>
+<FONT FACE="helvetica,arial" SIZE="2"><b>
+<a href="clo_photo7.html">Martin and Carlo</a>
+</b></font><br>
+<FONT FACE="helvetica,arial" SIZE="2">
+Martin Krucinski and Carlo Cloet with the experimental setup in the
+background.
+
+</font>
+</td></tr>
+
+<tr><td colspan=3>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+</td></tr>
+
+</table></td></tr>
+
+</table></center>
+
+<p>&nbsp;
+
+<center><img SRC="pixel.gif" ALT="" height=1 width=500>
+<font face="arial, helvetica" font color="#666666" size=1>
+MSC Lab. Homepage is created and maintained by Soichi Ibaraki and Shashikanth
+Suryanarayanan.<br>
+Please feel free to send comments to us at <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+</center>
+
+<p><br></caption>
+
+<tr>
+<td></td>
+</tr>
+</table></center>
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+PUBLICACIONES DE INVESTIGACIÓN
+
+CLAVE:  L = libro completo,  CL = capítulo de libro,  A = artículo,  R = revisión,  E = editor, PR = actas
+
+Revistas Internacionales
+
+
+AUTORES (p.o. de firma): Eduardo Vendrell & Martin Mellado
+TÍTULO: Robotic Tools and Experiences in Manufacturing Systems
+EDITORIAL Informatics and Control Publications
+REF. REVISTA/LIBRO:(ISBN, ISSN,...):, Studies in Informatics and Control, F.G. Filip (Editor)
+ISSN 1220-1766	CLAVE: A
+VOLUMEN: vol.4, no.3	PÁGINAS:	AÑO: 1995
+
+
+AUTORES (p.o. de firma): J. Garbajosa, C. Lomba, M. Mellado, E. Vendrell, A. Crespo, K. Schilling & R. Mayerhofer
+TÍTULO: An Intelligent Control System for an Autonomous Guided Vehicle to Support Material Transport
+EDITORIAL: EC2 & DÉVELOPPEMENT, PARIS, FRANCE
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): LA LETTRE DE L'IA. RCS B 405 101 619 - ISSN 0767-4910	CLAVE: A
+VOLUMEN: NUMERO 123, MAI 1997	PÁGINAS:	AÑO: 1997
+
+
+AUTORES (p.o. de firma): M. Mellado, E. Vendrell, A. Crespo, P. López, J. Garbajosa, C. Lomba, K. Schilling, H. Stützle, R. Mayerhofer
+TÍTULO: Application of a Real Time Expert System Platform for Flexible Autonomous Transport in Industrial Production
+EDITORIAL: Elsevier Science
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): Special Issue on Computer in Industry, Elsevier Science,
+ISSN 0166-3615	CLAVE: A
+VOLUMEN: 38, No. 2	PÁGINAS: 187-200	AÑO: Marzo 1999
+
+
+
+Revistas Nacionales
+
+AUTORES (p.o. de firma): Eduardo Vendrell, Martín Mellado y Josep Tornero
+TÍTULO: Programación de Robots. Desarrollo de un Entorno Basado en un Sistema CAD
+EDITORIAL Editorial PULSAR
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): Automatización Integrada & Revista de Robótica,
+ISSN 0210-0118	CLAVE: A
+VOLUMEN: Nº 72	PÁGINAS:	AÑO: 1992
+
+
+AUTORES (p.o. de firma): Martín Mellado, Josep Tornero y Eduardo Vendrell
+TÍTULO: Sistema CAD para Programar Robots
+EDITORIAL Editorial PULSAR
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): Proyecto 2000, Ingeniería del Producto. ISSN 0210-0118	CLAVE: A
+VOLUMEN: Nº 82	PÁGINAS:	AÑO: 1992
+
+
+ 
+Actas de Congresos
+
+(Actas Congresos Internacionales publicadas en Editorial Internacional)
+
+AUTORES (p.o. de firma): Martin Mellado & Josep Tornero
+TÍTULO: On the Spherical Splines for Robot Modeling
+EDITORIAL Springer-Verlag
+REF. REVISTA/LIBRO:(ISBN, ISSN,...):, Modeling in Computer Graphics,
+B. Falcidieno & T.L. Kunii (Editors) ISBN 3-540-56529	CLAVE: A
+VOLUMEN:	PÁGINAS:	AÑO: 1993
+
+
+AUTORES (p.o. de firma): Enrique J. Bernabeu, Josep Tornero
+TÍTULO: An Optimal and Automatic Geometric Modeler of Real Objects in Robotic Systems Using the Hough Transform Method
+EDITORIAL 2nd Int. Symp. on Method and Models in Automation and Robotics
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN 83-86359-17-X	CLAVE: A
+VOLUMEN:  2	PÁGINAS: 621-626	AÑO: 1995
+
+
+AUTORES (p.o. de firma): Enrique J. Bernabeu, Josep Tornero
+TÍTULO: An Automatic Method for the Geometric Modeling of Robotic Systems Based on the Hough Transform
+EDITORIAL 11th ISPE/IEE/IFAC Int. Conf. on CAD/CAM, Robotics and Factories of the Future
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN 95782-1-7, 	CLAVE: A
+VOLUMEN: 2	PÁGINAS: 758-763	AÑO: 1995
+
+
+AUTORES (p.o. de firma): Enrique J. Bernabeu, Josep Tornero
+TÍTULO: Robotic System Modeling for Trajectory Planning
+EDITORIAL IEEE SMC Computational Engineering in Systems Appliactions CESA'96
+REF. REVISTA/LIBRO:(ISBN, ISSN,...):  ISBN 2-9510266-1-7,	CLAVE: A
+VOLUMEN:	PÁGINAS: 670-675	AÑO: 1996
+
+
+AUTORES (p.o. de firma): Salvador F. Navarro, José R. Díaz, Eduardo Vendrell & Martin Mellado
+TÍTULO: Management and Monitoring of a Robotic System in a Windows Based Environment
+EDITORIAL Mechanical Engineering Publications Limited
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): Advanced Manufacturing Processes, Systems and Technologies, M.K. Khan, C.S. Wright & R. Whalley (Editors) , ISBN 0-85298-989-X	CLAVE: A
+VOLUMEN:	PÁGINAS:	AÑO: 1996
+
+
+AUTORES (p.o. de firma): Antonio Sánchez, Martin Mellado & Eduardo Vendrell
+TÍTULO: Integrated System for Computer Aided Robot Programming
+EDITORIAL Mechanical Engineering Publications Limited
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): Advanced Manufacturing Processes, Systems and Technologies, M.K. Khan, C.S. Wright & R. Whalley (Editors) , ISBN 0-85298-989-X	CLAVE: A
+VOLUMEN:	PÁGINAS:	AÑO: 1996
+
+
+AUTORES (p.o. de firma): E.J. Bernabeu, J. Tornero & M. Mellado
+TÍTULO: A Generalized Method for Optimal Modeling in Robotic Applications
+EDITORIAL:  ASME Press, Edited by M. Jamshidi, F. Pin & P. Dauchez
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN 0-7918-0047-4	CLAVE: A
+VOLUMEN:	PÁGINAS:	AÑO: 1996
+
+ 
+Actas de Congresos
+
+(Actas Congresos Internacionales publicadas en Editorial Internacional)
+
+AUTORES (p.o. de firma): Martin Mellado & Josep Tornero
+TÍTULO: Robot Motion Planning with Artificial Potential Fields in Cartesian
+EDITORIAL: Middlesex University Press, Edited By Raj Gill and Chanan S. Syan, Middlesex University Research Materials
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN 1 898253 03 X	CLAVE: A
+VOLUMEN:	PÁGINAS:	AÑO: 1996
+
+
+AUTORES (p.o. de firma): K. Schilling, J. Garbajosa, M. Mellado & R. Mayerhofer
+TÍTULO: Increasing Flexibility of Autonomous Transport Robots through Advanced Information Processing
+EDITORIAL: Published by Automotive Automation Limited
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN 0 947719 97 0	CLAVE: A
+VOLUMEN: 	PÁGINAS:	AÑO: 1997
+
+
+AUTORES (p.o. de firma): K. Schilling, J. Garbajosa, M. Mellado & R. Mayerhofer
+TÍTULO: Design of Flexible Autonomous Transport Robots  for Industrial Production
+EDITORIAL: IEEE Press, Institute of Electrical and Electronics Engineers
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN: 0-7803-3936-3 (IEEE Catalog Number: 97TH8280)	CLAVE: A
+VOLUMEN: 	PÁGINAS:	AÑO: 1997
+
+
+AUTORES (p.o. de firma): M. Mellado, E. Vendrell, A. Crespo, J. Garbajosa, C. Lomba, K. Schilling & R. Mayerhofer
+TÍTULO: Application of a Real Time Expert System Platform for Flexible Autonomous Transport in Industrial Production
+EDITORIAL: University of Patras
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN: 960-530-020-6	CLAVE: A
+VOLUMEN: 	PÁGINAS:	AÑO: 1997
+
+
+AUTORES (p.o. de firma): S.F. Navarro, E. Ballester, J.R. Díaz, E. Vendrell & M. Mellado
+TÍTULO: Operating Over A Robotized System Through An Ethernet Network
+EDITORIAL: IEEE Press, Institute of Electrical and Electronics Engineers
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN 0-7803-4182-1	CLAVE: A
+VOLUMEN: 	PÁGINAS:	AÑO: 1997
+
+
+AUTORES (p.o. de firma): M.A. Zamora, J. Tornero, F.J. Toledo, J.L. Muñoz & L.M. Tomas 
+TÍTULO: Sonar Grip Map of a Specular Environment using Artificial Neural Networks 
+EDITORIAL: Institute of Automatic Control Engineers
+REF. REVISTA/LIBRO:(ISBN, ISSN,...): ISBN 3-00-004482-5	CLAVE: A
+VOLUMEN: 	PÁGINAS: 195-200	AÑO: 1999
+
+
+ 
+ (Actas Congresos publicadas sin ISBN)
+
+AUTORES: Martin Mellado y Josep Tornero
+TÍTULO: Una Nueva Concepción en los Lenguajes de Control Numérico: Control de Máquinas Herramienta
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: VII Jornadas de Automática
+LUGAR DE CELEBRACIÓN:  Oviedo
+AÑO: 1986
+
+
+AUTORES: M. Mellado & J. Tornero
+TÍTULO: Flexible Inspection Systems Based on Robot-Arms
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: Second International Conference on Computer Integrated Manufacturing (CIM)
+LUGAR DE CELEBRACIÓN: Rensselaer Polytechnic Institute, New York, EEUU
+AÑO: 1990
+
+
+AUTORES: A. Valera, J. Salt, M. Mellado
+TÍTULO: Design of Industrial Control Systems Using C.A.D.C.S. Tools
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: Fifth IFAC/IMACS Symposium on Computer Aided Design in Control Systems
+LUGAR DE CELEBRACIÓN: University College of Swansea, Swansea, U.K.
+AÑO: 1991
+
+
+AUTORES: M. Mellado & J. Tornero
+TÍTULO: Object Contour Surface Generation for Robotic Applications
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: IFAC Symposium on Robot Control (SYROCO'91)
+LUGAR DE CELEBRACIÓN: Austrian Center for Productivity and Efficiency, Viena, Austria
+AÑO: 1991
+
+
+AUTORES: E. Vendrell, M. Mellado y J. Tornero
+TÍTULO: Programación de Robots Mediante una Herramienta CAD Comercial
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: 2º Congreso de la Asociación Española de Robótica (AER)
+LUGAR DE CELEBRACIÓN: Zaragoza
+AÑO: 1991
+
+
+AUTORES: A. Valera, J. Tornero & M. Mellado
+TÍTULO: An Experience in Robotics Education
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: European Seminar on Automation and Control Technology Education (EXCAT'92)
+LUGAR DE CELEBRACIÓN: Dresden, Alemania
+AÑO: 1992
+
+
+AUTORES: E. Vendrell, M. Mellado & J. Tornero
+TÍTULO: Robot Programming Based on Commercial CAD Systems
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: IFAC Symposium on Low Cost Automation (LCA'92)
+LUGAR DE CELEBRACIÓN: Austrian Center for Productivity and Efficiency, Viena, Austria
+AÑO: 1992
+
+ 
+ (Actas Congresos publicadas sin ISBN)
+
+AUTORES: J. Tornero, M. Mellado, G.J. Hamlin & R.B. Kelley
+TÍTULO: An Extended Hierarchical Robotic System Representation for Industrial Applications
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: 23rd International Symposium on Industrial Robots (ISIR'92)
+LUGAR DE CELEBRACIÓN: Asociación Española de Robótica, Barcelona
+AÑO: 1992
+
+
+AUTORES: E. Vendrell, M. Mellado y E. Vidal
+TÍTULO: Sistema Educacional de Programación de Robots Basado en PC
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: Tercer Congreso de la Asociación Española de Robótica (AER)
+LUGAR DE CELEBRACIÓN: Zaragoza
+AÑO: 1993
+
+
+AUTORES: M. Mellado & E. Vendrell
+TÍTULO: Software Tools for Teaching in Robotics
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: TEMPUS – IMPACT Workshop "Teaching Control Engineering and Process Control for Engineers in Mining, Mechanical Engineering, Metallurgy"
+LUGAR DE CELEBRACIÓN: Miskolc, Hungría
+AÑO: 1994
+
+
+AUTORES: M. Mellado & J. Tornero
+TÍTULO: Collision Detection and Avoidance in Robotic Systems 
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: Advanced Summer Institute 94 in Computer Integrated Manufacturing & Industrial Automation
+LUGAR DE CELEBRACIÓN: Lab. for Automation & Robotics, Electrical Engineering Dep., Univ. of Patras, Grecia
+AÑO: 1994
+
+
+AUTORES: M. Mellado y E. Vendrell
+TÍTULO: Software Específico para la Docencia en Robótica
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: XVI Jornadas de Automática. 
+LUGAR DE CELEBRACIÓN: San Sebastián
+AÑO: 1995
+
+
+
+ 
+ (Actas Congresos publicadas sin ISBN)
+
+AUTORES: M. Mellado & J. Tornero
+TÍTULO: Modelling and Collision Detection in Robotics Systems with Spherical Volumes
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: European Workshop on Hazardous Robotics (HEROS’96)
+LUGAR DE CELEBRACIÓN: Institut de Robòtica i Informàtica Industrial (CSIC-UPC), Barcelona
+AÑO:1996
+
+
+AUTORES: M. Mellado, E. Vendrell, A. Crespo, E. Ballester, J.M. Aparicio, P. Lçópez, C. Lomba
+TÍTULO: Architecture Definition for a Flexible Transport System in Industrial Production
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.)  PONENCIA
+CONGRESO: 3rd IFAC Symposium on Intelligent Autonomous Vehicles (IAV’98)
+LUGAR DE CELEBRACIÓN: Madrid
+AÑO: 1998
+
+
+AUTORES: E. Vendrell, M. Mellado
+TÍTULO: Human Intuition based Planning for Mobile Robots considering Dynamic Environments
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.)  PONENCIA
+CONGRESO: Int. Conf. On Intelligent Manufacturing Systems (IMS’98)
+LUGAR DE CELEBRACIÓN: Gramado, Brasil
+AÑO: 1998
+
+
+AUTORES: J. Tornero, J. Salt y P. Albertos
+TÍTULO: LQ optimal control for multirate sampled data systems
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.)  PONENCIA
+CONGRESO: Word Conference Internatinal Federation of Automatic Control (IFAC’99)
+LUGAR DE CELEBRACIÓN: Pekin, China
+AÑO: 1999
+
+
+AUTORES:  J. Tornero, Y. Gu y M. Tomizuka
+TÍTULO: Analysis of multi-rate discrete equivalent of continuous controllers
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.)  PONENCIA
+CONGRESO: American Control Conference (ACC99), pp. 2759-2763
+LUGAR DE CELEBRACIÓN: San Diego, California
+AÑO: 1999
+
+
+AUTORES: Y. Gu, M. Tomizuka y J. Tornero
+TÍTULO: Digital redesign of continuous time controller by multirate sampling and high order hold
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.)  PONENCIA
+CONGRESO: 38th IEEE Conference on Decision and Control (CDC99)
+LUGAR DE CELEBRACIÓN: Phoenix, Arizona
+AÑO: 1999
+
+
+AUTORES: E.J. Bernabeu y J. Tornero
+TÍTULO: Geometric modelling, collision detection, collision avoidance and path planning based on the Hough transform
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.)  Conf. Invitada
+CONGRESO: 3rd International Conference on Computing Anticipatory Systems (CASYS99)
+LUGAR DE CELEBRACIÓN: Liège, Francia
+AÑO: 1999
+
+
+ (Actas Congresos publicadas sin ISBN)
+
+AUTORES: E. J. Bernabeu y J. Tornero
+TÍTULO: Hough transform for robot motion planning in industrial applications
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) PONENCIA
+CONGRESO: 7th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA99)
+LUGAR DE CELEBRACIÓN: 
+AÑO:1999
+
+
+CONGRESOS
+
+
+AUTORES: Martin Mellado
+TÍTULO: ----------
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) Miembro del Comité de Programa Internacional
+CONGRESO: 13th International Conference on CAD/CAM, Robotics & Factories of the Future
+LUGAR DE CELEBRACIÓN: Pereira, Colombia
+AÑO: 1997
+
+
+AUTORES: Martin Mellado
+TÍTULO: ----------
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) Miembro del Comité Nacional de Organización
+CONGRESO: International Workshop on Robotics and Automated Machinery for Bio-Productions (BIO-ROBOTICS)
+LUGAR DE CELEBRACIÓN: Gandía
+AÑO: 1997
+
+
+AUTORES: Martin Mellado
+TÍTULO: ----------
+TIPO DE PARTICIPACIÓN: (PONENCIA, POSTER, CONF. INVITADA. PRESIDENCIA SESIÓN ETC.) Miembro del Comité de Programa Internacional
+CONGRESO: 5th IFAC Workshop on Intelligent Manufacturing Systems (IMS98)
+LUGAR DE CELEBRACIÓN: Gramado (Brasil)
+AÑO: 1998
+

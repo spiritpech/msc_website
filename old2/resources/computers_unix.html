@@ -1,0 +1,195 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Soichi Ibaraki">
+   <title>General Information about Computers in the Lab</title>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../mschomepage.css">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+
+<center>
+<br><b><tt><font face="arial, helvetica"><font color="#999999"><font size=-1>Mechanical Systems Control Laboratory Homepage</font></font></font></tt></b>
+<br><img SRC="pixel.gif" ALT="" height=1 width=500></center>
+
+<p>
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+<caption>
+<center><font face="arial, helvetica" size=-1>
+General Information about Computers in the Lab<br></font></center>
+<center><font face="arial, helvetica" font color="#999999">
+<a href="../index.html" class="base">Home</a> | 
+<a href="../people/people.html" class="base">People</a> | 
+<a href="../research/research.html" class="base">Research</a> | 
+<a href="../publications/publications.html" class="base">Publications</a> | 
+<a href="resources.html" class="base">Resources</a> | 
+<a href="../misc/misc.html" class="base">Misc</a><br>
+</font></center>
+
+<p><br>
+<br>&nbsp;
+<center><table CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+
+<tr>
+<td VALIGN=TOP WIDTH="120"><center>
+<a NAME="unix"></a>
+<img SRC="ico_gnome.jpg" ALT="About Unix Machines" height=90 width=120>
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+About Unix Machines</font></b></center>
+</td>
+
+<td WIDTH="30"></td>
+
+<td VALIGN=TOP WIDTH="340">
+&nbsp;<br>
+
+<!-- dark blue: #000498 or brown:#800000 -->
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#800000"><b>
+Computers in MSC Laboratory
+</b><br>
+
+<p><FONT color="#000000">
+The MSC Lab has 5 UNIX machines and 3 Windows machines.
+The unix machines are labelled <i>mechatro1.ME</i> - <i>mechatro5.ME</i>.
+The Windows machines are labeled <i>MSC PII</i>, <i>MSC K6</i> and ...<br>
+</p></font>
+
+&nbsp;<br>
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#800000"><b>
+File Server and Home Directories
+</b><br>
+
+<p><FONT color="#000000">
+<i>Mechatro2</i> acts as the file server. This means that all files of your home
+directory are present in the hard drive of <i>mechatro2</i>. Other unix machines
+access this information over the network.
+</p></font>
+
+&nbsp;<br>
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#800000"><b>
+Using the Floppy and Zip Drive
+</b><br>
+
+<p><FONT color="#000000">
+This is what you need to do to use the zip drive on mechatro2.<br>
+<li><i>cd</i> (This will take you to your home directory).</li>
+<li>Put your zip disk into the zip drive</li>
+<li><i>mount /mnt/zip;cd /mnt/zip</i> The directory /mnt/zip will now contain the contents of the zip disk. You can now do the same operations that you would with any other file in your home directory</li><br>
+&nbsp;<br>
+<li><b>IMPORTANT:</b> Please unmount the zip drive after you are done using it. This is important because other users will not be able to use the zip drive since you would have control over it for as long as it is mounted. The procedure to do this is:<br>
+<li><i>cd</i></li>
+<li><i>umount /mnt/zip</i></li></li><br>
+
+&nbsp;<br>
+To use the floppy drive in the linux machines,<br>
+<li><i>cd</i></li>
+<li>Put your floppy into the floppy drive</li>
+<li><i>mount /mnt/floppy;cd /mnt/floppy</i> The directory /mnt/floppy will now contain the contents of the floppy disk. You can now do the same operations that you would with any other file in your home directory</li><br>
+&nbsp;<br>
+<li><b>IMPORTANT:</b> Again, please unmount the floppy drive after you are done using it. This is important because other users will not be able to use the zip drive since you would have control over it for as long as it is mounted. The procedure to do this is:<br>
+<li><i>cd</i></li>
+<li><i>umount /mnt/floppy</i></li></li>
+</p></font>
+
+&nbsp;<br>
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#800000"><b>
+The Web Server and Personal Home Pages
+</b><br>
+
+<p><FONT color="#000000">
+<i>Mechatro2</i> acts as the web server as well. The www address is:
+<a href="http://mechatro2.ME.Berkeley.EDU">http://mechatro2.ME.Berkeley.EDU</a>.
+For information on how to create a personal home page, click 
+<a href="../comingsoon.html">here.</a> 
+</p>
+
+<p>
+To publish your html documents on the <i>mechatro2</i> web server, do the
+following. 
+</p>
+
+<blockquote><CODE>
+% cd<br>
+% mkdir public_html<br>
+</CODE></blockquote>
+
+<!-- Note: Use <CODE></CODE> to use this font. Its font information is
+ in mschomepage.css (but don't change this file) -->
+
+<p>
+Put your html document structure in <i>public_html</i>. Name your home page
+<i>index.html</i>.
+</p>
+
+<p>
+Then http://mechatro2.ME.Berkeley.EDU/~your_login_name will point to 
+~/public_html/index.html
+</p></font>
+
+&nbsp;<br>
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#800000"><b>
+Mail server
+</b><br>
+
+<p><FONT color="#000000">
+<i>Mechatro2</i> acts as the labs mail server. Each member of the lab has a
+mailbox in <i>mechatro2</i> which receives email. A mail program (which is easy
+and convenient) you could use is <i>pine</i>. Type <CODE>pine</CODE> at the command prompt to access your mailbox.
+</p>
+
+<p>
+For convenience, <i>mechatro2</i> also has group mailing lists. The available
+mailing lists are:
+</p>
+
+<blockquote><FONT FACE="helvetica,arial" SIZE=2 COLOR="#000498"><b>
+tomi_group</b></font>
+:All current members of Prof. Tomizuka's research group.</blockquote>
+
+<blockquote><FONT FACE="helvetica,arial" SIZE=2 COLOR="#000498"><b>
+avcs</b></font>
+:Group mailing list for the Vehicle Control Group.</blockquote>
+
+<blockquote><FONT FACE="helvetica,arial" SIZE=2 COLOR="#000498"><b>
+alumni</b></font>
+:Group mailing list for Alumni.</blockquote>
+
+<p>
+e.g.: If you wish to mail <i>tomi_group</i>, send your mail to tomi_group@mechatro2.me.berkeley.edu
+</p></font>
+
+&nbsp;<br>
+&nbsp;<br>
+
+</td>
+</tr>
+
+</table></center>
+</caption>
+
+<tr>
+<td></td>
+</tr>
+</table></center>
+
+<center><img SRC="pixel.gif" ALT="" height=1 width=500>
+<br><font face="arial, helvetica" font color="#666666" size=1>MSC
+Lab. Homepage is created and maintained by Soichi Ibaraki and Shashikanth
+Suryanarayanan.<br>
+Feel free to send your comments to <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+</center>
+
+<p><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

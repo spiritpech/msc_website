@@ -1,0 +1,507 @@
+
+
+Adaptive Robust Control of Nonlinear Systems with Application to Control of
+
+Mechanical Systems
+
+by Bin Yao
+
+B.Eng. (Beijing University of Aeronautics and Astronautics, P.R.China ) 1987
+
+M.Eng. (Nanyang Technological University, Singapore) 1992
+
+A dissertation submitted in partial satisfaction of the
+
+requirements for the degree of
+
+Doctor of Philosophy
+
+in Mechanical Engineering
+
+in the GRADUATE DIVISION
+
+of the UNIVERSITY of CALIFORNIA at BERKELEY
+
+Committee in charge:
+
+Professor Masayoshi Tomizuka , Chair Professor Karl J. Hedrick Professor S. Shankar Sastry
+
+1996
+
+1 Abstract
+
+Adaptive Robust Control of Nonlinear Systems with Application to Control of Mechanical
+
+Systems
+
+by Bin Yao Doctor of Philosophy in Mechanical Engineering
+
+University of California at Berkeley Professor Masayoshi Tomizuka , Chair
+
+This dissertation focuses on the high performance robust control of nonlinear systems in the presence of parametric uncertainties and uncertain nonlinearities (e.g., disturbances) and its application to the control of mechanical systems. A new approach, adaptive robust control (ARC), is proposed. The approach effectively combines the design techniques of adaptive control (AC) and deterministic robust control (DRC) and improves performance by preserving the advantages of both AC and DRC. Specifi- cally, the approach guarantees a superior performance in terms of both transient error and final tracking accuracy in the presence of parametric uncertainties and uncertain nonlinearities. This result overcomes the drawbacks of AC and makes the approach attractive to real applications. Through parameter adaptation, the approach achieves asymptotic tracking in the presence of parametric uncertainties without using a high-gain in the feedback loop, which implies that the control input is smooth. In this sense, ARC has a better tracking performance than DRC. The design is conceptually simple and amenable to implementation.
+
+A general framework of the proposed ARC is formulated in terms of adaptive robust control (ARC) Lyapunov functions. Through backstepping design, ARC Lyapunov functions can be successfully constructed for a large class of multi-input multi-output (MIMO) nonlinear systems transformable to a semi-strict feedback form.
+
+The method is applied to the control of robot manipulators in several applications. For trajectory tracking control, two ARC algorithms are developed: adaptive sliding mode control (ASMC) and desired compensation ARC (DCARC). ASMC is based on the sliding mode control (SMC) and the conventional adaptation law that uses the actual state variables in the regressor. DCARC uses the desired trajectory information in the regressor. Three different adaptive or robust control schemes are also derived for comparison: a simple nonlinear PID type robust control, a gain-based nonlinear PID type adaptive control, which requires no model information, and a combined parameter and gainbased adaptive robust control. All the algorithms are implemented and compared on a two-link direct drive robot. Comparative experimental results show the importance of the controller structure and the parameter adaptation. The proposed DCARC is found to provide the best tracking performance without increasing the control bandwidth and the control effort.
+
+For a constrained robot manipulator, the end-effector of which is in contact with rigid surfaces, a new constrained dynamic model is obtained to account for the effect of contact surface friction. The ARC scheme utilizes a PI type force feedback control structure with a low proportional gain to avoid the
+
+2 acausality problem. Possible impact problems caused by losing contact are alleviated by the guaranteed transient performance. An adaptation law driven by both motion and force tracking errors guarantees asymptotic motion and force tracking without any persistent excitation conditions. Simulation results verify the effectiveness of the method.
+
+For the coordinated control of multiple robot manipulators handling a constrained object, a set of transformed dynamic equations are obtained in the joint space. In the transformed domain, internal force and external contact force have the same form and can be dealt with in the same way as in the constrained motion problem. A coordinated motion and force ARC controller is developed. It possesses the same nice properties as the ARC constrained motion controller mentioned above.
+
+Motion and force tracking control of robot manipulators in contact with unknown stiffness environments is formulated. An ARC motion and force controller is developed to deal with unknown robot parameters and surface parameters, such as stiffness and friction coefficients, as well as uncertain nonlinearities caused by modeling errors.
+
+Professor Masayoshi TomizukaDissertation Committee Chair
+
+iii Contents List of Figures vi List of Tables viii 1 Introduction 1
+
+1.1 Control of Uncertain Nonlinear Dynamics . . . . . . . . . . . . . . . . . . . . . . . . . 1 1.2 Previous Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+1.2.1 Adaptive Control (AC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 1.2.2 Deterministic Robust Control (DRC) . . . . . . . . . . . . . . . . . . . . . . . . 5 1.3 Motivations and Contributions of the Dissertation . . . . . . . . . . . . . . . . . . . . . 6
+
+1.3.1 General Methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6 1.3.2 General Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8 1.3.3 Applications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8 1.4 Outline of the Dissertation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+I Adaptive Robust Control - Theory 14 2 Control of a First-order Uncertain System 15
+
+2.1 Deterministic Robust Control (DRC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 2.2 Adaptive Control (AC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19 2.3 Adaptive Robust Control (ARC) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+3 Adaptive Robust Control of SISO Nonlinear Systems in a Semi-Strict Feedback form 24
+
+3.1 Problem Formulation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 3.2 Smooth Projection and Positive Definite Function V` . . . . . . . . . . . . . . . . . . . 25 3.3 Backstepping Design Procedure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+3.3.1 Step 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26 3.3.2 Step 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 3.3.3 Step i . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 3.3.4 Step n . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 3.4 Guaranteed Transient Performance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 3.5 Simulation Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 3.6 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+
+4 General Framework of Adaptive Robust Control 38
+
+4.1 Problem Formulation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 4.2 ARC Lyapunov Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+
+iv 4.3 Adaptive Robust Control . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40 5 Backstepping Design via ARC Lyapunov Functions 44
+
+5.1 Initial MIMO Nonlinear Systems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44 5.2 Augmented MIMO Nonlinear Systems I . . . . . . . . . . . . . . . . . . . . . . . . . . 45 5.3 Backstepping Design I . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 5.4 Augmented MIMO Nonlinear Systems II . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+
+6 Adaptive Robust Control of MIMO Nonlinear Systems 54
+
+6.1 MIMO Semi-Strict Feedback Form . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54 6.2 Backstepping Design Procedure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+
+6.2.1 Step 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56 6.2.2 Step 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57 6.2.3 Step i . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57 6.2.4 Step r . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60 6.2.5 Guaranteed Transient Performance . . . . . . . . . . . . . . . . . . . . . . . . . 61 6.3 Simulation Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62 6.4 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+
+II Adaptive Robust Control - Applications 68 7 Trajectory Tracking Control of Robot Manipulators 69
+
+7.1 Dynamic Model of Robot Manipulators . . . . . . . . . . . . . . . . . . . . . . . . . . . 69 7.2 Control Algorithms . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+
+7.2.1 Adaptive Sliding Mode Control (ASMC) . . . . . . . . . . . . . . . . . . . . . . 70 7.2.2 Desired Compensation Adaptive Robust Control (DCARC) . . . . . . . . . . . . 74 7.2.3 Nonlinear PID Robust Control (NPID) . . . . . . . . . . . . . . . . . . . . . . . 77 7.2.4 Nonlinear PID Adaptive Control (PIDAC) . . . . . . . . . . . . . . . . . . . . . 78 7.2.5 Desired Compensation Adaptive Robust Control with Adjustable Gains (ARCAG) 80 7.3 Experimental Set-up . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82 7.4 Experimental Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84
+
+7.4.1 Performance Indexes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84 7.4.2 Controller Gains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84 7.4.3 Comparative Experimental Results . . . . . . . . . . . . . . . . . . . . . . . . . 86 7.5 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+
+8 Other Applications 93
+
+8.1 Constrained Motion and Force Control of Robot Manipulators . . . . . . . . . . . . . . 93
+
+8.1.1 Dynamic Model of Constrained Robots . . . . . . . . . . . . . . . . . . . . . . . 93 8.1.2 Adaptive Robust Control of Constrained Manipulators . . . . . . . . . . . . . . . 96 8.1.3 Simulation Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102 8.1.4 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104 8.2 Coordinated Control of Multiple Robot Manipulators . . . . . . . . . . . . . . . . . . . 104
+
+8.2.1 Dynamic Model of Robotic Systems . . . . . . . . . . . . . . . . . . . . . . . . 108 8.2.2 Adaptive Robust Control of Coordinated Manipulators . . . . . . . . . . . . . . 111 8.2.3 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113 8.3 Motion and Force Tracking Control of Robot Manipulators in Contact With Unknown
+
+Stiffness Environments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+
+v 8.3.1 Dynamic Model of a Manipulator in Contact with a Stiff Environment . . . . . . 114 8.3.2 ARC Motion and Force Tracking Control . . . . . . . . . . . . . . . . . . . . . . 116 8.3.3 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+
+9 Conclusion 123
+
+9.1 Conclusions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123 9.2 Suggested Ideas for Future Research . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+
+Bibliography 126
+
+vi List of Figures
+
+2.1 Nondecreasing n-th smooth projection map . . . . . . . . . . . . . . . . . . . . . . . . 21 3.1 Tracking errors in the presence of parametric uncertainties . . . . . . . . . . . . . . . . 35 3.2 Estimated parameters in the presence of parametric uncertainties . . . . . . . . . . . . 35 3.3 Control input in the presence of parametric uncertainties . . . . . . . . . . . . . . . . . 35 3.4 Tracking errors in the presence of parametric uncertainties and small disturbances (d1 =
+
+d2 = 0:02) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 3.5 Estimated parameters in the presence of parametric uncertainties and small disturbances
+
+(d1 = d2 = 0:02) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 3.6 Control input in the presence of parametric uncertainties and small disturbances (d1 =
+
+d2 = 0:02) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 3.7 Tracking errors in the presence of parametric uncertainties and large disturbances (d1 =
+
+d2 = 2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 3.8 Estimated parameters in the presence of parametric uncertainties and large disturbances
+
+(d1 = d2 = 2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 3.9 Control input in the presence of parametric uncertainties and large disturbances (d1 =
+
+d2 = 2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+
+6.1 Tracking errors in the presence of parametric uncertainties . . . . . . . . . . . . . . . . 63 6.2 Tracking errors in the presence of parametric uncertainties . . . . . . . . . . . . . . . . 64 6.3 Estimated parameters in the presence of parametric uncertainties . . . . . . . . . . . . 64 6.4 Control inputs in the presence of parametric uncertainties . . . . . . . . . . . . . . . . 64 6.5 Control inputs in the presence of parametric uncertainties . . . . . . . . . . . . . . . . 65 6.6 Tracking errors in the presence of parametric uncertainties and disturbances (d1=d2=2) 65 6.7 Tracking errors in the presence of parametric uncertainties and disturbances (d1=d2=2) 65 6.8 Estimated parameters in the presence of parametric uncertainties and disturbances
+
+(d1=d2=2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66 6.9 Control inputs in the presence of parametric uncertainties and disturbances (d1=d2=2) 66 6.10 Control inputs in the presence of parametric uncertainties and disturbances (d1=d2=2) 66 6.11 Tracking errors in the presence of parametric uncertainties . . . . . . . . . . . . . . . . 67 6.12 Tracking errors in the presence of parametric uncertainties . . . . . . . . . . . . . . . . 67 6.13 Estimated parameters in the presence of parametric uncertainties . . . . . . . . . . . . 67
+
+7.1 Berkeley/NSK Two-Link Direct-Drive Manipulator . . . . . . . . . . . . . . . . . . . . 82 7.2 Experimental Setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83 7.3 Transient Performance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87 7.4 Final Tracking Accuracy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87 7.5 Average Tracking Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+
+vii 7.6 Control Effort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88 7.7 Control Chattering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89 7.8 Estimated payloads approach their true values . . . . . . . . . . . . . . . . . . . . . . 89 7.9 Estimated Feedback Gains ^K, . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91 7.10 Joint Tracking Errors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92 7.11 Joint Control Torque . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 92
+
+8.1 Configuration of the Robot Moving on a Semi-circle Surface . . . . . . . . . . . . . . . 103 8.2 Position Tracking Error ep in the Presence of Parametric Uncertainties . . . . . . . . . 105 8.3 Force Tracking Error ef in the Presence of Parametric Uncertainties . . . . . . . . . . . 105 8.4 Interaction Force in the Presence of Parametric Uncertainties . . . . . . . . . . . . . . 106 8.5 Estimated Parameters in the Presence of Parametric Uncertainties . . . . . . . . . . . . 106 8.6 Position Tracking Error ep in the Presence of Parametric Uncertainties and Disturbances 106 8.7 Force Tracking Error ef in the Presence of Parametric Uncertainties and Disturbances . 107 8.8 Estimated Parameters in the Presence of Parametric Uncertainties and Disturbances . . 107 8.9 Joint Torque in the Presence of Parametric Uncertainties and Disturbances . . . . . . . 107 8.10 Configuration of a Robotic System . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108 8.11 A Manipulator in Contact With a Stiff Environment . . . . . . . . . . . . . . . . . . . 114
+
+viii List of Tables
+
+7.1 Experimental Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+
+ix Acknowledgements I would like to express my deepest gratitude to Professor Masayoshi Tomizuka for influencing my way of thinking and for helping and supporting my research.
+
+I would also like to thank Professor Karl Hedrick and Professor Shankar Sastry for their invaluable comments as members of my dissertation committee.
+
+I would like to thank all my friends in Berkeley and all members of Professor Tomizuka's research group, with whom I shared many good and bad moments during my study here. I would especially like to thank Professor Hui Peng, Dr. George T. C. Chiu, Dr. Yean-Ren Hwang, Dr. LiangJong Huang, Dr. Satyajit Patwardhan, Professor Addisu Tesfaye, Dr. Wei-Hsin Yao, Dr. Eugene David Tung, Dr. Thomas M. Hessburg, Dr. Perry Li, Rob Bickel, Mohammed Al-Majed, Prabhakar Pagilla, Chieh Chen, and Lin Guo for their inspiring discussions and warm friendship, and Victor Chu and Carlos Osorio for their help with computer software in the laboratory.
+
+Finally, I would like to thank all my family members for their encouragement and my dearest Dorothy for her love and support.
+
+1 Chapter 1 Introduction
+
+1.1 Control of Uncertain Nonlinear Dynamics
+
+Although linear control theory has evolved a variety of powerful methods and has had a long history of successful industrial applications, it has found to be inadequate in many applications, for many reasons such as increasingly stringent performance requirements and large operating range, which invalidate the use of linearized models. Many physical systems have so-called "hard nonlinearities", such as Coulomb friction, saturation, dead zones, backlash, and hysteresis. These nonlinearities are nonsmooth or discontinuous, and do not allow linear approximations. They often cause undesirable behavior in the control system, such as instability and limit cycles if not properly handled. It may be necessary to apply nonlinear control to obtain acceptable performance. The design of nonlinear controllers is not necessarily complex. For example, in robot control, it is easier to design a stabilizing nonlinear controller than a stabilizing linear controller. Also, with the advances of low-cost microprocessors, it is neither difficult nor costly to implement nonlinear controllers. All these factors have made nonlinear control increasingly more popular, and the field has grown quickly during the past twenty years.
+
+Earlier results in nonlinear control [47] required exact knowledge of the system dynamics. In reality, though we may apply physical laws to model the system and find the shapes of the nonlinear functions, parameters of the system (e.g., the inertia parameters of a new object grasped by a robot) may depend on operational conditions and may not be precisely known in advance. Because of factors such as aging effect, the parameters may also be slowly time-varying. These types of uncertainties are called parametric uncertainties and may cause the control law designed based on the nominal model unstable or degrade its performance. In mechanical systems, nonlinearities such as nonlinear friction force and backlash as well as external disturbances cannot be modeled exactly. These types of uncertain nonlinearities can be classified as unknown nonlinear functions. On the whole, the system may be subjected to both parametric uncertainties and unknown nonlinear functions. Control of uncertain nonlinear dynamics is, thus, essential for successful applications. In fact, during the past twenty years, the control of uncertain dynamics has been very popular. Numerous algorithms have been proposed, which can basically be classified into two classes: adaptive control and deterministic robust control.
+
+2 1.2 Previous Work 1.2.1 Adaptive Control (AC)
+
+Biological systems cope easily and efficiently with changes in their environments. As interests in control theory have shifted over the years to the control of systems with large uncertainty, efforts are naturally made to incorporate in them characteristics similar to those in living systems; numerous words, such as adaptation, learning, pattern recognition and self-organization, were introduced into the control literature. Among those words, adaptive control, which was born in the late 1950s to deal with parametric uncertainties, was the first introduced. Since then, it has remained to be a mainstream research activity, with hundreds papers published on it every year, and has become a wellformed discipline, especially for linear systems.
+
+Earlier results in adaptive control were developed for linear time-invariant (LTI) systems [68, 4, 85, 104] described by
+
+_x = A(`)x + B(`)u y = C(`)x + D(`)u (1.1)
+
+where ` represents the vector of parameters that are unknown but constant. For LTI systems with relative degree one (the relative degree r of a LTI system is equal to the number of poles minus the number of zeros of its transfer function), a stable adaptive controller was proposed in [88] with the concept of positive realness playing an important role. With the concept of the augmented error introduced by Monopoli [77], the general problem with r * 2 was finally solved around 1980 [87, 78, 34, 68]. These breakthrough results made researchers feel that the era of practical adaptive control had finally arrived. However, it was soon realized that the above adaptive control derived for the ideal case would result in the parameter error growing without bound and destabilizing the system when bounded disturbances were present [27]. It was also shown, primarily by simulations, that other perturbations, such as time-varying parameters and un-modeled dynamics [101], could result in instability. All of these clearly indicated that new approaches were needed to assure the boundedness of all the signals in the system and led to a body of work referred to as the robust adaptive control theory. Two distinct approaches were taken to achieve robustness. One is to use the appropriate reference input. The other is to modify the adaptation law. It was realized even in the 1960s [3] that for parameter convergence the reference input should satisfy certain conditions, generally referred to as persistent excitation (PE) conditions. Narendra and Annaswamy [83] demonstrated that the degree of persistent excitation would determine whether or not the system would be robust in the presence of specified disturbances, i.e., it was shown that in the absence of disturbances but with a persistently exciting input, an adaptive system is uniformly asymptotically stable. In view of the importance of PE in adaptive systems, Boyd and Sastry [6, 104] used frequency domain methods to show that if the spectral measure of the input was concentrated at at least n points, the state of an n-th order dynamical system would be persistently exciting. For most applications such as trajectory tracking control, the reference input (or desired output trajectory) is specified by the task and normally does not satisfy the PE condition. Thus, the first approach has limitations in practical problems. As to the modification of adaptation laws to achieve robustness, several approaches were proposed. One was the use of a dead zone [27, 93] in the adaptation law. In this approach, it has to be assumed that the magnitude of the disturbance was known and asymptotic stability was lost. By introducing an additional term in the adaptation law (referred to as oe-modification), Ioannou and Kokotovic [46] achieved the uniform stability at large. However, when the disturbance was not present,
+
+3 the error would no longer tend to zero and asymptotic stability was lost. To overcome this drawback, ffl-modification was proposed in [84]. More recently, by assuming that parameters lie in a known compact set, projection methods presented by Sastry in [104] and by Goodwin and Mayne in [33] have become popular to achieve robustness. Other recent developments in adaptive control of linear systems include relaxing the assumptions under which stable adaptive control is possible.
+
+Another drawback of adaptive control is that the transient performance is not clear. It was shown in [171] that poor initial parameter estimates may result in unacceptable poor transient behavior. The design of adaptive controllers with improved transient performance is a current research topic. Fu [30] introduced a variable structure control (VSC) design for a relative degree two plants and Narendra and Boskovic [86] proposed a combined direct, indirect, variable structure method. However, transient performance under these methods is still not guaranteed and the resulting controllers are discontinuous, which leads to control chattering. With a known high frequency gain, an L1 formulation was used in [24] to improve transient performance of continuous model reference adaptive control (MRAC). The assumption of known high frequency gain was relaxed in [92] and a different interpretation using modified high order tuning was given in [134]. However, in all of these controllers, only parametric uncertainties were considered and robustness was not discussed.
+
+In trying to extend the above adaptive schemes from linear systems to nonlinear systems, one was faced with considerable obstacles. One important factor was the lack of a systematic design methodology for nonlinear feedback. As such, adaptive nonlinear control started with specific problems, e.g., trajectory tracking control of rigid robot manipulators. A robot arm is constructed to simulate a human being's arm to accomplish a variety of tasks and has been widely used in industry to increase flexibility and productivity. Thus, high performance control of robots is of practical significance. Since robot dynamics are described by a set of highly coupled nonlinear differential equations, control of such a system is challenging, and has been extensively studied during the past decade. Earlier results, such as the computed torque method [119, 81], which utilized the feedback linearization method [47], required exact knowledge of the robot dynamics. It was soon found that such methods could not perform well in practical application because of parametric uncertainties such as the payload. A nonlinear adaptive method that guarantees asymptotic stability without any approximation of nonlinear dynamics was first developed by Craig, Hsu, and Sastry [23] around 1986. The requirement of acceleration measurements and invertibility of the estimate of the inertia matrix was later removed by Slotine and Li [110, 111], Wen and Bayard [135], Sadegh and Horowitz [103], and Middleton and Goodwin [75]. Sadegh and Horowitz presented an adaptive scheme [103] which used reference trajectory information rather than actual state information, and a locally exponentially stable adaptive algorithm [102] under the assumption of (semi) persistent excitation. Recently, Whitcomb, et al. [138] presented comparative experiments for different adaptive control algorithms.
+
+Motivated by the initial success of the adaptive control of robot manipulators, the adaptive control of general nonlinear systems has also undergone rapid developments during the past ten years [65, 105, 95], leading to global stability and tracking results for reasonably large classes of nonlinear systems [59, 62, 52]. Earlier results [82, 105, 123, 95, 96, 121, 9, 54, 26] were based on the feedback linearization method. Because of the parameter-dependent forms of feedback linearization conditions and the "certainty-equivalence" implementation, restrictions had to be imposed either on the location of unknown parameters or on the type of nonlinearities. Accordingly, the earlier results could be classified into two categories: the nonlinearity-constrained schemes [82, 105, 123, 95, 96], which do not restrict the location of unknown parameters but impose restrictions on the nonlinearities of the original system
+
+4 as well as on those appearing in the transformed error system, and the uncertainty-constrained schemes [121, 9, 54], which impose restrictions on the location of unknown parameters but can handle all types of nonlinearities. Specifically, in the first category, as long as the norm of perturbing nonlinear terms was dominated by an affine function, for all initial estimates lying in some open neighborhood of the true values in the parameter space, global convergence results were obtained in [82] for purefeedback systems by updating estimates of both the feedback terms and the coordinate transformations that were required to linearize the system. Sastry and Isidori [105] solved the problem of adaptive asymptotic tracking of feedback linearizable minimum phase nonlinear systems (including pure-feedback systems). Overparametrization was required and some restrictive assumptions on nonlinearities, such as the change of coordinates being globally Lipschitz in terms of states, were made. An indirect scheme (indirect adaptive control differs from direct adaptive control in that it relies on an observation error to update the parameters rather than relying on the output error) was proposed in [123] to overcome the overparametrization problem. The restrictive PE condition, an additional assumption required by the indirect scheme, was then eliminated by a "semi-indirect" scheme [123], which combined parameter estimation elements from both the direct and the indirect approaches. Global stabilization was achieved in [95] for feedback stabilizable nonlinear systems, a larger class of nonlinear systems than feedback linearizable nonlinear systems. For the uncertainty-constrained schemes, assuming that the matching condition (loosely speaking, the matching condition implies that control and uncertainty enter the system dynamics via the same channel) was satisfied, a feedback control scheme was developed in [121] for stable regulation of a class of nonlinear plants with parametric and dynamic uncertainties, and the estimate of stability region was given. The matching condition was relaxed to the extended-matching condition in [9, 54]. Praly, et al. [96] unified and generalized most of the earlier results by introducing a novel Lyapunov function for the design of direct schemes and by generalizing equation error filtering and regressor filtering for the design of indirect schemes. The key assumption in this approach was that a Lyapunov-like function existed and depended on unknown parameters in a particular way. Depending on the properties of this function, various designs were possible, including feedback linearization designs when this function was quadratic in the transformed coordinates. Output-feedback designs were studied in [55, 71, 72].
+
+It soon became clear that the "certainty-equivalence" adaptive controllers based on the feedback linearization technique were unable to achieve stability without restrictions on nonlinearities. New thinking was needed for the systematic design of adaptive nonlinear controllers, resulting in the exciting era of adaptive nonlinear control [65]. The new thinking employed a recursive design methodology -- backstepping. With this methodology, the construction of feedback control laws and associated Lyapunov functions became systematic. Strong properties, such as global or regional stability and tracking, were built into the nonlinear system in multiple steps, never higher than the system order. In contrast to feedback linearization methods that required cancelation of all nonlinearities, the backstepping design avoided wasteful cancelations and retained useful nonlinearities. Backstepping designs were flexible and allowed a choice of design tools for dominating, or adapting to, uncertain nonlinearities. Specifically, Kanellakopoulos, et al. [56, 60] presented a systematic design of globally stable and asymptotically tracking adaptive controllers for a class of nonlinear systems transformable to a parametric strict-feedback canonical form (local results for parametric pure-feedback systems). The number of overparametrization was reduced in half in [50], and the overparametrization problem was soon eliminated by Krstic, et al. [62] by elegantly introducing the concept of tuning function. Recently, the nonlinear damping was introduced by Kanellakopoulos [52, 53] to improve transient performance.
+
+5 Generalization to output-feedback design was presented in [66, 67]. The nonlinear design method was also applied to linear systems in [63, 64]. Compared to the previous traditional adaptive control schemes for linear systems, which could not resolve the conflict between their linear form and their nonlinear nature, the new nonlinear design achieved stronger stability and convergence properties with a much more transparent and straightforward design procedure. These improvements offered new insights into the field of adaptive control.
+
+1.2.2 Deterministic Robust Control (DRC)
+
+One of the earliest approaches to the control of uncertain systems was sliding mode control (SMC) or variable structure control (VSC) [48, 127, 128, 129, 114, 174, 165, 166, 28, 90, 31, 143], which was first studied in the Soviet Union in the 1960's [48] and was introduced to western researchers by Utkin [127, 128, 129]. The central feature of SMC is sliding mode, in which the dynamic motion of the system is effectively constrained to lie within a certain subspace of the full state space. The sliding mode is achieved by altering the system dynamics along some sliding surfaces in the state space so that the system state is first brought to these surfaces or their intersection surface and is made to stay on them thereafter. During the sliding mode, the system is equivalent to an unforced system of lower order, termed the equivalent system, which is insensitive to both parametric uncertainties and unknown nonlinear functions when the matching condition is satisfied.
+
+The design of a SMC system consists of two stages. In the first stage, sliding surfaces are selected so that the equivalent system is asymptotically stable and has a desired dynamic response. This stage may be completed without any assumptions about the form of the control functions. The static design of sliding surfaces was presented in [25] and dynamic sliding mode design was studied in [143, 12, 167, 154]. In the second stage, a control law is determined depending on the specific plant and the chosen sliding surfaces to ensure that the chosen sliding mode is attained. Among SMC schemes for robot manipulators, there have been proposals to make each sliding surface attractive. This approach makes the problem complicated, resulting in a control law defined implicitly by a set of fairly complicated algebraic inequalities [165, 166, 106]. By exploiting the passivity of robot dynamics, other researchers obtained simple control laws, which made the system state attracted to the intersection of the surfaces without necessarily reaching each individual one [90, 161, 141, 117]. Recently, a dynamic sliding mode controller, in which a dynamic compensator is introduced in forming the sliding surfaces, was employed in [143] to ensure that the system achieved a desired second-order model to realize several control purposes, such as impedance control, hybrid motion/force control, and constrained motion control. Reaching transients were also eliminated so that the system was maintained in the sliding mode all the time. Robust sliding mode control in the form of MIMO input-output (I/O) linearization was considered by Fernandez and Hedrick in [28]. Hedrick, et al., applied SMC to the control of automotive engines [79, 16, 37], aircraft flight control [40], electronics suspension control [1] and "platoon control" in automated highway systems [41]. Observers based on SMC were discussed in [113].
+
+One of the drawbacks of the SMC is that, in general, it only applies to the uncertain systems which satisfy the matching condition. The most severe drawback of the SMC is that the control law is discontinuous across sliding surfaces. Such control laws lead in practice to control chattering, which involves high frequency control activity and may excite neglected high-frequency dynamics. To remove control chattering, smoothing techniques, such as a boundary layer [106, 112], have to be employed. However, such a modification can guarantee the tracking error only within a prescribed
+
+6 precision. Although transient performance is still preserved at large, asymptotic stability is lost and a trade-off exists between control bandwidth and tracking precision.
+
+Another general deterministic robust control (DRC) technique has been developed based on Lyapunov's second method originally by Leitmann, et al. [39, 69, 21]. For uncertain systems satisfying the matching condition, a stabilizing discontinuous min-max control law was developed in [39, 38]. Like smoothed SMC, a continuous approximation of the min-max control law that guaranteed globally, uniformly, ultimately bounded (GUUB) stability instead of asymptotic stability was presented in [22]. Although the matching condition is met in many important applications, such as mechanical systems, it is still very restrictive. Subsequently, much effort has been devoted to loosening the restrictions imposed by the matching condition. Two main approaches have been used to tackle this issue. The first one studies the robustness of the controlled system against the mismatched uncertainty. In this approach, the uncertainty is first decomposed into two categories, the matched and the mismatched. The controller is designed assuming no mismatched uncertainty. A passive stability analysis is then made for mismatched uncertainty. The framework was first introduced by Barmish and Leitmann [5] for linear systems. Subsequent results were presented in [15, 13, 99]. Since this approach is based on the stability margin of the stabilized nominal system, certain restrictions on the mismatched uncertainty have to be made and the design procedure is not systematic. The second approach looks for a structural condition under which a systematic robust control design may be applied. This approach imposes restrictions on the location of uncertainty as in uncertainty-constrained adaptive nonlinear schemes. Along this line, Thorp and Barmish [124] presented a robust control design for linear uncertain systems satisfying a generalized matching condition. In extending the results to uncertain nonlinear systems, once, the backstepping procedure played an important role. Marino and Tomei [73] solved the robust stabilization problem of nonlinear systems with vanishing uncertainties and satisfying the strict feedback condition ( similar to the parametric-strict feedback condition). The case of nonvanishing uncertainties, which allows bounded disturbances and tracking, was solved by Freeman and Kokotovic in [29] by extending the results of [73]. A different approach, multiple surface sliding mode control, was presented by Won and Hedrick in [140]. The approach used a series of simple Lyapunov functions instead of the whole Lyapunov function in the backstepping design and made each sliding surface attractive outside a userdefined boundary layer thickness. Based on backstepping, Qu [97] presented the generalized matching condition for nonlinear systems in a pure-feedback form.
+
+1.3 Motivations and Contributions of the Dissertation 1.3.1 General Methodology
+
+In spite of the recent rapid advances in adaptive nonlinear control, one problem remains unsolved, i.e., unknown nonlinear functions have not been considered. All the adaptive nonlinear controllers mentioned in Section 1.2.1 dealt with the ideal case of parametric uncertainties only. Nonlinearities of the system were assumed known and unknown parameters were assumed to appear linearly with respect to these known nonlinear functions. The integral adaptation laws developed for linear systems may lose stability when even a small disturbance is present. Considering that every real system has some sorts of disturbances, we wonder if we can safely implement such adaptive controllers. This is more serious for nonlinear systems, as shown in [100] for the adaptive control of robot manipulators. As in the adaptive control of linear systems, one may apply similar remedies to nonlinear systems. For
+
+7 example, the adaptation law may be modified to achieve stability for bounded disturbances [100]. However, such modifications do not guarantee tracking accuracy since the steady state tracking error can only be shown to stay within an unknown ball, whose size depends on the disturbances Furthermore, transient performance is unknown. In [94], by using a variant of the oe-modification and backstepping procedure, Polycarpou and Ioannou presented a robust adaptive control design for a class of single input single output (SISO) nonlinear systems in a "semi-strict" feedback form, which allowed both parametric uncertainties and unknown nonlinear functions. However, transient performance was not guaranteed and asymptotic stability was lost even in the presence of parametric uncertainties only.
+
+Despite the above drawbacks of adaptive control, one should realize that the main advantage of adaptive control lies in the fact that, through on-line parameter adaptation, parametric uncertainties can be eliminated and, thus, asymptotic stability or zero final tracking error can be achieved in the presence of parametric uncertainties without using high-gain feedback. New thinking should be adopted to utilize this advantage judiciously.
+
+On the other hand, the deterministic robust control (DRC) mentioned in Section 1.2.2 employs proper controller structures to attenuate the effect of the model uncertainties coming from both parametric uncertainties and unknown nonlinear functions. In general, it can guarantee transient performance and certain final tracking accuracy. However, DRC does not discriminate between parametric uncertainties and unknown nonlinear functions and the control law uses fixed parameters. Model uncertainties coming from parametric uncertainties cannot be reduced. In order to reduce tracking errors, the feedback gains must be increased, resulting in high-gain feedback and increased bandwidths of closed-loop systems. Theoretically, SMC can use discontinuous control laws and some of the so-called continuous DRC schemes [98, 97] can use infinite gain feedback control to achieve asymptotic tracking. However, those are impractical and unachievable solutions because of finite bandwidths of physical systems.
+
+In view of the above drawbacks and advantages of both adaptive control (AC) and DRC, this dissertation will propose a new approach, adaptive robust control (ARC). which uses both means -- proper controller structure and parameter adaptation -- to reduce tracking errors. The DRC technique will be used to design a baseline control law (proper controller structure) to guarantee transient performance and certain final tracking accuracy. On top of it, parameter adaptation will be used to reduce the model uncertainties coming from parametric uncertainties (as in AC) and to improve tracking performance. In other words, the robust control problem is formulated under the general setting of DRC, but the difference between parametric uncertainties and unknown nonlinear functions is recognized and parameter adaptation is used to reduce the parametric uncertainties. In general, DRC design needs the modeling uncertainties to be bounded by some functions with known shapes but the estimated parameters by AC design may be unbounded in the presence of unknown nonlinear functions. By formulating the robust control problem under the general setting of DRC, when one designs either the baseline robust control law or the parameter adaptation law, one always keeps in mind the above conflicts between the DRC design and the AC design and solves the conflicts at the beginning. In such a way, stronger stability results can be obtained. Such a formulation has several advantages: it can naturally eliminate the transient problem and robustness problem of adaptive control, while at the same time, improve the tracking performance of DRC by reducing model uncertainties. The qualitative results obtained [154, 153, 152, 159, 157, 158, 156, 160] well reflect this philosophy. In general, in the presence of both parametric uncertainties and unknown nonlinear functions, the same qualitative results as DRC are achieved. Furthermore, if the model is accurate -- i.e., in the presence of parametric uncertainties
+
+8 only -- asymptotic tracking is achieved without using high-gain feedback as in AC.
+
+The above idea is simple and natural. In fact, during the past several years, some researchers in the two fields have been trying to achieve that goal. However, they all failed in one way or another. Researchers in the robust adaptive control field [100, 94] tended to formulate the problem for parametric uncertainties first and then to robustify the schemes. This approach inevitably complicated the problem because it lost the whole picture and leaded to conservative results -- only stability was achieved and nothing could be obtained about performance. On the other hand, researchers in the DRC field realized that parameter adaptation could reduce the control effort [107, 110, 35] but did not consider its destabilizing effect and the main advantages of the AC and DRC methods. Thus, when parameter adaptation was introduced in DRC design, as in the adaptive sliding mode control in [107], transient performance was lost and a discontinuous control law had to be used, since the traditional proof in AC was used. Furthermore, unlike the original SMC schemes for which smoothing techniques have been developed for the discontinuous control law, the scheme in [107] cannot directly employ the smoothing techniques since it is not robust to any approximation errors. This robustness problem was corrected in [107] by stopping adaptation inside the boundary layer. However, transient performance was not guaranteed and asymptotic stability could not be achieved in the presence of parametric uncertainties only.
+
+Finally, we would like to differentiate our algorithms from other adaptive robust control algorithms that have appeared in the literature [14]. Instead of true parameter adaptation, those algorithms in [14] used adaptation to adjust some of the feedback gains to achieve stability when the bounds of modeling uncertainties were unknown. So, their main purpose was to relax the conditions under which stabilization was possible. In general, those schemes do not provide better performance than their DRC counterparts when the bounds of modeling uncertainties are known. By contrary, our algorithms use true parameter adaptation to improve performance instead of relaxing the stabilizing conditions. These claims are verified by the experimental results shown in chapter 7.
+
+1.3.2 General Form
+
+The proposed ARC is formulated for general MIMO nonlinear systems in terms of the concept of adaptive robust control (ARC) Lyapunov functions. The formulation reduces the ARC of a system to the problem of finding an ARC Lyapunov function for the system. By using backstepping design procedure, we may successfully construct ARC Lyapunov functions for a class of MIMO nonlinear systems in a semi-strict feedback form. The form is very general and includes mechanical systems, such as robot manipulators. In the absence of unknown nonlinear functions, the form reduces to a parametric-strict feedback form, which extends the parametric-strict feedback form used in general adaptive nonlinear control [62, 65] in several ways. First, it is a MIMO version. A MIMO parametric-strict feedback form was also presented in [65] but it allowed coupling among different input channels of each layer at the last step only. Second, the form allows parametric uncertainties at each layer's input channels also, which increases the difficulty in the design of a pure adaptive control law considerably. Third, the last layer's state equations do not have to be completely linearly parametrized (linear parametrization is a requirement in [62, 65]). This extension is vital for applications, such as control of robot manipulators, where the dynamics cannot be linearly parametrized in the state equations.
+
+9 1.3.3 Applications
+
+The proposed ARC is applied to the control of robot manipulators in several ways as explained below.
+
+Trajectory Tracking Control of Robot Manipulators
+
+Industrial manipulators are commonly used in tasks such as painting, welding and material handing. In these tasks, their end-effectors are required to move from one place to another in a free workspace or to follow desired trajectories. In order to meet increased productivity requirement as well as tight tolerance requirements, it is essential for the manipulator to follow a desired trajectory as close as possible at fast speed. Thus, trajectory tracking control of robot manipulators is of practical significance. It is also the simplest but most fundamental task in robot control [81]. Because of these factors, during the past decade, numerous adaptive algorithms and DRC algorithms have been proposed. In addition to those schemes, there are also some adaptive schemes [17, 116, 115] termed as performance-based (or direct) adaptive control in [18], in which adaptation laws are used to adjust controller gains instead of true parameters. Thus, these gain-based schemes share the same properties as the adaptive robust scheme in [14]. They are claimed to be simple, computationally efficient and require very little model information. Robustness to bounded disturbances is also guaranteed. However, they can only guarantee tracking errors within certain bounds even when the system is subject to parameter uncertainties only.
+
+Some comparative experiments were carried out in [138] to test some of the model-based (or parameter-based) adaptive algorithms. However, the tested algorithms belonged to the same class. Facing so many algorithms and so many qualitatively different approaches, one has difficulty choosing a suitable one for a particular application since each algorithm has its own claim. Thus, it is of practical significance to test qualitatively different approaches on the same machine to understand their fundamental advantages and drawbacks. To work toward that direction, in addition to the proposed ARC, several typical robust and adaptive control algorithms are also developed for comparison. Specifically, two ARC schemes, one based on the conventional adaptation law structure [110] and one using the idea of desired compensation adaptation law [103], are first developed by applying the proposed ARC. Then, a very simple nonlinear PID scheme is proposed, which can guarantee the stability and requires little model information. By adjusting the feedback gains on-line, a simple gain-based adaptive control is also suggested to remove the requirements in choosing feedback gains in the nonlinear PID scheme. By combining the design techniques of the gain-based adaptive control with the proposed ARC, a new adaptive robust scheme is also proposed to remove the conditions on the selection of the controller gains. Finally, all schemes, as well as two benchmark adaptive control schemes [110, 103], are implemented and compared. Experimental results are presented to show the advantages and the drawbacks of each method. Comparative experimental results show that importance of using both proper controller structure and parameter adaptation in designing high-performance robust controllers. It is observed that the proposed ARC achieves the best tracking performance in the experiments. Detailed conclusions are given in chapter 7.
+
+Constrained Motion and Force Control
+
+Another important class of tasks requires the robot end-effector to make contact with its environment. Typical examples of such tasks are contour following, grinding, scrubbing, deburring, as
+
+10 well as those related to assembly and with multi-arm robot systems. In these applications, the contact force between the end-effector and the environment is generated, which modifies the dynamics of robot manipulator and creates some problems that do not exist in the free motion of robot systems. Research in this area has focused on simultaneous control of motion and force. Depending on the contact environment, different approaches [139, 143] have been proposed.
+
+The first type of motion and force control considers the robot whose end-effector is in contact with rigid surfaces [81, 132, 133, 74, 76, 163, 44, 162, 20, 146, 148, 147, 142, 168, 118, 45, 49, 108, 8, 70, 10]. In many cases the contact surface stiffness is so large that the surfaces must, in practical terms, be viewed as rigid. Such a view may be appropriate to prevent damage of either the workpiece or the end-effector.
+
+Typical example of constrained motion is contour following, in which the robot end-effector is required to move along a very stiff or rigid contact surface. In the normal direction of the surface, the end-effector's motion is restricted by the surface, and the robot can only move along the tangent direction of the surface. Correspondingly, contact force exists in the normal direction of the surface and no force but that of friction occurs along the tangent direction. This unique duality will be used in the subsequent formulation of constrained motion.
+
+When the robot moves on rigid surfaces, holonomic kinematic constraints are imposed on the robot motion that correspond to some algebraic constraints among the manipulator state variables. Dynamics of such a robot system is described by a set of nonlinear differential-algebraic equations, which is called singular system [74] or descriptor system [76]. The objective is to control both the motion on the constraint surfaces and the generalized constrained force.
+
+A general theoretical framework of constrained motion control was rigorously developed by McClamroch and Wang [74]. The proposed controller was based on a modification of the computed torque method. A Lyapunov's direct method was utilized by Wang and McClamroch [133, 132] to develop a class of decentralized position and force controllers. Mill and Goldenberg [76] applied descriptor theory to constrained motion control. The controller was derived based on a linearized dynamic model of the manipulator. State feedback control and dynamic state feedback control were utilized to linearize the robot dynamics with respect to motion and contact force in [163], and [168], respectively.
+
+The above methods are based on the exact model of constrained robot dynamics. As in the case of free motion, robust control methods are needed. There are many papers applying the two robust control methods to constrained motion of robot manipulators: adaptive constrained motion control [10, 118, 49, 149, 2] for parametric uncertainties only, and SMC motion and force control [148, 143, 142, 145]. Basically, adaptive constrained motion control methods proposed in [108, 10, 118, 49] are all based on the reduced dynamic model proposed in [74], which enable motion and force controllers to be designed separately. It should be noted that this model is only valid for frictionless contact surfaces, while most real contact surfaces have friction. Furthermore, the previous parameter adaptation laws proposed are only driven by motion tracking error. Thus, the force tracking error can be guaranteed to be only bounded unless some persistent excitation conditions are satisfied -- these are difficult to verify and depend on specific desired motion trajectories. Although, theoretically, the force tracking error can be made small by using a large proportional force feedback gain [10, 49], the gain for the proportional force feedback is severely limited in applications because of the acausality that arises from the rigid body dynamics assumed in the modeling of the robot [91]. In fact, recent one-dimensional force experimental results presented by [130] and [91] suggest that the best force tracking performance is achieved by integral (I) force feedback or PI force feedback control. Considering these factors, we propose a new
+
+11 transformed constrained dynamic model that is suitable for controller design and is also valid for friction surfaces with unknown friction coefficients in [149, 155]. The resulting adaptive controller guarantees asymptotic motion and force tracking without persistent excitation, and has the expected PI type force feedback control structure with a low proportional force feedback gain.
+
+It should be noted that all the above force controllers are synthesized based on the assumption that the robot keeps contact with the surface when the controller is applied. This assumption is valid only if the controller has good transient performance since, otherwise, drastic transient response may cause the robot to lose contact with the surface, thus voiding the obtained result. Therefore, it is important to design a motion and force controller with a guaranteed transient performance. This goal is achieved by applying the proposed ARC and using our previous general formulation of constrained motion in [149, 155]. Dynamic motion sliding mode and filtered force tracking error are used to enhance the dynamic response of the system. The suggested control law can achieve asymptotic motion and force tracking without persistent excitation condition in the presence of parametric uncertainties, and has a guaranteed transient performance with a prescribed final tracking accuracy in the presence of both parametric uncertainties and external disturbances or modeling errors. Simulation results illustrate the proposed motion and force controller.
+
+Coordinated Control of Multiple Robot Manipulators
+
+For assembly-related tasks, such as heavy material handling, several manipulators are required to grasp a common object. In these applications, a set of homogeneous constraints are imposed on the positions of the manipulators. As a result, degrees of freedom (DOF) of the whole system decrease, and internal forces exerted on the object by the manipulators are generated. These internal forces do not affect the motion of the object. To control the robots cooperatively, a number of control methods have been proposed. In closed kinematic chain methods [120, 80, 42, 172, 173, 32, 146], only the position of the whole system is controlled. Hence, the joint torque for a particular load of the object cannot be uniquely determined and load distribution is required. In hybrid position/force control methods [61, 125, 170, 137, 136, 126, 131], both position and internal force of the whole system are controlled. The DOF lost in the arm configuration from the imposed kinematic constraints is introduced as the DOF needed to control the internal forces of the system [61]. This scheme is important especially when the object is fragile or needs operations such as compression, tension, and torsion.
+
+The problem of a constrained object grasped by multiple manipulators has been considered in [169, 164, 43, 148]. The methods in [169, 164] were based on the exact model of the system, and the adaptive law derived from Popov hyperstability theory [43] needs the measurements of acceleration and force derivative. A set of transformed dynamic equations of the robotic system were obtained in the joint space in [148], in which internal force and constrained force had the same form and could be controlled in the same method. The VSC method was used to deal with the problem of parameter uncertainties as well as external disturbances. However, the effect of friction force on the object was not considered, and the transformation was basically formed by a position relationship but may not be easily obtained.
+
+In this dissertation, we apply the ARC to the robust control of motion, internal force, and external contact force control of multiple manipulators handling a constrained object in the presence of both parametric uncertainties and disturbances. Parametric uncertainties may exist in the manipulators and in the object and in the friction coefficients of contact surfaces. A set of transformed dynamic
+
+12 equations are obtained in the joint space, in which internal force and external contact force have the same form [150]. Thus, internal force control and external contact force control can be dealt with in the same way as in constrained motion and force control. The resulting controller possesses those nice properties mentioned in the above subsubsection.
+
+Motion and Force Tracking Control of Robot Manipulators In Unknown Stiffness Environments
+
+In addition to constrained motion, another important class of contact tasks is when the robot end-effector comes in contact with surfaces that are not so rigid and can be modeled as stiffness environments. Typical examples include the deburring process. The objective in these applications is the same as that in constrained motion -- i.e., control of motion along the tangent direction of the surface and control of force along the normal direction of the surface.
+
+There are only a few published papers addressing motion and force tracking control in the presence of unknown environmental stiffness. Carelli, et. al. proposed an adaptive force control method to estimate unknown parameters of the robot and the environmental stiffness in [11]. The inertia matrix of the robot is assumed to remain constant. Because of the highly nonlinear and coupled nature of the robot dynamics and the wide working range of the robot, this assumption is usually not satisfied. Recently, a variable structure adaptive (VSA) method was developed by Yao, et. al. in [144] to solve this problem. This method resulted in a two-loop control system. VSC method was used in the inner-loop that forced the system to reach and be maintained on a dynamic sliding mode provided by the outer-loop design. In the outer loop, the adaptive control method was used to estimate environmental stiffness and provide the system with good force tracking property. However, the resulting VSC control law was inherently discontinuous and the associated chattering problem had not been analyzed. In [151], we developed an adaptive motion and force control algorithm to eliminate the chattering problem. However, transient performance was not guaranteed when disturbances appeared. The effect of timevarying equilibrium position was not considered.
+
+In this dissertation, we show that motion and force tracking control of such a system falls nicely into the proposed semi-strict feedback form with a relative degree two. The proposed ARC is applied and the resulting controller needs measurements of position, velocity and interaction force only. Transient performance is also guaranteed when disturbances appear.
+
+1.4 Outline of the Dissertation
+
+The dissertation is organized into two parts. Part one deals with general theory and Part two talks about applications. Part one consists of the following chapters:
+
+ffl Chapter 2 uses a simple first-order system to illustrate the general idea of the proposed ARC. An
+
+adaptive controller and a DRC controller are also constructed for comparison.
+
+ffl Chapter 3 generalizes the proposed ARC to a class of SISO nonlinear systems with arbitrary known
+
+relative degrees and transformable to a semi-strict feedback form.
+
+ffl Chapter 4 introduces the concept of ARC Lyapunov functions and presents a general framework
+
+of ARC for general nonlinear systems via ARC Lyapunov functions.
+
+13 ffl Chapter 5 talks about the systematic construction of ARC Lyapunov functions via the backstepping
+
+design procedure.
+
+ffl Chapter 6 solves the ARC of a class of MIMO nonlinear systems with arbitrary known relative
+
+degrees and transformable to a semi-strict feedback form.
+
+Part two consists of the following chapters: ffl Chapter 7 applies the proposed ARC to trajectory tracking control of robot manipulators. Several
+
+conceptually different adaptive and robust control algorithms are also developed for comparison. Comparative experimental results on a SCARA robot are presented.
+
+ffl Chapter 8 applies the proposed ARC to constrained motion and force control, coordinated control
+
+of multiple manipulators, and motion and force control of robot manipulators in unknown stiffness environments.
+
+Finally, Chapter 9 concludes the dissertation and discusses possible future research directions.
+
+14 Part I Adaptive Robust Control - Theory
+
+15 Chapter 2 Control of a First-order Uncertain System
+
+In this chapter, we consider the tracking control of a first-order nonlinear system to illustrate the basic ideas of the proposed adaptive robust control (ARC) scheme. The results can also be used later in the backstepping design for general nonlinear systems.
+
+The first-order nonlinear system under consideration is described by
+
+_x = f (x; t) + u x; u 2 R (2.1) where u is the control input. Normally, it is very hard to determine the exact form of the nonlinear function f (x; t). In this chapter, we describe it in two parts. The first part represents all the terms that can be modeled and linearly parametrized: i.e., this part normally represents the terms derived by physical laws or certain kinds of approximation and its form or base shape is usually available but its magnitude may not be known in advance. For the first order system (2.1), it is assumed to be described by `OE(x; t), where OE(x; t) is a known shape function and ` is an unknown magnitude parameter. The second part is used to represent terms that cannot be modeled or linearly parametrized as well as those which may be due to external disturbances and modeling simplifications, such as neglecting Columb friction. This part is denoted by '(x; t). Therefore,
+
+f (x; t) = `'(x; t) + '(x; t) (2.2) For controller design, it is necessary to make some reasonable assumptions about the prior knowledge of the plant. The more we know about the plant -- i.e., the more strict the assumptions are -- the better the nominal performance of the resulting controller will likely be. However, if the assumptions are too strict, the actual plant may not satisfy them and, thus, the obtained nominal performance may likely be useless. Although the exact value of the parameter ` and the modeling error '(x; t) may not be known, the extent of the parametric uncertainty and modeled errors can often be predicted in advance. For example, when a robot picks up an object, although we may not know the exact mass property of the object, we know the maximum payload the robot is going to pick up. Thus, we can make the following reasonable and practical assumptions that ` and '(x; t) are bounded by some known parameters or known functions, i.e.,
+
+` 2 .` '= (`min ; `max)j
+
+'(x; t)j ^ ffi(x; t) (2.3)
+
+16 where `min, `max, and ffi(x; t) are the known scalars and the known function respectively. In this dissertation, all functions involved in the design are assumed to be bounded with respect to (w.r.t.) time t (e.g., for ffi(x; t), there exists a function ffip(x) such that 8t; jffi(x; t)j ^ ffip(x)), and have finite value when all their variables except t are finite (e.g., x 2 L1 =) ffi(x; t) 2 L1 ).
+
+Let xd(t) be the desired output, which is assumed to be bounded with bounded derivatives up to a sufficient order. The control problem can be formulated as that of designing a control law for u such that, under assumption (2.3), the system is either globally, ultimately, uniformly bounded (GUUB) stable or asymptotically stable, and the output x tracks xd(t).
+
+To illustrate what we want to do, two popularly used nonlinear synthesis methods, deterministic robust control (e.g. sliding mode control) and adaptive control, are first applied. After that, the proposed new adaptive robust control is naturally introduced by effectively combining the two methods.
+
+2.1 Deterministic Robust Control (DRC)
+
+Since the system (2.1) has relative degree one, sliding mode control (SMC) can be applied. A dynamic sliding mode is employed to enhance the dynamic response of the system in sliding mode and eliminate the unpleasant reaching transient [154].
+
+Let a dynamic compensator be
+
+_xc = Acxc + Bce xc 2 Rnc Ac 2 Rnc\Theta nc Bc 2 Rnc yc = Ccxc yc 2 R Cc 2 R1\Theta nc (2.4)
+
+where e = x \Gamma  xd(t) is the tracking error and constant matrices (Ac; Bc; Cc) are chosen to ensure that the resulting dynamic sliding mode exhibits the desired dynamics. (Ac; Bc; Cc) is controllable and observable. The sliding mode controller is designed to make the following quantity remain zero.
+
+z = e + yc
+
+= x \Gamma  xr xr '= xd(t) \Gamma  yc (2.5)
+
+Transfer function from z to e is
+
+e = G\Gamma 1z (s)z (2.6)
+
+where
+
+Gz(s) = 1 + Gc(s) Gc(s) = Cc(sInc \Gamma  Ac)\Gamma 1Bc (2.7)
+
+and In represents an n \Theta  n identity matrix. From (2.7), G\Gamma 1z (s) can be arbitrarily assigned by suitably choosing dynamic compensator transfer function Gc(s) as long as G\Gamma 1z (s) has relative degree zero. During the sliding mode, z = 0 and the system response is governed by the free response of transfer function G\Gamma 1z (s). Therefore, as long as G\Gamma 1z (s) is stable, the resulting dynamic sliding mode will be stable and is invariant to various modeling errors. Furthermore, the sliding mode can be arbitrarily shaped to possess any exponentially fast converging rate since poles of G\Gamma 1z (s) can be freely assigned. In addition to these results, G\Gamma 1z (s) can be chosen to minimize the effect of z on e when ideal sliding mode fz = 0g cannot be exactly achieved in practice.
+
+The rest of the design is to construct a control law such that the sliding mode is reached. The control law is suggested as
+
+u = uf + us uf = _xr(t) \Gamma  ^`'(x; t) us = \Gamma kz \Gamma  h(x; t)sgn(z)
+
+(2.8)
+
+17 where ^` 2 .` is the estimate of `, sgn(:) denotes the discontinuous sign function defined as sgn(z) = 1 if z ? 0 and sgn(z) = \Gamma 1 if z ! 0, and h(x; t) is any known bounding function satisfying
+
+h(x; t) * j \Gamma  ~`'(x; t) + '(x; t)j 8^` 2 .` (2.9)
+
+where ~` '= ^` \Gamma  ` is the estimation error. The required known function h(x; t) exists since the extent of uncertainties is known. For example, let
+
+h(x; t) = (`max \Gamma  `min)j'(x; t)j + ffi(x; t) (2.10) h(x; t) can also be chosen in other ways to simplify the on-line computation time. Theorem 1 The control law (2.8) guarantees that the system (2.1) is exponentially stable and its output tracks the desired trajectory asymptotically. 4
+
+Proof. Choose a positive definite (p.d.) function as
+
+Vs = 12 z2 (2.11) From (2.1), (2.5), (2.8) and (2.9), its time derivative is
+
+_Vs = z _z = z[\Gamma ~`'(x; t) + '(x; t) + us]^ j
+
+zjj \Gamma  ~`'(x; t) + '(x; t)j \Gamma  kz2 \Gamma  h(x; t)jzj^ \Gamma 
+
+kz2 = \Gamma 2kVs
+
+(2.12)
+
+Therefore,
+
+Vs(t) ^ exp(\Gamma 2kt)Vs(0) (2.13)
+
+which implies that z exponentially decays to zero. This result leads to the theorem 1 since the sliding mode is exponentially stable. 4
+
+Corollary 1 If the initial value xc(0) of the dynamic compensator (2.4) can be chosen to satisfy
+
+Ccxc(0) = \Gamma e(0) (2.14) then the system is maintained in the sliding mode all the time and reaching transient is eliminated, i.e., z(t) = 0; 8t. 4
+
+Proof. If (2.14) is satisfied, z(0) = 0 and Vs(0) = 0. From (2.13), z(t) = 0; 8t. 4 Usually, the control law (2.8) is discontinuous across the sliding surface since it contains sgn(z). Such a control law leads to control chattering in practice. To overcome this problem, the above ideal SMC law can be smoothed by replacing discontinuous robust control term h sgn(z) by a continuous function --h (h sgn(z)). --h (h sgn(z)) is required to satisfy the following two conditions:
+
+i: z --h (h sgn(z)) * 0 ii: hjzj \Gamma  z--h (h sgn(z)) ^ "(t) (2.15)
+
+where "(t) is any bounded time-varying positive scalar, i.e., 0 ! "(t) ^ "max. "(t) is used to measure the approximation error. The SMC law is thus smoothed to
+
+u = uf + us us = \Gamma kz \Gamma  --h (h sgn(z)) (2.16) where uf is the same as before.
+
+18 Theorem 2 If the smoothed SMC control law (2.16) is applied, the system is exponentially stable at large with a guaranteed transient performance and final tracking accuracy. 4
+
+Proof. From (2.1) and (2.16), error dynamics is given by
+
+_z + kz + --h (h sgn(z)) = \Gamma ~`'(x; t) + '(x; t) (2.17) Following the same steps as in (2.12) and noting (2.15), the time derivative of Vs is now given by
+
+_Vs ^ jzjj \Gamma  ~`'(x; t) + '(x; t)j \Gamma  kz2 \Gamma  z--h (h sgn(z))^ \Gamma 
+
+kz2 + hjzj \Gamma  z--h (h sgn(z)) ^ \Gamma 2kVs + "(t) (2.18) so
+
+Vs(t) ^ exp(\Gamma 2kt)Vs(0) + R t0 exp(\Gamma 2k(t \Gamma  *)"(*)d*^
+
+exp(\Gamma 2kt)Vs(0) + "max2k [1 \Gamma  exp(\Gamma 2kt)] (2.19)
+
+This implies that the system is exponentially stable at large with a guaranteed transient performance and final tracking accuracy since, theoretically, both the exponentially decaying rate 2k and the bound of the final tracking error z(1), q "maxk , can be freely adjusted by the controller parameters k and ".4
+
+Remark 1 Two examples of the required continuous function --h (h sgn(z)) are as follows.
+
+ffl Continuous Modification (CM).
+
+First, as in most smoothed SMC schemes [112, 154], we use the continuous saturation function sat i zOEz j to replace sgn(z). In order to take into account the time-varying nature of h, the
+
+strength of the discontinuity, we use a time-varying boundary layer thickness given by OEz = 4"h+"h , where "h is any small positive number to avoid the possible singularity in case that h = 0. Thus,
+
+--h (h sgn(z)) = h(x; t) sat i (h+"h)z4" j (2.20)
+
+Obviously, (2.20) satisfies condition i of (2.15). When jzj * OEz, we have, hjzj \Gamma  zhsat i zOEz j = 0. When jzj ^ OEz, we have
+
+hjzj \Gamma  zhsat i zOEz j ^ hjzj \Gamma  h
+
+2z2
+
+4" = 1" [\Gamma ( 12hjzj \Gamma  ")2 + "2] ^ " (2.21)
+
+Thus, condition ii of (2.15) is satisfied.
+
+ffl Smooth Modification (SM) .
+
+Later, when we extend the methodology from relative degree one systems to general relative degree n systems, we will use the backstepping design procedure, which recursively requires the derivatives of the control components at each step. In such a case, a smooth modification is preferred. For this purpose, similar to [94], a smooth approximation of sgn(:) by tanh(:) function is used by considering the following nice properties of tanh(:):
+
+tanh(0) = 0 tanh(1) = 1 tanh(\Gamma 1) = \Gamma 1 0 ^ juj \Gamma  u tanh( u"z ) ^ ^"z 8u 2 R and "z ? 0 (2.22)
+
+where ^ = 0:2785. Letting "z = "^h , we have
+
+--h (h sgn(z)) = h(x; t) tanh i ^h(x;t) z"(t) j (2.23) Noting (2.22), (2.23) satisfies the conditions i and ii of (2.15). 4
+
+19 2.2 Adaptive Control (AC)
+
+In this subsection, the conventional AC [112, 85] is applied. The adaptive control is formulated for parametric uncertainties only, i.e., for the case where '(x; t) = 0.
+
+Let the control law be
+
+u = ufa + usa ufa = _xd(t) \Gamma  ^`'(x; t); usa = \Gamma ke (2.24)
+
+with ^` updated on-line by _
+
+^` = fl'(x; t)e (2.25)
+
+Theorem 3 In presence of parametric uncertainties only (' = 0), if the adaptive control law (2.24) with the update law (2.25) is applied, the system output follows the desired output asymptotically, i.e., e \Gamma ! 0 when t \Gamma ! 1.
+
+Additionally, if the desired trajectory satisfies the following persistent excitation (PE) conditionR
+
+t+T t j'(xd(*); *)j2d* * "p 8t * t0 (2.26)
+
+where T; t0 and "p are some positive scalars, then, the estimated parameter ^` converges to its true value (i.e., ~` \Gamma ! 0 when t \Gamma ! 1). 4
+
+Proof: Substituting (2.24) into (2.1), the error dynamics is
+
+_e + ke = \Gamma ~`'(x; t) (2.27) The time derivative of the positive definite (p.d.) function
+
+Va = 12 e2 + 12fl ~`2 (2.28) is
+
+_Va = e[\Gamma ~`'(x; t) \Gamma  ke] + 1fl ~` _^` = \Gamma ke2 (2.29)
+
+which implies that e 2 L2 " L1 and ~` 2 L1. From (2.27), _e 2 L1 and thus e is uniformly continuous. By Barbalat's lemma [112], e \Gamma ! 0 1 and asymptotic tracking is achieved. Furthermore, from (2.27), since all terms except _e are uniformly continuous, _e is uniformly continuous. Applying Barbalat's lemma again, _e \Gamma ! 0. From (2.27), ~`'(x; t) \Gamma ! 0. Thus, the PE condition (2.26) will guarantee that ~` \Gamma ! 0.4
+
+2.3 Adaptive Robust Control (ARC)
+
+The advantage of the adaptive control in section 2.2 is that, through on-line parameter adaptation, it can reduce the model uncertainty ~`OE ( in fact, ~`OE \Gamma ! 0). Thus, we can obtain asymptotic stability or a zero steady state tracking error without using high gain feedback (asymptotic stability is achieved for any gain k). However, there are two main drawbacks. First, transient performance of the system is not clear. Second, unknown nonlinear functions, such as external disturbance, are not
+
+1For a vector ffl, which is a function of time, ffl \Gamma ! 0 denotes the asymptotic convergence of ffl
+
+20 considered, and it is well known that the integral type adaptation law (2.25) may suffer from parameter drifting and destabilize the system in the presence of even a small disturbance and measurement noise[100] when certain PE conditions are not satisfied. Considering that every real system is always subjected to some sorts of disturbances, it is natural to wonder if the above adaptive controller can be safely implemented. As contrast to adaptive control, transient performance and final tracking accuracy are guaranteed in the smooth SMC design in section 2.1 for both parametric uncertainties and external disturbances. This result makes the SMC design attractive for applications. From (2.17), we can see that the SMC reduces the tracking error by attenuating the effect of modeling uncertainties (the left side of (2.17) can be considered as a nonlinear filter and the right side represents modeling uncertainties). In order to reduce the tracking error, we have to use large feedback gains, i.e., large k or small ". However, since the bandwidth of any real system is limited, there will be a practical upper bound on the feedback gains that we can use. This fact limits the tracking accuracy that DRC can achieve in practice although theoretically it can achieve arbitrarily small final tracking errors. For any chosen feedback gains, from (2.17), the real tracking error is proportional to the modeling uncertainty, \Gamma ~`' + '. Therefore, if we can introduce parameter adaptation in the DRC design to reduce the modeling uncertainty coming from the parametric uncertainty, ~`', as in adaptive control, we may further improve the tracking accuracy. This is the rationale of the proposed adaptive robust control (ARC).
+
+The proposed ARC is to combine the design methodologies of DRC and AC to keep the advantages of the two methods while overcoming the previously mentioned drawbacks. In other words, we will try to use both means -- proper controller structure and parameter adaptation -- to reduce the tracking error. The way to do so is to use the DRC technique to design a baseline controller (proper controller structure) to guarantee transient performance and prescribed final tracking accuracy for both parametric uncertainties and disturbances. On top of it, we will also use the adaptive control technique to update the parameters to obtain asymptotic output tracking in the presence of parametric uncertainties. To do so, we have to solve the conflicts between the two design methodologies. DRC requires knowledge of the bounds of modeling uncertainties, but the estimated parameters by AC may not be bounded in the presence of unknown nonlinear functions. Thus, we have to modify the conventional adaptation law in such a way that it can guarantee that the estimated parameters stay in a prescribed uncertainty range all the time even in the presence of unknown nonlinear functions. Such a modification should not damage the correct estimation process for parametric uncertainties. In this dissertation, this modification is achieved by generalizing the smooth projection used in [122].
+
+Let "` be an arbitrarily small positive real number. There exists a real-valued, sufficiently smooth nondecreasing function ss (Fig.2.1) defined by
+
+ss(*) = * 8* 2 .` ss(*) 2 .^` '= [`min \Gamma  "` ; `max + "`] 8* 2 R (2.30)
+
+with bounded derivatives up to order n \Gamma  1: i.e., there exist constants, cssi ? 0; i = 1; : : : ; n \Gamma  1, such that j
+
+di d*i ss(*)j ^ cssi 8* 2 R; i = 1; : : : ; n \Gamma  1 (2.31)
+
+Let
+
+V`(~`; `) = 1fl R ~`0 (ss(* + `) \Gamma  `)d* fl ? 0 (2.32)
+
+21 * ) *imin imax
+
+imax*
+
+*imin
+
+** **
+
+*
+
+*(*Error: /typecheck in --restore--
+Operand stack:
+   --nostringval--   --nostringval--   78   78   78   78   66   49   49   66   78   83   78   78
+Execution stack:
+   %interp_exit   .runexec2   --nostringval--   --nostringval--   --nostringval--   2   %stopped_push   --nostringval--   3   3   %oparray_pop   --nostringval--   --nostringval--   false   1   %stopped_push   2   3   %oparray_pop   .runexec2   --nostringval--   --nostringval--   --nostringval--   2   %stopped_push   --nostringval--   13   5   %oparray_pop   --nostringval--   --nostringval--   --nostringval--   5   5   %oparray_pop
+Dictionary stack:
+   --dict:826/1215--   --dict:0/20--   --dict:47/200--   --dict:142/250--   --dict:62/200--
+Current allocation mode is local
+Current file position is 286803

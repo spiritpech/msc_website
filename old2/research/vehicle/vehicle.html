@@ -1,0 +1,761 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+
+<html>
+
+<head>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+   <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+
+   <meta name="Author" content="Soichi Ibaraki">
+
+   <title>Advanced Vehicle Control</title>
+
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../../mschomepage.css">
+
+</head>
+
+
+
+<SCRIPT LANGUAGE = "Javascript">
+
+<!-- Hide this script.
+
+browserName = navigator.appName;
+
+browserVer = parseInt(navigator.appVersion);
+
+   if (browserVer >= 3) version = "n3";
+
+   else version = "n2"
+
+   if (version == "n3") {
+
+   navbar1on = new Image();
+
+   navbar1on.src = "../bot_research_on.jpg";
+
+   navbar1off = new Image();
+
+   navbar1off.src = "../bot_research.jpg";
+
+   navbar2on = new Image();
+
+   navbar2on.src = "../bot_vehicle_on.jpg";
+
+   navbar2off = new Image();
+
+   navbar2off.src = "../bot_vehicle0.jpg";
+
+   navbar3on = new Image();
+
+   navbar3on.src = "../bot_disk_on.jpg";
+
+   navbar3off = new Image();
+
+   navbar3off.src = "../bot_disk0.jpg";
+
+   navbar4on = new Image();
+
+   navbar4on.src = "../bot_motion_on.jpg";
+
+   navbar4off = new Image();
+
+   navbar4off.src = "../bot_motion0.jpg";
+
+   navbar5on = new Image();
+
+   navbar5on.src = "../bot_machine_on.jpg";
+
+   navbar5off = new Image();
+
+   navbar5off.src = "../bot_machine0.jpg";
+
+   navbar6on = new Image();
+
+   navbar6on.src = "../bot_copy_on.jpg";
+
+   navbar6off = new Image();
+
+   navbar6off.src = "../bot_copy0.jpg";
+
+   }
+
+function img_act(imgName)  {
+
+   if (version == "n3")   {
+
+   imgOn = eval(imgName + "on.src");
+
+   document [imgName].src = imgOn;
+
+   }
+
+}
+
+function img_inact(imgName)   {
+
+   if (version == "n3") {
+
+   imgOff = eval(imgName + "off.src");
+
+   document [imgName].src = imgOff;
+
+   }
+
+}
+
+// End the hiding here. -->
+
+</SCRIPT>
+
+
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+
+<FONT SIZE=2 FACE="arial, helvetica">
+
+&nbsp;
+
+<center><b><tt><font color="#999999">
+
+Mechanical Systems Control Laboratory Homepage</font></tt></b><br>
+
+<img SRC="pixel.gif" ALT="" height=1 width=500></center><br>
+
+<center>
+
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+
+
+
+<tr><td>
+
+<caption><center><font face="arial, helvetica" size=-1>
+
+Advanced Vehicle Control<br></font></center>
+
+<center><font face="arial, helvetica" font color="#999999">
+
+<a href="../../index.html" class="base">Home</a> | 
+
+<a href="../../people/people.html" class="base">People</a> | 
+
+<a href="../research.html" class="base">Research</a> | 
+
+<a href="../../publications/publications.html" class="base">Publications</a> | 
+
+<a href="../../resources/resources.html" class="base">Resources</a> | 
+
+<a href="../../misc/misc.html" class="base">Misc</a><br>
+
+</font></center>
+
+
+
+<p><br>
+
+<br>&nbsp;
+
+<center><table CELLSPACING=0 CELLPADDING=0 WIDTH="500" height="1401" >
+
+
+
+<tr>
+
+<td ALIGN=LEFT VALIGN=TOP WIDTH="128" height="158">
+
+<table ALIGN=LEFT CELLSPACING=0 CELLPADDING=0 WIDTH="128" >
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+
+<td><a href="../research.html" ONMOUSEOVER="window.status=
+
+'Back to Research page.';img_act('navbar1'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar1'); return true"><img SRC="../bot_research.jpg" NAME="navbar1" BORDER=0 height=22 width=128></a></td>
+
+</tr>
+
+
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+
+<td><img SRC="../bot_vehicle_on.jpg" BORDER=0 height=22 width=128></td>
+
+</tr>
+
+
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+
+<td><a href="../disk/disk.html" ONMOUSEOVER="window.status=
+
+'Disk Drive Control.';img_act('navbar3'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar3'); return true"><img SRC="../bot_disk0.jpg" NAME="navbar3" BORDER=0 height=22 width=128></a></td>
+
+</tr>
+
+
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+
+<td><a href="../motion/motion.html" ONMOUSEOVER="window.status=
+
+'Motion and Torque Control.';img_act('navbar4'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar4'); return true"><img SRC="../bot_motion0.jpg" NAME="navbar4" BORDER=0 height=22 width=128></a></td>
+
+</tr>
+
+
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+
+<td><a href="../machine/machine.html" ONMOUSEOVER="window.status=
+
+'Intelligent Machining.';img_act('navbar5'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar5'); return true"><img SRC="../bot_machine0.jpg" NAME="navbar5" BORDER=0 height=22 width=128></a></td>
+
+</tr>
+
+
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+
+<td><a href="../copy/copy.html" ONMOUSEOVER="window.status=
+
+'Paper Path Control of Xerox Machines.';img_act('navbar6'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar6'); return true"><img SRC="../bot_copy0.jpg" NAME="navbar6" BORDER=0 height=22 width=128></a></td>
+
+</tr>
+
+</table>
+
+</td>
+
+
+
+<td WIDTH="30" height="158"></td>
+
+
+
+<td VALIGN=TOP WIDTH="340" height="158">
+
+
+
+<FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000"><b>
+
+Advanced Vehicle Control</font></b><br>
+
+<FONT FACE="helvetica,arial">
+
+<font size="1", color="#000000">
+
+Overview<br>
+
+</font>
+
+<a href="heavy/heavy.html" class="base"><font size="1">
+
+Lateral Control of Heavy-Duty Vehicles<br>
+
+</font></a>
+
+<a href="kaiten1.html" class="base"><font size="1">
+
+Human-machine Interface for Assistance in Manual Vehicle Steering<br>
+
+</font></a>
+
+<a href="kaiten2.html" class="base"><font size="1">
+
+Influence of Suspension Dynamics on Vehicle Steering Control<br>
+
+</font></a>
+
+<a href="shashi.html" class="base"><font size="1">
+
+Fault Diagnosis and Management in the Extended AHS Architecture<br>
+
+</font></a>
+
+<a href="kun.html" class="base"><font size="1">
+
+Bus Frontal Collision Warning System<br>
+
+</font></a>
+
+</font>
+
+</td>
+
+
+
+</tr>
+
+
+
+<tr>
+
+<td colspan=3 height="74">
+
+&nbsp;<br>
+
+&nbsp;<br>
+
+&nbsp;<br>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+
+bordercolordark="#FFFFFF" valign="top" width="128" height="530">
+
+<center>
+
+<img SRC="../ico_path.jpg" ALT="Overview" height=90 width=120>
+
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+
+Overview</font></b></center>
+
+</td>
+
+
+
+<td WIDTH="30" height="530"></td>
+
+
+
+<td VALIGN=TOP WIDTH="340" height="530">
+
+<b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+
+Advanced Vehicle Control: Overview. </font></b>
+
+<FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+
+Electronics and control have become 
+
+major elements of modern automobiles. Their use is not limited to control 
+
+of a vehicle unit. In 1986, the California Department of Transportation (Caltrans) and the Institute of Transportation
+
+Studies at the University of California at Berkeley established the PATH (Partners for Advances Transit and
+
+Highways) program to investigate the applicability of advanced highway automation, communication, and roadway
+
+electrification technologies. Controls have been identified to be critical in the PATH program, and various projects
+
+are in progress in the area of AVCS (Advanced Vehicle Control Systems).<br>
+
+&nbsp;<br>
+
+Under the PATH program, our group has been conducting research on vehicle lateral guidance. So far, it has
+
+covered many issues related to lateral guidance, including the development of accurate nonlinear models of all
+
+types of vehicles as well as developing advanced control algorithm. We have conducted research projects on the
+
+automated lane following problem, the lane change maneuvering problem, and the traction control problem. A
+
+full-sized test vehicle using a discrete magnetic marker track as a reference/sensing system has been successfully
+
+implemented on a test track at the Richmond Field Station of the University of California at Berkeley. A fail-safe
+
+investigation has been conducted to diagnose system failures, such as sensor malfunction or tire bursts, and to
+
+bring the vehicle under control in these emergency situations. Also, research is being conducted to explore the
+
+effects of combining both longitudinal and lateral control to a vehicle.
+
+(M. Tomizuka, ILP Summary 1996-1997)
+
+</font>
+
+</td>
+
+
+
+<tr>
+
+<td colspan=3 height="74">
+
+&nbsp;<br>
+
+&nbsp;<br>
+
+&nbsp;<br>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+
+bordercolordark="#FFFFFF" valign="top" width="128" height="243">
+
+<center>
+
+<img SRC="ico_pathbanner.jpg" ALT="Individual Projects" height=90 width=120>
+
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+
+Individual Projects</font></b></center>
+
+</td>
+
+
+
+<td VALIGN=TOP WIDTH="340" colspan=2 height="243">
+
+
+
+<ul><li><FONT FACE="helvetica,arial" SIZE="2"><b>
+
+<a href="heavy/heavy.html">
+
+Lateral Control of Heavy Duty Vehicles for Automated Highway Systems
+
+</font></b></a><br></li>
+
+</ul>
+
+
+
+<ul><li><FONT FACE="helvetica,arial" SIZE="2"><b>
+
+<a href="kaiten1.html">
+
+Look-ahead Human-machine Interface for Assistance in Manual Vehicle Steering
+
+</font></b></a><br></li>
+
+</ul>
+
+
+
+<ul><li><FONT FACE="helvetica,arial" SIZE="2"><b>
+
+<a href="kaiten2.html">
+
+The Influence of Suspension Roll Dynamics on Vehicle Steering Control
+
+</font></b></a><br></li>
+
+</ul>
+
+
+
+<ul><li><FONT FACE="helvetica,arial" SIZE="2"><b>
+
+<a href="shashi.html">
+
+Fault Diagnosis and Management in the Extended AHS Architecture
+
+</font></b></a><br></li>
+
+</ul>
+
+
+
+<ul><li><FONT FACE="helvetica,arial" SIZE="2"><b>
+
+<a href="kun.html">
+
+Bus Frontal Collision Warning System
+
+</font></b></a><br></li>
+
+</ul>
+
+
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td colspan=3 height="31">
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+
+bordercolordark="#FFFFFF" valign="top" width="128" height="208">
+
+<img SRC="ico_pathpeople.jpg" ALT="Researchers" height=90 width=120>
+
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+
+Researchers</font></b>
+
+</td>
+
+
+
+<td WIDTH="30" height="208"></td>
+
+
+
+<td VALIGN=TOP WIDTH="340" height="208">
+
+
+
+<p>
+
+<FONT SIZE=2 FACE="arial, helvetica">
+
+<b><font face="helvetica,arial" size="2" color="#000000">Nagata, Takashi</font></b><FONT FACE="helvetica,arial" SIZE="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+</font><font face="helvetica,arial" size="2" color="#000000">Automotive power
+control&nbsp;</font><FONT FACE="helvetica,arial" SIZE="2">&nbsp;&nbsp;<br>
+
+
+
+</font><font color="#999999" face="helvetica,arial">homepage</font>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+<font color="#999999">
+
+ |
+
+</font>
+
+
+
+<a href="mailto:taka_me@me.berkeley.edu"><font color="#3366CC">e-mail</font></a><font color="#3366CC">&nbsp;</font><font color="#C0C0C0">|</font> <font color="#999999">&nbsp; 
+
+<font size="1" color="#000000"><br></font>
+
+</font>
+
+
+
+ <br>
+
+
+
+<b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">Sh</font></b></font><b><font face="helvetica,arial" size="2" color="#000000">i,
+Mingyu</font></b><font face="helvetica,arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#999999" size="2" face="arial, helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><FONT FACE="helvetica,arial" SIZE="2"><br>
+
+Advanced vehicle control<br>
+
+
+
+</font><a href="http://www.me.berkeley.edu/~mingyu" target="_blank"><font face="helvetica,arial" size="2" color="#3366CC">homepage</font></a>
+
+<font color="#999999">
+
+ |
+
+</font>
+
+<a href="mailto:mingyu@me.berkeley.edu">
+
+<font color="#3366CC" FACE="helvetica,arial" SIZE="2">
+
+e-mail</font></a><FONT FACE="helvetica,arial" SIZE="2"><font color="#3366CC">&nbsp;</font><font color="#C0C0C0">|</font></font></font></p>
+
+
+
+<p style="margin-top: 0; margin-bottom: 0">
+
+<FONT SIZE=2 FACE="arial, helvetica">
+
+<b><font face="helvetica,arial" size="2" color="#000000">Koo, Shiang-Lung</font></b><font face="helvetica,arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+<br>
+
+Advanced vehicle control<br>
+
+
+
+</font><font color="#999999" face="helvetica,arial">homepage</font>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+<font color="#999999">
+
+ |
+
+</font>
+
+<a href="mailto:slk@uclink.berkeley.edu"><font color="#3366CC">e-mail</font></a><font color="#3366CC">&nbsp;</font><font color="#C0C0C0">|</font> <font color="#999999">&nbsp;
+
+</font>
+
+
+
+</font></font>
+
+
+
+</p>
+
+
+
+<p style="margin-top: 0; margin-bottom: 0">
+
+<br>
+
+
+
+<b>
+
+
+
+<FONT FACE="helvetica,arial" SIZE="2" color="#000498">Sponsor</font></b></font><br>
+
+<FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+
+California PATH</font><br>
+
+
+
+</p>
+
+
+
+</td>
+
+
+
+</tr>
+
+
+
+<tr>
+
+<td colspan=3 height="32">
+
+&nbsp;<br>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+
+bordercolordark="#FFFFFF" valign="top" width="128" height="152">
+
+<center>
+
+<img SRC="../ico_earth.jpg" ALT="Related Links" height=90 width=120>
+
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+
+Related Links</font></b></center>
+
+</td>
+
+
+
+<td VALIGN=TOP WIDTH="340" colspan=2 height="152">
+
+
+
+<ul><FONT FACE="helvetica,arial" SIZE="2"><b>
+
+<a href="http://www.path.berkeley.edu">
+
+California Path - Partners for Advanced Transit and Highways
+
+</font></b></a><br>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+For more general information of the Automated Highway Systems.
+
+</font></ul>
+
+
+
+<ul><FONT FACE="helvetica,arial" SIZE="2"><b>
+
+<a href="http://vehicle.me.berkeley.edu">
+
+Vehicle Dynamics Laboratory
+
+</font></b></a><br>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+Professor Karl Hedrick's group in Mechanical Engineering Department, 
+
+UC Berkeley. 
+
+</font></ul>
+
+
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td colspan=3 height="1">
+
+&nbsp;<br>
+
+<br>
+
+</td>
+
+</tr>
+
+
+
+</table></center>
+
+</caption>
+
+
+
+</table></center>
+
+
+
+<center><img SRC="pixel.gif" ALT="" height=1 width=500>
+
+<br><font face="arial, helvetica" font color="#666666" size=1>Feel free to send your comments to <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+
+</center>
+
+
+
+<p><br>
+
+</body>
+
+</html>

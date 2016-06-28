@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../style.css" media="all" />
+	<title>MSC Lab - Automotive Control Systems</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../people/students.html">Students</a></li>
+                    <li><a href="../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../robotics.html">Robotics</a></li>
+                    <li><a href="../human.html">Human Mechatronics</a></li>
+                    <li><a href="../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../research.html">Research</a> &gt; <a href="../automotive.html">Automotive Control Systems</a> &gt; <a href="ev.html">Integrated Control Method for a Full Drive-by-Wire Electric Vehicle Based on Driver’s Intention Recognition</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Jump to:</h3>
+				<ul class="sidemenu">
+					<li><a href="#intro">Introduction</a></li>
+                    <li><a href="#topics">Research Topics</a></li>
+                    <li><a href="#researchers">Researchers</a></li>
+                    <li><a href="#acknowledgements">Acknowledgements</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Integrated Control Method for a Full Drive-by-Wire Electric Vehicle Based on Driver’s Intention Recognition</h2>
+		  <h3 id="intro">Introduction</h3>
+		  <p>Almost every automaker in the world has  been researching and promoting new energy vehicles under the pressure of  resources, energy and environment. With rapid development of electric motors  and communication technology, the electric vehicle with all its actuators using  X-by-wire technology, namely a full drive-by-wire electric vehicle has  gradually become a perfect platform for the research on the next-generation  vehicle control. A full drive-by-wire electric vehicle must be steer-by-wire,  drive-by-wire, brake-by-wire and it can achieve an ultimate goal of individual  vehicle motion control whose four wheel driving and braking torques and four  wheel steer angles can be controlled independently.</p>
+		  <p>Theoretically, a full drive-by-wire electric vehicle  can easily achieve ideal vehicle dynamic performance in plane motion, due to  flexibility and high degrees of freedom of its control. It&rsquo;s an ideal platform  for the development of advanced vehicle control and for the design of  next-generation vehicle dynamics characteristics. In order to realize the  concept that &ldquo;car adapts to people&rdquo;, the process of driver&rsquo;s intention  recognition should be applied to the vehicle integrated control. Technical  support and theoretical guidance in next-generation vehicle control will be  provided by the research on achieving the ideal handling performance and  optimal driving comfort and safety of the full drive-by-wire electric vehicle.</p>
+		  <p>&nbsp;</p>
+		<h3 id="topics">Research Topics</h3>
+		  <p><strong>Ideal Vehicle Dynamics  Control</strong></p>
+		  <p>A centralized controller  will be implemented based on the model predictive control theory and the linear  quadratic regulator will be utilized as the optimal-tire-force distributor. A  driver&rsquo;s characteristics identification subsystem is employed to identify the  characteristics (types) of the driver by analyzing his/her control commands. Selected  reference model is then matched with this (kind of) driver, which can reflect  the ideal characteristics of vehicle dynamics. The central vehicle control unit  integratedly controls the driving, braking, steering systems and makes the real  vehicle motion track the outputs from the ideal vehicle dynamics reference  model and eventually the concept that &quot;car adapts to people&quot; can be  realized.</p>
+		  <p align="center"><img src="ev_ideal.png" width="800" alt="ideal control" /><br />
+Figure 1: Block Diagram of the Ideal  Vehicle Dynamics Control</p>
+		  <p><strong>Vehicle Stability Control</strong></p>
+		  <p>This project will establish  an overall description of the performance indexes that assess the vehicle  stability and determine their threshold values. A nonlinear prediction model  which can describe the features of the stability of the full drive-by-wire  electric vehicle will be built for the purpose of predicting the vehicle states  of motion. If the stability indexes exceed the threshold values, the ideal  dynamics characteristics control will be employed, otherwise the outputs of the  ideal reference model will be the control objectives. The resultant forces and  motion will be imported into the optimal distributor of tire forces and the  maximum stability margin of tire forces should be guaranteed. The distributor  computes target values of the component forces of each tire and sends them to  the actuators.</p>
+		  <p align="center"><img src="ev_stability.png" width="900" alt="stability control" /><br />
+Fig. 2: Block Diagram of the  Vehicle Stability Control</p>
+		  <p><strong>Integration Control  Methods</strong></p>
+		  <p>The integrated  controller should be a MIMO system with a hierarchical structure with multiple  layers that operate harmoniously. The characteristics of the ideal vehicle  dynamics will be realized under general maneuvers meanwhile the ideal reference  model will be set as the control objective under worst-case maneuvers to  prevent the vehicle from instability. The control objective of tire-force  distributor will be the optimal stability margin of tire forces.</p>
+		  <p align="center"><img src="ev_overall.png" width="900" alt="overall" /><br />
+Fig. 3: Overall System Block  Diagram</p>
+		  <p>&nbsp;</p>
+		  <h3 id="researchers">Researchers</h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="40%"><p>Prof. Tomizuka, Masayoshi<br />
+                Prof. Zong, Changfu<br />
+              Lecturer Chen, Guoying<br />
+              Ph.D. Student Zhang, Zexing<br />
+              Ph.D. Student Song, Pan<br />
+              M.S. Student Lin, Na </p></td>
+              <td width="10%"><p><a href="mailto:tomizuka@me.berkeley.edu" target="_new">Email</a><br />
+                <a href="mailto:zong.changfu@gmail.com" target="_new">Email</a><br />
+                &nbsp;<br />
+                &nbsp;<br />
+                &nbsp;<br />
+              &nbsp;</p></td>
+              <td width="50%"><p>&nbsp;</p></td>
+            </tr>
+          </table>
+			<p>&nbsp;</p>
+			<h3 id="acknowledgements">Acknowledgements</h3>
+			<p>This project is a collaboration between the <a href="http://www.berkeley.edu" target="_new">University of California, Berkeley</a> and  <a href="http://www.jlu.edu.cn" target="_new">Jilin University</a> in P.R. China and supported by State Key Laboratory of  Automotive Simulation and Control, Jilin University.</p>
+	  </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

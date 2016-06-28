@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../style.css" media="all" />
+	<title>MSC Lab - Adaptive Cruise Control Systems with Stop-and-Go</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../people/students.html">Students</a></li>
+                    <li><a href="../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../robotics.html">Robotics</a></li>
+                    <li><a href="../human.html">Human Mechatronics</a></li>
+                    <li><a href="../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../research.html#past">Past Research</a> &gt; <a href="../automotive.html">Automotive Control Systems</a> &gt; <a href="acc.html">Adaptive Cruise Control</a></p>
+		</div>
+        
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+					<li><a href="#intro">Introduction</a></li>
+                    <li><a href="#topics">Research Topics</a></li>
+                    <li><a href="#researchers">Researchers</a></li>
+                    <li><a href="#acknowledgements">Acknowledgements</a></li>
+				</ul>
+			</div>
+			</div>
+            
+          <h2>Adaptive Cruise Control Systems with Stop-and-Go</h2>
+		  <h3 id="intro">Introduction</h3>
+		  <p>Modern automobiles are equipped with a number of drive assistance functions for safety and reduction in driver fatigue. Cruise control is such a function. It was originally introduced as a function to maintain the speed of an automobile at a reference value selected by the driver. In recent years, it has evolved to adaptive cruise control (ACC) or intelligent cruise control, which has an additional function of car following when the preceding vehicle is driven at a speed lower than the reference speed. ACC has become reality because of advances in sensor technologies and other enabling technologies. Research and development efforts are continuing in both the academic and industrial sectors to further enhance the capability of ACC.</p>
+          <p>One importance enhancement is the car following capability at low speeds including stop-and-go capability. In case of heavy traffic, the driver has to keep driving over hours and cannot use the cruise control function. With a stop-and-go capability, the driver`s fatigue can be immensely reduced. Also, with a further advance, this function can be expended to be used in a city driving.</p>
+          <p align="center"><a href="acc_system.jpg"><img src="acc_system.jpg" alt="ACC system" width="450" border="0" /></a><br />
+            Fig. 1: Overall System Flow Diagram</p>
+          <p align="center"><a href="acc_system_ctrl.jpg"><img src="acc_system_ctrl.jpg" alt="ACC system control" width="450" border="0" /></a><br />
+          Fig. 2: Detailed Control Flow Diagram</p>
+          <p>&nbsp;</p>
+          <h3 id="topics">Research Topics</h3>
+          <p><strong>Environmental parameter estimation</strong></p>
+          <p>With a good estimation of the environmental parameters, a smoother and safer control of the vehicle can be achieved. For a smooth driving, an appropriate cancellation of disturbances is required. At low speeds, the gravitational disturbance due to the road slope is a dominant resistance, while at high speeds the effect of the aerodynamic disturbance is the most important. Also, the information of the environmental parameters like the road friction coefficient can be utilized for a safe control of the vehicle.</p>
+          <p><strong>Controller tuning</strong></p>
+          <p>Many methods can be used for the tuning of the feedback controllers. One of the promising methods is Iterative Feedback Tuning which can autonomously tune the gains of the controller. By adding the quadratic function of the acceleration, passengers' comfort can be additionally considered in the design of the controller.</p>
+          <p><strong>Switching</strong></p>
+          <p>Since the ACC controller consists of different modes, and the vehicle itself uses two different power sources - an engine and a brake, it is important to guarantee soft and stable transients between different modes. For example, the controller has to work safely in case of a sudden lane change - cut-in or cut-out- of a lead vehicle.</p>
+          <p><strong>Smooth stop</strong></p>
+          <p>Due to the compliance of tires, a hard braking can cause an undesirable oscillation of the vehicle during a complete stop. This undesirable motion can be captured with some tire models including Dynamic Deflection Tire model. The controller should minimize the oscillation to enhance the comfort of passengers.</p>
+          <p>&nbsp;</p>
+          <h3 id="researchers">Researchers</h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="40%"><p>Kim, Sanggyum (graduated)</p></td>
+              <td width="10%"><p><a href="mailto:sgkim@berkeley.edu" target="_new">Email</a></p></td>
+              <td width="50%"><p>&nbsp;</p></td>
+            </tr>
+          </table>
+			<p>&nbsp;</p>
+			<h3 id="acknowledgements">Acknowledgements</h3>
+			<p>This project is a collaboration between the <a href="http://www.berkeley.edu" target="new">University of California, Berkeley</a> and the <a href="http://www.itri.org.tw" target="new">Industrial Technology Research Institute in Taiwan</a>.</p>
+	  </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

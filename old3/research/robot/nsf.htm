@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0066)http://mechatro2.me.berkeley.edu/research/vehicle/heavy/heavy.html -->
+<HTML><HEAD><TITLE>Sensing Rich Design of Drive Trains</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2900.2802" name=GENERATOR>
+<META content="Soichi Ibaraki" name=Author><LINK 
+href="nsf_files/mschomepage.css" type=text/css rel=STYLESHEET>
+<SCRIPT language=Javascript>
+
+<!-- Hide this script.
+
+browserName = navigator.appName;
+
+browserVer = parseInt(navigator.appVersion);
+
+   if (browserVer >= 3) version = "n3";
+
+   else version = "n2"
+
+   if (version == "n3") {
+
+   navbar1on = new Image();
+
+   navbar1on.src = "../../bot_research_on.jpg";
+
+   navbar1off = new Image();
+
+   navbar1off.src = "../../bot_research.jpg";
+
+   navbar2on = new Image();
+
+   navbar2on.src = "../../bot_vehicle_on.jpg";
+
+   navbar2off = new Image();
+
+   navbar2off.src = "../../bot_vehicle0.jpg";
+
+   navbar3on = new Image();
+
+   navbar3on.src = "../../bot_disk_on.jpg";
+
+   navbar3off = new Image();
+
+   navbar3off.src = "../../bot_disk0.jpg";
+
+   navbar4on = new Image();
+
+   navbar4on.src = "../../bot_motion_on.jpg";
+
+   navbar4off = new Image();
+
+   navbar4off.src = "../../bot_motion0.jpg";
+
+   navbar5on = new Image();
+
+   navbar5on.src = "../../bot_machine_on.jpg";
+
+   navbar5off = new Image();
+
+   navbar5off.src = "../../bot_machine0.jpg";
+
+   navbar6on = new Image();
+
+   navbar6on.src = "../../bot_copy_on.jpg";
+
+   navbar6off = new Image();
+
+   navbar6off.src = "../../bot_copy0.jpg";
+
+   }
+
+function img_act(imgName)  {
+
+   if (version == "n3")   {
+
+   imgOn = eval(imgName + "on.src");
+
+   document [imgName].src = imgOn;
+
+   }
+
+}
+
+function img_inact(imgName)   {
+
+   if (version == "n3") {
+
+   imgOff = eval(imgName + "off.src");
+
+   document [imgName].src = imgOff;
+
+   }
+
+}
+
+// End the hiding here. -->
+
+</SCRIPT>
+</HEAD>
+<BODY text=#000000 vLink=#213f7d link=#3366cc bgColor=#ffffff>
+<CENTER><BR><B><TT><FONT face="arial, helvetica"><FONT color=#999999><FONT 
+size=-1>Mechanical Systems Control Laboratory 
+Homepage</FONT></FONT></FONT></TT></B> <BR><IMG height=1 alt="" 
+src="nsf_files/pixel.gif" width=500></CENTER>
+<P>
+<CENTER>
+<CENTER>
+    <FONT face="arial, helvetica" size=-1>Sensing Rich Design of Drive Trains<BR>
+    </FONT>
+<CENTER><FONT face="arial, helvetica" color=#999999 font><A class=base 
+href="http://mechatro2.me.berkeley.edu/index.html">Home</A> | <A class=base 
+href="http://mechatro2.me.berkeley.edu/people/people.html">People</A> | <A 
+class=base 
+href="http://mechatro2.me.berkeley.edu/research/research.html">Research</A> | <A 
+class=base 
+href="http://mechatro2.me.berkeley.edu/publications/publications.html">Publications</A> 
+| <A class=base 
+href="http://mechatro2.me.berkeley.edu/resources/resources.html">Resources</A> | 
+<A class=base 
+href="http://mechatro2.me.berkeley.edu/misc/misc.html">Misc</A><BR></FONT></CENTER>
+<P><BR><BR>&nbsp; 
+<CENTER>
+      <TABLE height=4627 cellSpacing=0 cellPadding=0 width=696>
+        <TBODY>
+          <TR> 
+            <TD height=150 colspan="5" align=left vAlign=middle> 
+              <div align="center"><img src="nsf_files/msclogo.jpg" width="210" height="81" align="left"></div>
+              <p>&nbsp;</p></TD>
+            <TD width="114" vAlign=top>&nbsp;</TD>
+            <TD width="360" vAlign=middle><font face=helvetica,arial 
+      color=#000000 size=2><strong>National Science Fundation Project</strong></font><br> 
+              <font 
+      face=helvetica,arial><font color="#000000" 
+      size=1><a href="#introduction">Introduction</a></font><font 
+      size=1><br>
+              </font><font color=#000000 size=1 ,><a href="#target">Technical 
+              Objectives</a><br>
+              <a href="#example">Example </a><br>
+              </font><font color="#000000" 
+      size=1><a href="#setup">Equipments</a><br>
+              <a href="#advantage">Further Advantages of Sensing Rich Approach</a><br>
+              <a href="#publication">Related Publications</a></font></font></TD>
+          </TR>
+          <TR> 
+            <TD height=170>&nbsp;<BR> &nbsp;<BR> &nbsp;<BR></TD>
+            <TD height=170>&nbsp;</TD>
+            <TD height=170 colSpan=5 valign="top"> 
+              <p align="justify">&nbsp;</p>
+              <p align="justify"><em><strong><font size="-1">Attention</font></strong></em><font size="-1">: 
+                This website is based upon work supported by the National Science 
+                Foundation under Award No.0529451. Any opinions, findings, and 
+                conclusions or recommendations expressed in this website are those 
+                of the authors and do not necessarily reflect the views of the 
+                National Science Foundation. </font></p></TD>
+          </TR>
+          <TR> 
+            <TD vAlign=top borderColor=#ffffff borderColorLight=#ffffff width=216 
+    bgColor=#ffffff borderColorDark=#ffffff height=624> <CENTER>
+                <img src="nsf_files/introduction.jpg" width="120" height="90"> 
+              </CENTER></TD>
+            <TD width=1 height=624></TD>
+            <TD height=624 colspan="5" vAlign=top> <P><B><FONT face=helvetica,arial color=#000000 size=2>Introduction<a name="introduction"></a></FONT></B></P>
+              <P align="justify">The design and production of high-performance 
+                machineries and consumer products in a cost effective and timely 
+                manner is one of the ultimate challenges to engineers today. Mechatronics 
+                approach has been recognized to meet such challenges.</P>
+              <P align="center"><img src="nsf_files/mms.jpg" width="301" height="301"></P>
+              <P align="justify">In modern mechatronic systems, the physical system 
+                and the computer (DSP) are interfaced by sensors and actuators. 
+                The sensor signals are utilized for variety of purposes such as 
+              </P>
+              <div align="justify"> 
+                <ul>
+                  <li>real time estimation of parameters such as mass and friction 
+                    coefficients,</li>
+                  <li> real time identification of dynamics of drive trains, and</li>
+                  <li> motion/vibration control. </li>
+                </ul>
+              </div>
+              <ul>
+              </ul></TD>
+          <TR> 
+            <TD height="97" colSpan=7>&nbsp;</TD>
+          </TR>
+          <TR> 
+            <TD 
+height=78 valign="top"> <div align="center"><img src="nsf_files/target.jpg" width="120" height="90"></div></TD>
+            <TD 
+height=78>&nbsp;</TD>
+            <TD 
+height=78 colspan="5"><p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Technical 
+                Objectives<a name="target"></a></strong></font></p>
+              <p>The technical objectives of the research are: </p>
+              <ul>
+                <li> 
+                  <div align="justify"> to study sensing of various signals in 
+                    the drive train, in particular, those not utilized in conventional 
+                    practice such as acceleration signals, force signals in the 
+                    drive train and end effector&#8217;s position,</div>
+                </li>
+                <li> 
+                  <div align="justify"> to develop signal processing and decision 
+                    making algorithms including their auto-tuning methodologies 
+                    that take advantage of the sensed signals for the betterment 
+                    of performance and other mechatonic advantages, and</div>
+                </li>
+                <li> 
+                  <div align="justify"> to demonstrate these benefits experimentally. 
+                  </div>
+                </li>
+              </ul></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=7 
+height=59>&nbsp;</TD>
+          </TR>
+          <TR> 
+            <TD 
+height=131 valign="top"><div align="center"><img src="nsf_files/example.jpg" width="120" height="90"></div></TD>
+            <TD 
+height=131>&nbsp;</TD>
+            <TD 
+height=131 colSpan=5 valign="top"><div align="justify"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Example<a name="example" id="example"></a>: 
+                Kinematic Kalman Filter</strong></font><br>
+                <strong><font size="2" face="Courier New, Courier, mono"> </font></strong> 
+                <font size="2" face="Courier New, Courier, mono"><strong> &#8212;&#8212;&#8212; 
+                <font face="Arial, Helvetica, sans-serif">An example demonstrating 
+                the advantage of sensing rich design.</font></strong></font><br>
+              </div>
+              <p align="justify"> The Kinematic Kalman Filter (KKF) fuses acceleration 
+                measurement and position measurement of a linear motor driven 
+                positioning table for simple and robust estimation of the velocity. 
+                <br>
+                Consider a single degree of freedom motion system described by 
+              </p>
+              <p align="center"><img src="nsf_files/Eqn_mxbxkxu.gif" width="106" height="18"> 
+              </p>
+              <p align="justify">where x is the position, u is the force input. 
+                When the position is measured, the velocity may be estimated by 
+                a model based Kalman Filter (MBKF) or state observer. Defining 
+                two state variables by x<font size="-7">1</font> = x and x<font size="-6">2</font> 
+                = dx/dt, the system and the Kalman filter are obtained in the 
+                following form:<br>
+                <br>
+                <font color="#0066CC" size="2" face="Arial, Helvetica, sans-serif">System 
+                Model for MBKF</font></p>
+              <p align="center"><img src="nsf_files/Eqn_sysmbkf.gif" width="369" height="74"></p>
+              <p align="justify">where w(t) and v(t) are input noise and measurement 
+                noise, respectively. w(t) and v(t) are independent Gaussian white 
+                noise processes.<br>
+                <br>
+                <font color="#0066CC" size="2" face="Arial, Helvetica, sans-serif">Model 
+                Based Kalman Filter (MBKF)</font></p>
+              <p align="center"><img src="nsf_files/Eqn_mbkf.gif" width="318" height="101"></p>
+              <p align="justify"> where f<font size="1"> 1</font> and f <font size="1">2</font> 
+                are the filter gains.<br>
+                <br>
+                The MBKF depends on the plant parameters. Thus, if the plant parameters 
+                are poorly known or subject to change, its performance deteriorates. 
+                <br>
+                <br>
+                If the position and acceleration are both measured, the system 
+                equation and the KKF are obtained in the following form:<br>
+                <br>
+                <font color="#0066CC" size="2" face="Arial, Helvetica, sans-serif">System 
+                Model for KKF</font></p>
+              <p align="center"><img src="nsf_files/Eqn_sysmkkf.gif" width="306" height="74"></p>
+              <p align="justify">where w(t) and v(t) are accelerometer measurement 
+                noise and position measurement noise, respectively.<br>
+                <br>
+                <font color="#0066CC" size="2" face="Arial, Helvetica, sans-serif">Kinematic 
+                Kalman Filter (KKF)</font></p>
+              <p align="center"><img src="nsf_files/Eqn_kkf.gif" width="305" height="50"></p>
+              <p align="justify">where f <font size="1">k1</font> and f <font size="1">k2</font> 
+                are the filter gains.<br>
+                <br>
+                KKF does not depend on model parameters at all. Thus, if the acceleration 
+                and the position are both measured, the velocity may be reliably 
+                estimated by KKF.<br>
+                <br>
+                The figure below show that the KKF provides an accurate estimate 
+                of the velocity even when the resolution of an encoder is low. 
+              </p>
+              <p><img src="nsf_files/figure.jpg" width="400" height="301"></p>
+              <p align="center">Estimation of Speed by MBKF and KKF<br>
+                Encoder resolution = 256 pulse per revolution<br>
+                <br>
+              </p></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=7 
+height=57>&nbsp;</TD>
+          </TR>
+          <TR> 
+            <TD 
+height=330 rowspan="6" valign="top"><div align="center"><img src="nsf_files/equipment.jpg" width="120" height="90"></div></TD>
+            <TD 
+height=330 rowspan="6">&nbsp;</TD>
+            <TD 
+height=40 colspan="5"> <p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Equipments<a name="setup"></a></strong></font></p></TD>
+          </TR>
+          <TR> 
+            <TD 
+height=37 colspan="5"> <ul>
+                <li>Two link robot</li>
+              </ul></TD>
+          </TR>
+          <TR> 
+            <TD 
+height=83 colspan="5"><div align="center"><img src="nsf_files/twolink.jpg" width="300" height="193"></div></TD>
+          </TR>
+          <TR> 
+            <TD 
+height=29 colspan="5">&nbsp;</TD>
+          </TR>
+          <TR> 
+            <TD 
+height=32 colspan="5"> <ul>
+                <li>Two Inertia System with Harmonic Gear</li>
+              </ul></TD>
+          </TR>
+          <TR> 
+            <TD 
+height=112 colspan="5"><img src="nsf_files/setup3.jpg" width="400" height="207"></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=7 
+height=78>&nbsp;</TD>
+          </TR>
+          <TR> 
+            <TD 
+height=78 valign="top"><div align="center"><img src="nsf_files/advantage.jpg" width="120" height="90"></div></TD>
+            <TD 
+height=78>&nbsp;</TD>
+            <TD 
+height=78 colSpan=5><p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Further 
+                Advantages of Sensing Rich Approach<a name="advantage"></a></strong></font></p>
+              <ul>
+                <li> 
+                  <div align="justify">If an encoder and an accelerometer are 
+                    installed on the motor side as well as on the load side, the 
+                    velocity on both end can be accurately estimated by KKFs.</div>
+                </li>
+                <li> 
+                  <div align="justify"> State feedback control may be easily implemented. 
+                    LQ tuning of state feedback gain provides excellent robustness 
+                    properties.</div>
+                </li>
+                <li> 
+                  <div align="justify"> If all state variables are known, parameter 
+                    identification and adaptive control may be easily implemented.</div>
+                </li>
+                <li> 
+                  <div align="justify"> Additional sensors such as force sensors 
+                    may be added for reliable fault detection and effective failure 
+                    management.<br>
+                  </div>
+                </li>
+              </ul></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=7 
+height=81>&nbsp;</TD>
+          </TR>
+          <TR> 
+            <TD 
+height=438 valign="top"><div align="center"><img src="nsf_files/publication.jpg" width="120" height="90"></div></TD>
+            <TD 
+height=438>&nbsp;</TD>
+            <TD 
+height=438 colSpan=5 valign="top"> <p><font size=2 face="Arial, Helvetica, sans-serif"><strong>Related 
+                Publications<a name="publication"></a></strong></font></p>
+              <ol>
+                <li> 
+                  <div align="justify">Lee H-S., Tomizuka, M., &quot;Robust Motion 
+                    Controller Design for High-Accuracy Positioning Systems,&quot; 
+                    IEEE Transactions on Industrial Electronics, Vol. 43, No. 
+                    1, pp. 48-55, 1996.<br>
+                  </div>
+                </li>
+                <li> 
+                  <div align="justify">Ishikawa, J. and Tomizuka, M. &quot;Pivot 
+                    Friction Compensation Using and Accelerometer and a Disturbance 
+                    Observer for Hard Disk Drives,&quot; IEEE/ASME Transactions 
+                    on Mechatronics, Vol. 3, No. 3, pp. 194-201, September 1998.<br>
+                  </div>
+                </li>
+                <li> 
+                  <div align="justify">Lee D-J., Tomizuka, M., &quot;State/Parameter/Disturbance 
+                    Estimation with an Accelerometer in Precision Motion Control 
+                    of a Linear Motor,&quot; Proceedings of 2001 ASME International 
+                    Mechanical Engineering Congress and Exposition, IMECE2001/DSC-24578, 
+                    2001 <br>
+                  </div>
+                </li>
+                <li> 
+                  <div align="justify">Jeon, S. and Tomizuka, M., &quot;Benefit 
+                    of Acceleration Measurement in Velocity Estimation and Motion 
+                    Control,&quot; Preprints of the 3rd IFAC Symposium on Mechatronic 
+                    Systems, Sydney, Australia, pp. 223-228, September 2004. </div>
+                </li>
+              </ol>
+              <p align="justify">&nbsp;</p></TD>
+          </TR>
+          <TR> 
+            <TD colSpan=7 
+height=78>&nbsp;</TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    </CENTER></CENTER>
+<CENTER><IMG height=1 alt="" src="nsf_files/pixel.gif" width=500> <BR><FONT 
+face="arial, helvetica" color=#666666 size=1 font>MSC Lab. Homepage is created 
+and maintained by Soichi Ibaraki and Shashikanth Suryanarayanan.<BR>Please feel 
+free to send comments to us at <A 
+href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</A> 
+</CENTER>
+<P><BR></P></FONT></CENTER></BODY></HTML>

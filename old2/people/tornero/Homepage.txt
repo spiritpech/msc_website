@@ -1,0 +1,49 @@
+
+CURRICULUM VITAE
+
+Professor Josep Tornero was born in Valencia, Spain in 1956. He received his B.Sc. and his Ph.D. in Electrical Engineering at the Polytechnic University of Valencia in 1978 and 1985 respectively. He obtained the M.Sc. Degree in Systems and Control from the University of Manchester, Institute of Science and Technology in 1982. In 1986, he became Associate Professor and, since 1993, he has been  Full Professor of the Department of Systems Engineering and Control at the Computer Science Faculty in the Polytechnic University of Valencia.
+
+From 1981 to 1983, he was Visiting Researcher at the Control Systems Center of  the  University of Manchester, Institute of Science and Technology (UMIST). During 1990, he spent nine months as Visiting Researcher at the CIRSSE (NASA Center for Intelligent Robotics Systems for Space Exploration), Rensselaer Polytechnic Institute, Troy, New York, USA York during 1990 and Visiting Professor at the Department of Mechanical Engineering, University of California at Berkeley, USA during 1999.
+
+He is Director of the one-year post-graduate course, Master of Science in Computer Aided Design (CAD), Computer Aided Manufacturing (CAM) and Computer Integrated Manufacturing (CIM), in progress since 1988.
+
+In 1984, he was appointed Vice Director of the Computer Science Faculty, in addition to being Head of Studies from 1985 to 1989. From 1992 to 1993, he was appointed Vice Dean of the same Faculty. 
+
+In 1994, Professor Tornero was appointed the Secretary General (Registrar) of the Polytechnic University of Valencia, and from 1995 to 1996 Vice Chancellor of the same University.
+
+Professor Tornero is in the Department of Systems Engineering and Automation. The department has a staff of more than 30 full-time faculty members involved in the area of Automatic Control. The Department is carrying out research in a wide range of topics, such as intelligent control, fuzzy and neural control, expert systems, adaptive control, robotics and artificial vision.
+
+Professor Tornero is responsible for the Robotics Group, mainly concerned with the integration, programming, control, simulation and management of robot arms and auto-guided-vehicles (AGVs). He is particularly interested in three topics: collision detection and avoidance, automatic trajectory generation, and robot control.
+
+Professor Tornero is also doing research on multirate sampled data systems in the aspects of modeling, analysis and control design. At present, a research group in the department is involved in the modeling and design steps in multirate sampling structures. We are also working on multirate control of flexible structure robot. We have succesfully implemented, CC, MATLAB and SIMULINK packages in order to simulate the obtained results.
+
+ He has given lectures, seminars and presented many papers in control topics such as multi-rate sampled data systems, digital control and periodic systems, as well as robotics topics such as modeling, collision checking and avoidance, path planning, automatic generation of trajectories and control architectures.
+
+He has experience in teaching Digital Control, Computer Control and Robotic, in general.
+
+Member of IEEE, IFAC, DECUS and from 1993 to 1995 was elected member of the Spanish Robotic Association Board.
+
+He has participated in European research projects such as ESPRIT, BRITE, EUREKA and STRIDE, and in educational projects as ERAMUS, INTERCAMPUS, ALPHAS and TEMPUS.
+
+He is fluent in English, understands French, likes gardening, music, and regularly practices sports such as jogging, cycling and swimming.
+
+Professor Tornero is married with two children.
+
+
+
+Prof. Josep Tornero
+Dep. Ing. de Sistemas y Automatica  
+(Dept of Systems Engineering and Control)
+Universidad Politecnica de Valencia    
+P.O.Box: 22012. E-46071. Spain          
+e-mail: jtornero@isa.upv.es
+Tel. 34.963879578
+Fax. 34.963879579
+
+
+
+
+
+
+
+\departamento\curricul\Curri Ingles.doc

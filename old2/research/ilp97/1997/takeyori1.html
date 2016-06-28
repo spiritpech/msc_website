@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>MULTIRATE CONTROLLER FOR HARD DISK DRIVE</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=US-ASCII">
+<LINK REV="made" HREF="mailto:www@mechatro2.ME.Berkeley.EDU">
+</HEAD>
+<BODY>
+<H2 ALIGN=CENTER>MULTIRATE CONTROLLER FOR HARD DISK DRIVE</H2>
+
+<P ALIGN=CENTER>Takeyori Hara</P>
+
+<H3>PROJECT DESCRIPTION</H3>
+
+<P>Recent growth in the track density of hard disk drives has required
+higher controller bandwidth. On the other hand, the paradigm of servo
+format methods has shifted from dedicated servo to embedded servo even
+in high-end disk drives which have many (4 to 10) disks. This causes a
+tradeoff problem between sampling rate and date format efficiency. The
+multirate estimation-output controller is one approach to achieve
+higher control bandwidth under lower sampling frequency by updating
+the input signal at a higher frequency than the sampling frequency for
+the tracking error. The input signal is updated based on an estimated
+state between two sampling instances. The multi-rate ratio (MRR) is
+defined by (Input Update Frequency)/(Output Sampling Frequency).  The
+method has been successfully implemented in some commercial
+products. However, further analysis is required for future disk drives
+in particular for increased MRR implementations. This project will
+examine advantage and theoretical limit of multirate controller, and
+develop design and implementation method suitable for the actual
+drives.</P>
+
+<H3>METHODOLOGY</H3>
+
+<UL>
+  <LI>Implement multirate controller in a disk drive and compare with
+       high and low frequency single-rate controller.
+  <LI>Simulate frequency response of an ideal multirate controller and
+       compare with actual drive.
+  <LI>Evaluate the influence of time delay and develop a method to
+       minimize its influence.
+  <LI>Evaluate the influence of model error/perturbation.
+  <LI>Develop a auto tuning method for estimator coefficients to
+       minimize the model error.
+</UL>
+
+<H3>RESULTS TO DATE</H3>
+
+<UL>
+  <LI>Complete a hardware setup and tested a multirate control scheme
+       with MRR=4.
+  <LI>Compared with single-rate controller in magnitude of tracking
+       run-out and frequency response.
+  <LI>Simulated frequency response and compared with experimental
+       results.
+</UL>
+
+<H3>SPONSOR</H3>
+
+<P>Fujitsu Ltd.</P>
+
+<HR>
+&copy;1997
+<A HREF="http://mechatro2.ME.Berkeley.EDU/">M.Tomizuka Research Group</A>
+<ADDRESS>
+<A HREF="mailto:www@mechatro2.ME.Berkeley.EDU">www@mechatro2.ME.Berkeley.EDU</A>
+</ADDRESS>
+</BODY>
+</HTML>

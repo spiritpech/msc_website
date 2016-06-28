@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../style.css" media="all" />
+	<title>MSC Lab - Robotics</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../people/students.html">Students</a></li>
+                    <li><a href="../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../robotics.html">Robotics</a></li>
+                    <li><a href="../human.html">Human Mechatronics</a></li>
+                    <li><a href="../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../research.html">Research</a> &gt; <a href="../robotics.html">Robotics</a> &gt; <a href="robot_manip.html">Intelligent Control of Robot Manipulators</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3><a href="../../research.html">Research</a></h3>
+				<ul class="sidemenu">
+					<li><a href="#overview">Overview</a></li>
+                    <li><a href="#researchers">Researchers</a></li>
+                    <li><a href="#sponsor">Sponsor</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Intelligent Control of Robot Manipulators for Performance Enhancement</h2>
+		  <h3 id="overview">Overview</h3>
+		  <p>The design and production of high-performance servo-systems for robot   manipulators in a cost effective and timely manner is one of the   ultimate challenges to engineers today.   Three key performance criteria   for modern robot manipulators are 1) speed, 2) accuracy and   repeatability and 3) vibration suppression.  To respond to performance   requirements becoming more and more stringent, the mechatronics   approach, which gives considerations to both mechanical hardware,   sensing and actuation devices, and servo software, must be pursued.  The   proposed research aims to enhance the performance of robots with   indirect drive mechanism.  In indirect drive mechanisms, the actuator   (electric motor) and the link are connected via gears for speed   reduction and torque amplification. The harmonic gear is the most   popular means for this purpose; it is compact and may reduce the speed   at the order of 100 in one stage. This allows the use of high speed and   low torque motors resulting in various advantages such as lower costs   and lighter weights.</p>
+          <p>In the servo control of indirect drive robot joints, the current   practice in industry is based on loop-by-loop gain tuning. In other   words, a set of feedback gains is selected to specify the bandwidths of   three servo loops: current (acceleration) loop, velocity servo loop and   position servo loop. One advantage of this method is that tuning may be   performed sequentially from the inner acceleration loop to the outer   position loop. If we have good online measurements of state variables,   we can expect that the closed-loop system will achieve the desired   overall bandwidth with good robustness properties. However, the motor   side position is usually the only measurement in industrial applications   and other states must be estimated by observer or state estimator. The   tuning of control gains and the design of observers is further   complicated because the dynamics of robots depend on configuration.    Namely, a set of gains tuned for one configuration may not work well for   other configurations.  The performance may be further limited due to   parameter uncertainties and nonlinear effects such as friction,   hysteresi (or backlash) and nonlinear compliance.</p>
+          <p>We plan to overcome the above mentioned difficulties in the robot   servo systems by applying intelligent control and sensing methodologies.   More specifically, we will study the following six items over the next   twelve month period:  1) the use of robust control theory for systematic   tuning of control gains, 2) the application of 1) above for selected   configurations and establish optimal gain scheduling, 3) compensation of   friction forces, 4) modeling and identification of robots to study   oscillations and vibrations, 5) investigation on vibration   characteristics and suppression of vibrations, and 6) improved design of   mechanism and controllers for reduced vibration.  The study will   include analysis, simulation and experimentation.  Concrete results are   expected from the first three tasks.  The remaining three tasks are   related to a long term goal of establishing the design methodology for   mechanism and control algorithms to eliminate or reduce oscillations and   vibrations in trajectory following. (Prof. Masayoshi Tomizuka, 2005)</p>
+<p>&nbsp;</p>
+          <h3 id="researchers">Researchers</h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="40%"><p>Chen, Wenjie<br />
+                Reynoso, Pedro<br />
+                Chan, Michael<br />
+                Wang, Cong<br />
+                Lin, Chung-Yen<br />
+                <br />
+                Han, Chenghuei (graduated)<br />
+                Wang, Chun-Chih (graduated)<br />
+              Jeon, Soo (graduated)</p></td>
+              <td width="10%"><p><a href="mailto:wjchen@berkeley.edu" target="_new">Email</a><br />
+                <a href="mailto:preynoso@berkeley.edu" target="_new">Email</a><br />
+                <a href="mailto:michael.l.g.chan@berkeley.edu" target="_new">Email</a><br />
+                <a href="mailto:wangcong@berkeley.edu" target="_new">Email</a><br />
+                <a href="mailto:chung_yen@berkeley.edu" target="_new">Email</a><br />
+              <br />
+              <a href="mailto:norahann@berkeley.edu" target="_new">Email</a><br />
+              <a href="mailto:ccwang@me.berkeley.edu" target="_new">Email</a><br />
+              <a href="mailto:soojeon@mecheng1.uwaterloo.ca" target="_new">Email</a> </p></td>
+              <td width="50%" valign="top"><p><a href="http://msc.berkeley.edu/wjchen/" target="_new">Homepage</a></p></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <h3 id="sponsor">Sponsor</h3>
+          <p><a href="http://www.fanucrobotics.com/" target="_new">Fanuc, Ltd.</a></p>
+      </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

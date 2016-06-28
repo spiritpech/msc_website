@@ -1,0 +1,272 @@
+/*
+Original design: Variant Multi (v1.0 - Dec 15th, 2010) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/variant-multi/
+
+All modifications by Raechel Tan.
+*/
+
+*{margin:0;padding:0;}
+body{
+	color:#282828;
+	font-family:'PT Sans', sans-serif;
+	font-size:1em;
+}
+p{
+	line-height:1.7em;
+	margin-bottom:15px;
+}
+p.indent{
+	margin-left:50px;
+}
+a{
+	color:#154DB1;
+	text-decoration:none;
+}
+a:hover{
+	color:#154DB1;
+	text-decoration:underline;
+}
+h1{
+	color:#282828;
+	font-family:'Brawler',serif;
+	font-size:3em;
+	line-height:3em;
+}
+h2{
+	color:#282828;
+	font-family:'Brawler',serif;
+	font-size:2em;
+	line-height:1.5em;
+}
+h3{
+	color:#282828;
+	font-family:'Brawler',serif;
+	font-size:1.2em;
+	line-height:1.7em;
+}
+h4{
+	color:#282828;
+	font-family:'PT Sans', sans-serif;
+	font-size:1em;
+	font-weight:bold;
+	line-height:1.7em;
+}
+ul,ol,dl{margin:0 0 20px 20px; padding:0;}
+li{padding-bottom:5px;}
+li.papers{padding-bottom:20px;}
+ol.listparagraph{line-height:1.7em;}
+ol.listparagraphletters{line-height:1.7em; list-style-type:lower-alpha;}
+
+table.researchers{
+	border-collapse:separate;
+	border-spacing:0px 10px;
+}
+
+#containerfull,#container980,#container760,#container600{
+	margin:0 auto;
+	padding:0;
+	overflow:hidden;
+	border-left:1px solid #CCC;
+	border-right:1px solid #CCC;
+	background-color:#FFFFFF;
+}
+
+#containerfull{width:100%;border:0;}
+#container980{width:980px;}
+#container760{width:760px;}
+#container600{width:600px;}
+
+#header{
+	background-image:url(images/headerbg.jpg);
+	height:130px;
+	margin:auto;
+	padding:30px 0 0 0;
+	text-align:right;
+}
+
+#menu{
+	background-image:url(images/menubg.jpg);
+	height:40px;
+}
+#menu>ul{
+	list-style:none;
+	text-align:right;
+	margin:0;
+	padding:0;
+}
+#menu>ul>li{
+	background-color:transparent;
+	display:inline;
+	float:left;
+	position:relative;
+	margin:0;
+	padding:10px 0 10px 38px;
+}
+#menu>ul>li>a{
+	color:#FFFFFF;
+	display:block;
+	font-size:1em;
+	text-transform:uppercase;
+	text-decoration:none;
+	letter-spacing:2px;
+}
+#menu>ul>li>a.current{
+	color:#DBA539;
+}
+#menu>ul>li:hover>a{
+	color:#DBA539;
+}
+#menu>ul>li>ul{
+	background-color:#282828;
+	z-index:100;
+	list-style:none;
+	text-align:left;
+	display:block;
+	position:absolute;
+	top:40px;
+	left:-100em;
+}
+#menu>ul>li:hover>ul{
+	left:7px;
+}
+#menu>ul>li>ul>li>a{
+	color:#FFFFFF;
+	display:block;
+	padding:0 12px;
+	line-height:1.7em;
+	min-width:7em;
+	white-space:nowrap;
+}
+#menu>ul>li>ul>li:hover{
+	background-color:#DBA539;
+}
+#menu>ul>li>ul>li:hover>a{
+	color:#282828;
+	text-decoration:none;
+}
+
+#main{
+	clear:both;
+	margin:0;
+	padding:8px 25px 5px;
+	border-top:3px solid #CCC;
+}
+
+#content{
+	float:left;
+	width:100%;
+	margin:0 0 0 0;
+	clear:both;
+}
+
+#sidebar{
+	float:right;
+	width:25%;
+}
+#sidebar .blurb{
+	margin:0 0 25px 25px;
+	border:1px solid #282828;
+	background-color:#EBEBEB;
+}
+#sidebar .sidebarbox{
+	margin:0 0 25px 25px;
+	border:1px solid #282828;
+}
+#sidebar p{margin:10px 0 10px 10px;}
+#sidebar ul{
+	list-style:none;
+	margin:10px 0 10px 10px;
+	padding:0;
+}
+#sidebar ul.sidemenu {margin:0;}
+#sidebar ul.sidemenu li{
+	display:inline;
+	padding:0;
+	margin:0;
+}
+#sidebar ul.sidemenu li a{
+	display:block;
+	padding:7px 5px 6px 10px;
+	text-decoration:none;
+	border-bottom:1px solid #CCC;
+}
+#sidebar ul.sidemenu li a:hover{
+	background-color:#EBEBEB;
+	color:#282828;
+	border-bottom:1px solid #CCC;
+}
+#sidebar ul.sidemenu ul{
+	margin:0;
+	padding:0;
+	font-size:0.9em;
+	border-bottom:1px solid #ccc;
+}
+#sidebar ul.sidemenu ul li a{
+	padding:5px 5px 5px 25px;
+	border:0;
+	font-weight:400;
+}
+#sidebar ul.sidemenu ul li a:hover{border:0;}
+#sidebar ul li a:hover{color:#EBEBEB;}
+#sidebar ul li a.current{
+	background-color:#EBEBEB;
+	color:#282828;
+}
+#sidebar h3{
+	background-color:#282828;
+	color:#fff;
+	margin:0 0 0 0;
+	padding:3px;
+}
+
+#sidebar h3 a{
+	background-color:#282828;
+	color:#fff;
+	margin:0 0 0 0;
+	padding:3px;
+}
+
+#navtree{
+	clear:both;
+	height:1.2em;
+	margin-bottom:10px;
+}
+#navtree p{
+	font-size:0.7em;
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+#credits{
+	background-color:#282828;
+	color:#CCC;
+	padding:10px 15px;
+}
+#credits p{
+	text-align:center;
+	font-size:0.7em;
+	margin:0;
+	padding:0;
+	line-height:1em;
+}
+#credits a{
+	color:#8AB4DB;
+}
+#credits a:hover{
+	color:#8AB4DB;
+}
+
+.left{
+	float:left;
+	width:49%;
+}
+.right{
+	float:right;
+	width:48%;
+}
+.clear{
+	clear:both;
+	visibility:hidden;
+}

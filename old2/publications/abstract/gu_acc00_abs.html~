@@ -1,0 +1,88 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Soichi Ibaraki">
+   <title>Abstract: Yuping Gu</title>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../../mschomepage.css">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+<FONT SIZE=2 FACE="arial, helvetica">
+&nbsp;
+<center><b><tt><font color="#999999">
+Mechanical Systems Control Laboratory Homepage</font></tt></b><br>
+<img SRC="pixel.gif" ALT="" height=1 width=500></center><br>
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+
+<caption><center><font face="arial, helvetica" size=-1>
+Papers<br></font></center>
+<center><font face="arial, helvetica" font color="#999999">
+<a href="../../index.html" class="base">Home</a> | 
+<a href="../../people/people.html" class="base">People</a> | 
+<a href="../../research.html" class="base">Research</a> | 
+<a href="../publications.html" class="base">Publications</a> | 
+<a href="../../resources/resources.html" class="base">Resources</a> | 
+<a href="../../misc/misc.html" class="base">Misc</a><br>
+</font></center>
+
+<p><br>
+&nbsp;<br>
+
+<tr>
+<center>
+<td width="25"></td>
+<td WIDTH="400">
+
+<center>
+<FONT FACE="helvetica,arial" SIZE="2" color="#000000"><b>
+Multirate Digital Redesign of Continuous Time Controllers Based on Closed-loop Performance</b><br>
+</b></font>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+Yuping Gu and Masayoshi Tomizuka<br>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE="2" color="#000498"><b>
+Abstract<br></b></font>
+&nbsp;<br>
+</center>
+
+<div align=left><left>
+<FONT FACE="helvetica,arial" SIZE="2">
+This paper presents a multirate H1 optimal digital redesign of continuous time controllers. It focuses on the performance of the closed loop system under digital control. The resulting approximation criterion is a measure for stability of the control system. The discrete time controller is obtained through minimization of this criterion, which can be performed with standard software used for H1 controller design. A hard disk drive servo example is given to show the proposed digital redesign method.
+<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE="2" color="#000498"><b>Keywords:</b></font>
+<FONT FACE="helvetica,arial" SIZE="2">
+digital redesign, multirate control, digital control, H1 control
+</left></div>
+
+&nbsp;<br>
+&nbsp;<br>
+
+</td>
+
+<td width="25"></td>
+</center>
+</tr>
+
+
+</caption>
+</table></center>
+
+<center><img SRC="pixel.gif" ALT="" height=1 width=500>
+<br><font face="arial, helvetica" font color="#666666" size=1>MSC
+Lab. Homepage is created and maintained by Soichi Ibaraki and Shashikanth
+Suryanarayanan.<br>
+Please feel free to send comments to us at <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+</center>
+
+<p><br>
+</body>
+</html>

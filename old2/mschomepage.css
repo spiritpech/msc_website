@@ -1,0 +1,8 @@
+A {color:#3366cc;}
+A:visited {color:#213F7D;}
+A.base {font-size:x-small;color:#999999;text-decoration:none;}
+A.base:hover {color:#3366cc;}
+A.base:active {color:#999999;}
+A.base:visited {color:#999999;}
+A.base:visited:hover {color:#3366cc;}
+CODE {font-family: 'monotype.com', courier, monospace; font-style: normal}

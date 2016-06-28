@@ -1,0 +1,76 @@
+ROBUST STEERING AND DIFFERENTIAL BRAKING CONTROL FOR AUTOMATED 
+GUIDANCE OF TRACTOR­SEMITRAILER COMBINATION VEHICLES 
+Jeng­Yu Wang  
+Department of Mechanical Engineering 
+University of California at Berkeley 
+Berkeley, California 94720­1740 
+Email: jengyu@newton.berkeley.edu 
+Masayoshi Tomizuka 
+Department of Mechanical Engineering 
+University of California at Berkeley 
+Berkeley, California 94720­1740 
+Email: tomizuka@me.berkeley.edu 
+ABSTRACT 
+In this paper, a robust linear steering and differential brak­ 
+ing controller is designed for the automated guidance of tractor­ 
+semitrailer combination vehicles using the H¥ loop shaping 
+methodology. Only the articulation angle, the lateral errors at 
+the front and rear axle of the tractor, and the angular velocity of 
+the rear wheel of the trailer or the brake line pressure signals, are 
+assumed to be available for the synthesis of control inputs. The 
+controller is designed to ensure robustness to model uncertainties 
+due to the variations of vehicle longitudinal speeds, road adhe­ 
+sion coefficients and trailer cargo loads. Closed­loop simulation 
+results show the robustness of the proposed controller and the re­ 
+sulting smaller lateral error at the trailer end when compared to 
+the controller using the steering input only. 
+1 INTRODUCTION 
+Automated guidance of heavy vehicles has been an active 
+research topic on automated highway systems for the past few 
+years. Automated guidance will reduce the operating cost sub­ 
+stantially and have a significant impact on the overall safety of 
+highways. Analyses of the dynamic system response reveal that 
+varying vehicle longitudinal speed, tire cornering force and cargo 
+loads dramatically change the system dynamics (from the steer­ 
+ing input to the lateral acceleration) in different frequency ranges 
+(Wand and Tomizuka, 1998). Robustness to these model uncer­ 
+tainties is considered an important issue in the design of lateral 
+controllers. Some robust controllers have been shown to be ef­ 
+fective (see for example, Wand and Tomizuka (1999), Mammar 
+(1999), and Hingwe et al. (2000)). Experimental validations 
+can be found in Wand and Tomizuka (1999) and Hingwe et al. 
+ Address all correspondence to this author. 
+(2000). In the previous works, the steering angle of the front 
+wheel of the tractor was the only control input. Another possible 
+control input is the differential braking force to the rear wheels 
+of the trailer, which may generate a torque for directly control­ 
+ling the yaw motion of the trailer. It may effectively deal with the 
+yaw instability of the trailer such as fish­tailing. Coordinated s­ 
+teering and braking control for the heavy vehicles in the automat­ 
+ed highway system was first introduced in Chen and Tomizuka 
+(1995), where the input­output linearization and back­stepping 
+control methodologies were applied. In this approach, the model 
+uncertainties are not directly considered. Furthermore, all ve­ 
+hicle state variables are required to implement the controller in 
+Chen and Tomizuka (1995), which may make the approach im­ 
+practical depending on the availability of sensors and presence 
+of measurement noises. 
+This paper extends the work in Wand and Tomizuka (1999) 
+to take advantage of the two control inputs in the H¥ loop­ 
+shaping control design. Only the articulation angle, the lateral 
+errors of the front and rear axle of the tractor, and the angular 
+velocity of the rear wheel of the trailer or the brake line pressure 
+signals, are assumed to be available for the synthesis of control 
+inputs. In actual implementation, the lateral errors can be ob­ 
+tained from two magnetometers, each located at the front and 
+rear ends of the tractor. The articulation angle can be obtained 
+from a string gauge on the fifth wheel. Another advantage of the 
+proposed H¥ loop­shaping controller is that it has an observer 
+structure with gains that can be tuned for different longitudinal 
+vehicle speeds, making it suitable for gain­scheduling (Wang and 
+Tomizuka, 2000). Simulation results show that the lateral error 
+of the trailer rear end by the proposed controller is smaller than 
+the one by steering control only. 
+The remainder of the paper is organized as follows. In Sec­ 
+tion 2, a linearized vehicle control model is presented with dis­ 
+

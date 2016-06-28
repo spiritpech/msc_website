@@ -1,0 +1,359 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+   <meta name="Author" content="Soichi Ibaraki">
+   <title>Induction Motor Control</title>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../../mschomepage.css">
+</head>
+
+<SCRIPT LANGUAGE = "Javascript">
+<!-- Hide this script.
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+   if (browserVer >= 3) version = "n3";
+   else version = "n2"
+   if (version == "n3") {
+   navbar1on = new Image();
+   navbar1on.src = "../bot_research_on.jpg";
+   navbar1off = new Image();
+   navbar1off.src = "../bot_research.jpg";
+   navbar2on = new Image();
+   navbar2on.src = "../bot_vehicle_on.jpg";
+   navbar2off = new Image();
+   navbar2off.src = "../bot_vehicle0.jpg";
+   navbar3on = new Image();
+   navbar3on.src = "../bot_disk_on.jpg";
+   navbar3off = new Image();
+   navbar3off.src = "../bot_disk0.jpg";
+   navbar4on = new Image();
+   navbar4on.src = "../bot_motion_on.jpg";
+   navbar4off = new Image();
+   navbar4off.src = "../bot_motion0.jpg";
+   navbar5on = new Image();
+   navbar5on.src = "../bot_machine_on.jpg";
+   navbar5off = new Image();
+   navbar5off.src = "../bot_machine0.jpg";
+   navbar6on = new Image();
+   navbar6on.src = "../bot_copy_on.jpg";
+   navbar6off = new Image();
+   navbar6off.src = "../bot_copy02.jpg";
+   }
+function img_act(imgName)  {
+   if (version == "n3")   {
+   imgOn = eval(imgName + "on.src");
+   document [imgName].src = imgOn;
+   }
+}
+function img_inact(imgName)   {
+   if (version == "n3") {
+   imgOff = eval(imgName + "off.src");
+   document [imgName].src = imgOff;
+   }
+}
+// End the hiding here. -->
+</SCRIPT>
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+<FONT SIZE=2 FACE="arial, helvetica">
+&nbsp;
+<center><b><tt><font color="#999999">
+Mechanical Systems Control Laboratory Homepage</font></tt></b><br>
+<img SRC="pixel.gif" ALT="" height=1 width=500></center><br>
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+
+<tr><td>
+<caption><center>
+
+<a href="soichi.html" class="base"><font color="#000000" size="2" FACE="helvetica,arial">Intelligent Control of Robot Manipulators for Performance Enhancement</font></a><font face="arial, helvetica" size=-1><br></font></center>
+<center><font face="arial, helvetica" font color="#999999">
+<a href="../../index.html" class="base">Home</a> | 
+<a href="../../people/people.html" class="base">People</a> | 
+<a href="../research.html" class="base">Research</a> | 
+<a href="../../publications/publications.html" class="base">Publications</a> | 
+<a href="../../resources/resources.html" class="base">Resources</a> | 
+<a href="../../misc/misc.html" class="base">Misc</a><br>
+</font></center>
+
+<p><br>
+<br>&nbsp;
+<center><table CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+
+<tr>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="128">
+<table ALIGN=LEFT CELLSPACING=0 CELLPADDING=0 WIDTH="128" >
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+<td><a href="../research.html" ONMOUSEOVER="window.status=
+'Back to Research page.';img_act('navbar1'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar1'); return true"><img SRC="../bot_research.jpg" NAME="navbar1" BORDER=0 height=22 width=128></a></td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+<td><a href="../vehicle/vehicle.html" ONMOUSEOVER="window.status=
+'Advanced Vehicle Control.';img_act('navbar2'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar2'); return true"><img SRC="../bot_vehicle0.jpg" NAME="navbar2" BORDER=0 height=22 width=128></a></td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+<td><a href="../disk/disk.html" ONMOUSEOVER="window.status=
+'Disk Drive Control.';img_act('navbar3'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar3'); return true"><img SRC="../bot_disk0.jpg" NAME="navbar3" BORDER=0 height=22 width=128></a></td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+<td><img SRC="../bot_motion_on.jpg" BORDER=0 height=22 width=128></a></td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+<td><a href="../machine/machine.html" ONMOUSEOVER="window.status=
+'Intelligent Machining.';img_act('navbar5'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar5'); return true"><img SRC="../bot_machine0.jpg" NAME="navbar5" BORDER=0 height=22 width=128></a></td>
+</tr>
+
+<tr ALIGN=LEFT VALIGN=TOP BGCOLOR="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" height="24" width="128">
+<td><a href="../copy/copy.html" ONMOUSEOVER="window.status=
+'Paper Path Control of Xerox Machines.';img_act('navbar6'); return true" ONMOUSEOUT="window.status=''; img_inact('navbar6'); return true"><img SRC="../bot_copy0.jpg" NAME="navbar6" BORDER=0 height=22 width=128></a></td>
+</tr>
+</table>
+</td>
+
+<td WIDTH="2"></td>
+
+
+
+<td VALIGN=TOP WIDTH="483">
+
+
+
+<b>
+
+
+
+<FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">Motion and Torque Control</font></b><br>
+
+<a href="motion.html" class="base">
+<FONT SIZE=2 FACE="arial, helvetica">
+<font size="1">
+<FONT FACE="helvetica,arial">
+Overview</font></font></font></a><FONT FACE="helvetica,arial"><font size="1", color="#000000"><br>
+
+</font>
+
+<font size="1">
+
+<font color="#000000" size="1">Intelligent Control of Robot Manipulators for Performance Enhancement</font><br>
+
+</font><a class="base" style="font-size: 8pt" href="nsf_proj.html"><font size="1">
+
+Sensing Rich Drive Trains for Modern Mechatronic Systems</font></a><font size="2"><br>
+
+</font>
+
+<a href="satrya.html" class="base"><font size="1">
+
+Iterative Learning Control for Precision Linear Motion<br>
+
+</font></a>
+
+</font>
+
+</td>
+
+
+
+</tr>
+
+<tr>
+<td colspan=3 width="500">
+&nbsp;<br>
+<br>
+&nbsp;<br>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+bordercolordark="#FFFFFF" valign="top" width="128">
+<center>
+<FONT SIZE=2 FACE="arial, helvetica">
+
+<img SRC="../ico_robo.jpg" ALT="Overview" height=90 width=120></font>
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+Overview</font></b></center>
+</td>
+
+<td WIDTH="2"></td>
+
+<td VALIGN=TOP WIDTH="483">
+<b>
+
+<a href="soichi.html" class="base"><font color="#000000" FACE="helvetica,arial" size="2">Intelligent Control of Robot Manipulators for Performance Enhancement</font></a><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">. </font></b></font><p>
+<FONT SIZE=2 FACE="Arial">
+<span style="color: black"><font size="2">The design and production of high-performance servo-systems for robot manipulators in a cost effective and timely manner is one of the ultimate challenges to engineers today.&nbsp;&nbsp; Three key performance criteria for modern robot manipulators are 1) speed, 2) accuracy and repeatability and 3) vibration suppression. &nbsp;To respond to performance requirements becoming more and more stringent, the mechatronics approach, which gives considerations to both mechanical hardware, sensing and actuation devices, and servo software, must be pursued.&nbsp; The proposed research aims to enhance the performance of robots with indirect drive mechanism.&nbsp; In indirect drive mechanisms, the actuator (electric motor) and the link are connected via gears for speed reduction and torque amplification. The harmonic gear is the most popular means for this purpose; it is compact and may reduce the speed at the order of 100 in one stage. This allows the use of high speed and low torque motors resulting in various advantages such as lower costs and lighter weights.</font></span></p><p class="MsoNormal" style="text-align: left"><span style="color: black"><font size="2">In the servo control of indirect drive robot joints, the current practice in industry is based on loop-by-loop gain tuning. In other words, a set of feedback gains is selected to specify the bandwidths of three servo loops: current (acceleration) loop, velocity servo loop and position servo loop. One advantage of this method is that tuning may be performed sequentially from the inner acceleration loop to the outer position loop. If we have good online measurements of state variables, we can expect that the closed-loop system will achieve the desired overall bandwidth with good robustness properties. However, the motor side position is usually the only measurement in industrial applications and other states must be estimated by observer or state estimator. The tuning of control gains and the design of observers is further complicated because the dynamics of robots depend on configuration.&nbsp; Namely, a set of gains tuned for one configuration may not work well for other configurations.&nbsp; The performance may be further limited due to parameter uncertainties and nonlinear effects such as friction, hysteresi (or backlash) and nonlinear compliance.</font></span></p><p class="MsoNormal" style="text-align: left"></font>
+<FONT SIZE=2 FACE="arial, helvetica">
+<span style="font-family: Arial; color: black"><font size="2">We plan to overcome the above mentioned difficulties in the robot servo systems by applying intelligent control and sensing methodologies. More specifically, we will study the following six items over the next twelve month period:&nbsp; 1) the use of robust control theory for systematic tuning of control gains, 2) the application of 1) above for selected configurations and establish optimal gain scheduling, 3) compensation of friction forces, 4) modeling and identification of robots to study oscillations and vibrations, 5) investigation on vibration characteristics and suppression of vibrations, and 6) improved design of mechanism and controllers for reduced vibration.&nbsp; The study will include analysis, simulation and experimentation.&nbsp; Concrete results are expected from the first three tasks.&nbsp; The remaining three tasks are related to a long term goal of establishing the design methodology for mechanism and control algorithms to eliminate or reduce oscillations and vibrations in trajectory following.</font></span><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+(Prof. Masayoshi Tomizuka, 2005)<font></td>
+
+<tr>
+<td colspan=3 width="500">
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+</td>
+</tr>
+
+<tr>
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+bordercolordark="#FFFFFF" valign="top" width="128">
+<center>
+<FONT SIZE=2 FACE="arial, helvetica">
+
+<img SRC="../../publications/ico_erwin1.jpg" ALT="More ..." height=90 width=120></font>
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+Researchers</font></b></center>
+</td>
+
+<td WIDTH="2"></td>
+
+<td VALIGN=TOP WIDTH="483">
+
+<p style="margin-top: 0; margin-bottom: 0">
+
+<FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+Chun-Chih Wang</font><br>
+<FONT SIZE=2 FACE="arial, helvetica">
+
+<font color="#999999" face="helvetica,arial">homepage</font>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+<font color="#999999">
+
+ |</font>
+
+
+
+<font color="#3366CC"> <a href="mailto:ccwang@mechatro2.ME.Berkeley.EDU">e-mail</a>&nbsp;</font><font color="#C0C0C0">|</font> </font></font>
+<font color="#999999" face="arial, helvetica">
+<br></font>
+</font>
+</p></font><p style="margin-top: 0; margin-bottom: 0"><font face="helvetica,arial" size="2">Soo Jeon</font><font SIZE="2" FACE="arial, helvetica">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="helvetica,arial" size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</font><font FACE="helvetica,arial" SIZE="2"><br>&nbsp;</font><font color="#999999" face="helvetica,arial">homepage</font><font FACE="helvetica,arial" SIZE="2"><font color="#999999">| </font><a href="mailto:soojeon@berkeley.edu"><font color="#3366CC"><u>e-mail</u></font></a><font color="#3366CC">&nbsp;</font><font color="#C0C0C0">|</font>&nbsp;</font></font></p><p>
+<FONT SIZE=2 FACE="helvetica,arial">
+Kiyonori Inaba</font><FONT SIZE=2 FACE="arial, helvetica"><br>
+<font color="#999999" face="helvetica,arial">homepage</font>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+<font color="#999999">
+
+ |
+
+</font>
+
+<a href="mailto:KIYONORI@UA.AIRNET.NE.JP"><font color="#3366CC"><u>e-mail</u></font></a>
+
+<font color="#C0C0C0"> |</font>
+
+
+
+</font></font></p><p style="margin-top: 0; margin-bottom: 0">
+<FONT SIZE=2 FACE="helvetica,arial">
+Cheng-Hui Han</font><FONT SIZE=2 FACE="arial, helvetica"><br>
+<font color="#999999" face="helvetica,arial">homepage</font>
+
+<FONT FACE="helvetica,arial" SIZE="2">
+
+<font color="#999999">
+
+ |
+
+</font>
+
+<font color="#3366CC"> <a href="mailto:norahann@calmail.berkeley.edu"><u>e-mail</u></a>&nbsp;</font><font color="#C0C0C0">|</font>
+
+
+
+
+</font>
+
+</td>
+
+</tr>
+
+<tr>
+<td colspan=3 width="500">
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+</td>
+</tr>
+
+<tr>
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+bordercolordark="#FFFFFF" valign="top" width="128">
+<center>
+<img SRC="ico_motor3.jpg" ALT="More ..." height=90 width=120>
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+More...</font></b></center>
+</td>
+
+<td VALIGN=TOP WIDTH="2">
+
+</td>
+
+<td VALIGN=TOP WIDTH="483">
+
+&nbsp;</td>
+</tr>
+
+<tr>
+<td colspan=3 width="500">
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+</td>
+</tr>
+
+<tr>
+
+<td bgcolor="#FFFFFF" bordercolor="#FFFFFF" bordercolorlight="#FFFFFF" 
+bordercolordark="#FFFFFF" valign="top" width="128">
+<center>
+<img SRC="../ico_earth.jpg" ALT="Related Links" height=90 width=120>
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+Related Links</font></b></center>
+</td>
+
+<td VALIGN=TOP WIDTH="46">
+
+&nbsp;<td VALIGN=TOP WIDTH="326">
+
+<FONT SIZE=2 FACE="arial, helvetica">
+<a href="http://www.fanucrobotics.com/">
+<b>
+<FONT FACE="helvetica,arial" SIZE="2">Fanuc, Ltd.</font></b></a><FONT FACE="helvetica,arial" SIZE="2">
+</font>
+
+<tr>
+<td colspan=3 width="500">
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+</td>
+</tr>
+
+
+</table></center>
+</caption>
+
+</td>
+</tr>
+</table></center>
+
+<center><img SRC="pixel.gif" ALT="" height=1 width=500>
+<br><font face="arial, helvetica" font color="#666666" size=1>Please feel free to send comments to us at <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+</center>
+
+<p><br>
+</body>
+</html>

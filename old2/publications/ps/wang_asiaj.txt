@@ -1,0 +1,26 @@
+DYNAMIC ANALYSES AND ROBUST STEERING CONTROLLER 
+DESIGN FOR AUTOMATED LANE GUIDANCE OF HEAVY-DUTY 
+VEHICLES  
+Jeng-Yu Wang and Masayoshi Tomizuka 
+Department of Mechanical Engineering, 
+University of California at Berkeley, Berkeley, CA 94720-1740 
+jengyu@newton.berkeley.edu tomizuka@me.berkeley.edu 
+Abstract 
+In this paper, we present various linear analyses of the linearized lateral dynamics of heavy-duty 
+vehicles (HDVs) (tractor-semitrailer type), which include time domain, frequency domain and pole/zero 
+analyses. These analyses are conducted to examine the vehicle response to the steering input subject to 
+variations of speed, road adhesion coe∆cient, cargo load in the trailer, and look-ahead distance for the 
+lateral deviation sensor. These parameters (uncertainties) have signicant inuence on vehicle dynamics. 
+It has been shown that redening the look-ahead lateral error as the controlled output has a favorable 
+impact on the lateral control problem. Based on these analyses, a robust steering controller using H1 
+loop-shaping procedure is designed for a tractor semitrailer combination to follow the road center line 
+on both curved and straight highway sections. The proposed controller ensures the robust performance 
+under model uncertainties which include varying vehicle longitudinal speed, road adhesion coe∆cient, 
+and cargo load in the trailer. The performance of the designed controller is evaluated by simulations and 
+validated by experiments. 
+Keywords:Automated highway system, automatic steering control, lateral control, heavy-duty vehicle, 
+tractor-semitrailer vehicle, H1 loop-shaping design procedure 
+ This work has been performed as a part of the California PATH program supported by the California Dept. of Transporta- 
+tion. 
+1 
+

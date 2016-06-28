@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="Description" content="MSC Lab. Homepage" />
+	<meta name="Keywords" content="mechanical, control, systems" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Author" content="Wenjie Chen" />
+    <link rel="icon" href="../../mscicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../../images/style.css" />
+	<title>Mechanical Systems Control Laboratory, Robot Manipulators</title>
+</head>
+<body>
+	<div id="content">
+		<div class="header">
+				<h1><a name="Top"></a><a href="../../index.html"><img src="../../images/msclogo_2dc.jpg" alt="" border="none" /><a href="../../index.html">Mechanical Systems Control Laboratory</a></h1>
+		</div>
+
+		<div class="subheader">
+			<div class="subheader_right">
+				<a href="../../index.html">Home</a>
+				<a href="../../people/people.html">People</a>
+				<a href="../../research/research.html">Research</a>
+				<a href="../../publications/publications.html">Publication</a>
+				<a href="../../resources/resources.html">Resources</a>
+				<a href="../../misc/misc.html">Miscellaneous</a>
+				<a href="../../contact/contact.html">Contact Us</a>
+			</div>
+			<div class="subheader_left">
+				<a href="http://www.me.berkeley.edu/">ME Department</a>
+			</div>
+		</div>
+  		
+		<div class="left">
+			<h2 align="left">Current Projects</h2>
+			<ul>
+				<li><h3><a href="../vehicle/vehicle.html">Advanced Vehicle Control Systems</a></h3></li>
+				<li><h3><a href="../disk/disk.html">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../human/human.html">Human Mechatronics</a></h3></li>
+				<li><h3><a href="../precision/precision.html">Precision Motion Control</a></h3></li>
+				<li><div class="left_currentpage"><h3><a href="../robot/robot.html">Robotics</a></h3></div></li>
+			</ul>
+			<h2 align="left">Past Projects</h2>
+			<ul>
+				<li><h3><a href="../../old2/research/vehicle/vehicle.html" target="new">Advanced Vehicle Control Systems</a></h3></li>
+				<li><h3><a href="../../old2/research/copy/copy.html" target="new">Copier Paperpath Control</a></h3></li>
+				<li><h3><a href="../../old2/research/disk/disk.html" target="new">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../../old2/research/machine/machine.html" target="new">Intelligent Machining</a></h3></li>
+				<li><h3><a href="../../old2/research/ilp97/index.html" target="new">ILP Summary '96-'97</a></h3></li>
+			</ul>		
+			<div class="line"></div>
+			<p><center><font size="1">Last updated on August 07, 2010</font></center></p>						
+		</div>
+			
+		<div class="right">
+
+			<h4 style="padding:5px 0 20px 0; margin:0;">
+				<img src="../../images/comment.gif" alt="" /><a href="robot.html">Robotics</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="fanuc.html">Intelligent Control of Robot Manipulators for Performance Enhancement</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="nsf_proj.html">Sensing Rich Drive Trains for Modern Mechatronic Systems</a>
+			</h4>
+			<h2>Intelligent Control of Robot Manipulators for Performance Enhancement</h2>
+			<h4 class="bottomline">
+				<img src="../../images/comment.gif" alt="" /><a href="#Overview">Overview</a> 
+				| <img src="../../images/comment.gif" alt="" /><a href="#Researchers">Researchers</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Sponsor">Sponsor</a>
+			</h4>
+			
+		</div>
+			
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="../ico_robo.jpg" ALT="Robotics"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Overview"></a>Overview</h2>
+			</div>
+			
+			<br><br><br>
+			<p>The design and production of high-performance servo-systems for robot manipulators in a cost effective and timely manner is one of the ultimate challenges to engineers today.   Three key performance criteria for modern robot manipulators are 1) speed, 2) accuracy and repeatability and 3) vibration suppression.  To respond to performance requirements becoming more and more stringent, the mechatronics approach, which gives considerations to both mechanical hardware, sensing and actuation devices, and servo software, must be pursued.  The proposed research aims to enhance the performance of robots with indirect drive mechanism.  In indirect drive mechanisms, the actuator (electric motor) and the link are connected via gears for speed reduction and torque amplification. The harmonic gear is the most popular means for this purpose; it is compact and may reduce the speed at the order of 100 in one stage. This allows the use of high speed and low torque motors resulting in various advantages such as lower costs and lighter weights.</p>
+			<p>In the servo control of indirect drive robot joints, the current practice in industry is based on loop-by-loop gain tuning. In other words, a set of feedback gains is selected to specify the bandwidths of three servo loops: current (acceleration) loop, velocity servo loop and position servo loop. One advantage of this method is that tuning may be performed sequentially from the inner acceleration loop to the outer position loop. If we have good online measurements of state variables, we can expect that the closed-loop system will achieve the desired overall bandwidth with good robustness properties. However, the motor side position is usually the only measurement in industrial applications and other states must be estimated by observer or state estimator. The tuning of control gains and the design of observers is further complicated because the dynamics of robots depend on configuration.  Namely, a set of gains tuned for one configuration may not work well for other configurations.  The performance may be further limited due to parameter uncertainties and nonlinear effects such as friction, hysteresi (or backlash) and nonlinear compliance.</p>
+			<p>We plan to overcome the above mentioned difficulties in the robot servo systems by applying intelligent control and sensing methodologies. More specifically, we will study the following six items over the next twelve month period:  1) the use of robust control theory for systematic tuning of control gains, 2) the application of 1) above for selected configurations and establish optimal gain scheduling, 3) compensation of friction forces, 4) modeling and identification of robots to study oscillations and vibrations, 5) investigation on vibration characteristics and suppression of vibrations, and 6) improved design of mechanism and controllers for reduced vibration.  The study will include analysis, simulation and experimentation.  Concrete results are expected from the first three tasks.  The remaining three tasks are related to a long term goal of establishing the design methodology for mechanism and control algorithms to eliminate or reduce oscillations and vibrations in trajectory following. (Prof. Masayoshi Tomizuka, 2005)</p>
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="researcher.jpg" ALT="Researchers"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Researchers"></a>Researchers</h2>
+				<ul>
+					<li><p><b>Chen, Wenjie</b> &nbsp; | Homepage | <a href="mailto:wjchen@berkeley.edu">Email</a></p></li>
+					<li><p><b>Reynoso, Pedro</b> &nbsp; | Homepage | <a href="mailto:preynoso@berkeley.edu">Email</a></p></li>
+					<li><p><b>Chan, Michael. L. G.</b> &nbsp; | Homepage | <a href="mailto:michael.l.g.chan@berkeley.edu">Email</a></p></li>
+					<li><p><b>Wang, Cong</b> &nbsp; | Homepage | <a href="mailto:wangcong@berkeley.edu">Email</a></p></li>
+                    <li><p><b>Lin, Chung-Yen</b> &nbsp; | Homepage | <a href="mailto:chung_yen@berkeley.edu">Email</a></p></li>
+					<li><p><b>Han, Chenghuei</b> (Graduated) &nbsp; | Homepage | <a href="mailto:norahann@berkeley.edu">Email</a></p></li>
+					<li><p><b>Wang, Chun-Chih</b> (Graduated) &nbsp; | Homepage | <a href="mailto:norahann@berkeley.edu">Email</a></p></li>
+					<li><p><b>Jeon, Soo</b> (Graduated) &nbsp; | Homepage | <a href="mailto:soojeon@mecheng1.uwaterloo.ca">Email</a></p></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="sponsor.jpg" ALT="Related Links"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Sponsor"></a>Sponsor</h2>
+				<ul><li><h3><a href="http://www.fanucrobotics.com/">FANUC, Ltd.</a></h3></li></ul>
+			</div>
+		
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="footer">
+			<p><a href="http://www.me.berkeley.edu/">ME Department Home</a> | <a href="http://www.berkeley.edu/">UC Berkeley Home</a></p>	
+			<p>Copyright &copy; 2008-2010, Mechanical Systems Control Laboratory, UC Berkeley | <a href="../../contact/contact.html">Contact Us</a></p>
+			<p>Designed & Maintained by Wenjie Chen | <a href="mailto:wjchen@me.berkeley.edu">Comments to the website</a></p>
+		</div>
+	</div>
+</body>
+</html>

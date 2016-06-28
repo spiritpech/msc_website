@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="Description" content="MSC Lab. Homepage" />
+	<meta name="Keywords" content="mechanical, control, systems" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Author" content="Wenjie Chen" />
+    <link rel="icon" href="../../mscicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../../images/style.css" />
+	<title>Mechanical Systems Control Laboratory, Hard Disk</title>
+</head>
+<body>
+	<div id="content">
+		<div class="header">
+				<h1><a name="Top"></a><a href="../../index.html"><img src="../../images/msclogo_2dc.jpg" alt="" border="none" /><a href="../../index.html">Mechanical Systems Control Laboratory</a></h1>
+		</div>
+
+		<div class="subheader">
+			<div class="subheader_right">
+				<a href="../../index.html">Home</a>
+				<a href="../../people/people.html">People</a>
+				<a href="../../research/research.html">Research</a>
+				<a href="../../publications/publications.html">Publication</a>
+				<a href="../../resources/resources.html">Resources</a>
+				<a href="../../misc/misc.html">Miscellaneous</a>
+				<a href="../../contact/contact.html">Contact Us</a>
+			</div>
+			<div class="subheader_left">
+				<a href="http://www.me.berkeley.edu/">ME Department</a>
+			</div>
+		</div>
+  		
+		<div class="left">
+			<h2 align="left">Current Projects</h2>
+			<ul>
+				<li><h3><a href="../vehicle/vehicle.html">Advanced Vehicle Control Systems</a></h3></li>
+				<li><div class="left_currentpage"><h3><a href="../disk/disk.html">Disk Drive Control</a></h3></div></li>
+				<li><h3><a href="../human/human.html">Human Mechatronics</a></h3></li>
+				<li><h3><a href="../precision/precision.html">Precision Motion Control</a></h3></li>
+				<li><h3><a href="../robot/robot.html">Robotics</a></h3></li>
+			</ul>
+			<h2 align="left">Past Projects</h2>
+			<ul>
+				<li><h3><a href="../../old2/research/vehicle/vehicle.html" target="new">Advanced Vehicle Control Systems</a></h3></li>
+				<li><h3><a href="../../old2/research/copy/copy.html" target="new">Copier Paperpath Control</a></h3></li>
+				<li><h3><a href="../../old2/research/disk/disk.html" target="new">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../../old2/research/machine/machine.html" target="new">Intelligent Machining</a></h3></li>
+				<li><h3><a href="../../old2/research/ilp97/index.html" target="new">ILP Summary '96-'97</a></h3></li>
+			</ul>		
+			<div class="line"></div>
+			<p><center><font size="1">Last updated on August 07, 2010</font></center></p>						
+		</div>
+			
+		<div class="right">
+
+			<h2>Disk Drive Control</h2>
+			<h4 class="bottomline">
+				<img src="../../images/comment.gif" alt="" /><a href="#Overview">Overview</a> 
+				| <img src="../../images/comment.gif" alt="" /><a href="#Research">Research Topics</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Publications">Related Publications</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Researchers">Researchers</a>
+				<br><br>
+			</h4>
+			
+		</div>
+			
+		<div class="right">
+
+			<div class="content_right">
+				<p><img src="images/ico_disk2.jpg"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Overview"></a>Overview</h2>
+			</div>
+			
+			<br><br><br>
+			<p>Bits of information are stored on and retrieved from computer disk drives using a magnetic read/write head. This information is arranged on concentric tracks, nominally circular in shape. Positioning the read/write head over the appropriate track is a control problem, which has a significant impact on the performance of the drive.</p>
+			<p>Servowriting is a manufacturing process where the data tracks and servo sectors are defined on the disk platters by creating the servo patterns so that the HDD servo system can later use them to identify the tracks and servo sectors, and to measure the relative position of the read head to the track centerline, i.e., the Position Error Signal (PES). The HDD servomechanism generates the position feedback signal by using the servo patterns as reference, which are written on the disks when no reference is present on the disks or inside the HDD. There are several conventional mechanisms used to provide the reference while the servo writing is performed. The common one is to externally write the position (servo burst) and timing (synchronization mark) information onto the disk surface by means of a costly laser-guided push-pin mechanism which can accurately move the HDD actuator arm so that the write head is positioned on the desired tracks.</p>
+			<p>Normal operation of a disk drive will require access to many different tracks. The faster the read/write head can be moved between tracks, the faster information can be stored or retrieved. There are economic and physical constraints on this task. The fast transition between data tracks is usually called "seeking."</p>
+			<p>The sensitivity of the position of the read/write head to external disturbances is also an important consideration in the design of controllers for disk drive servos. As computer disk drives become more mobile in laptop or handheld applications, new bumps and vibrations become common disturbances which must not affect the positioning control of the read/write head. Maintaining the read/write head over a particular data track is usually called "following."</p>
+			<p>The designed controller needs to address the concerns of servo writing, seeking and following for the final disk drive performance to be both fast and reliable. Work in this lab deals with the analysis of and design of controllers for disk drives.</p>
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+				<div class="content_right">
+				<p><img SRC="images/ico_fujitsu.jpg" ALT="Research Topics"></p>
+			</div>
+		
+		<div class="content_left">
+				<h2><a name="Research"></a>Research Topics</h2>
+			</div>
+			
+			<br><br><br>
+
+			<h3>Adaptive Compensation for Narrow-Band Disturbances</h3>
+			<p>One of the most important issues in the track following control of hard disk drives (HDDs) is to keep the track mis-registration (TMR) small. TMR is defined as three times the standard deviation of the position error signal (PES) that is proportional to the radial distance between the position of the read/write head and the reference track center. Narrow-band disturbances, which show up as spikes in the PES spectrum, contribute a lot to the TMR. The sources of the narrow-band disturbances in HDD include track eccentricity (or repeatable runout), disk modes, and external vibration.</p> 
+			<p>Since the frequencies of the narrow-band disturbances are often unknown, adaptive control is required for effective rejection of the disturbances. We have developed both indirect and direct adaptive control schemes to compensate for a single narrow-band disturbance to improve the TMR for higher TPI. </p>
+			<p>The <b>indirect adaptive control</b> is a two-step approach. At step one, the disturbance frequency is identified on-line within a short time window. The method we use to perform the frequency identification is the computational simple least mean squares (LMS) algorithm, which requires only three multiplications and three additions per sample. At step two, with the identified disturbance frequency, we use the basis function algorithm to adaptively identify magnitude and phase of the narrow-band disturbance and then reject it ([1]) or apply a disturbance observer (DOB) with a band-pass Q filter to cancel the disturbance ([2]).</p>
+			<p>Unlike the indirect adaptive control, the <b>direct adaptive control</b> does not involve identification of the disturbance model or the disturbance frequency. We modify the direct adaptive controller based on the Youla-Kucera parameterization to avoid large transient oscillation and to limit the waterbed effect to a certain frequency range by adding a pre-specified term and by cascading the Q filter with a band-pass filter, respectively ([3]). The other direct adaptive approach we develop involves adapting a parameter of the DOB Q filter to minimize the TMR caused by the narrow-band disturbance ([4]).</p>
+			<p>Currently we are developing adaptive control schemes to reject multiple narrow-band components in the PES spectrum for high TMR improvement. We are also looking for adaptive approaches to compensating for time-varying resonant modes in HDDs.</p>
+
+			<br>
+			<h3>Self Servowriting</h3>
+			<p>The conventional servo writing methods have some disadvantages. They need expensive external devices for positioning of the write head to write the servo patterns and require clean room environment not to contaminate the disk drive interior. Furthermore, frequent calibrations may be required. They face increasingly difficult challenges as the move towards ever increasing Track Per Inch (TPI) continues in the industry. These challenges come from different factors. Firstly, conventional servo writing requires several revolutions of the spindle to create one servo track. Therefore, the total time required to servo write an HDD increases proportionately with increasing number of tracks per surface. Because of this decrease in the throughput of servo writing, more servo writers are required to meet the production target. This in turn, requires more floor space in clean room. Secondly, for drives of smaller form factors, the jigs and fixtures for servo writing become smaller. It is challenging to design the pushpin mechanism that is small and yet sufficiently stiff. </p> 
+			<p>The demand for higher throughput without increasing the production cost and process time was primary motivation for developing an alternative method of writing servo patterns called Self ServoWriting (SSW) which can be performed in an area outside expensive clean room as this method does not require any opening on the HDD's enclosure. SSW has been attractive in HDD industries because it not only potentially saves in the cost and time of mass manufacturing, but also effectively maintains the servo writing quality. SSW regenerates timing (tangential) and position (radial) information from the previously written track using the existing GMR head of the HDD itself. Hence, the external servo writers are no longer needed and servo writing does not have to be processed in the clean-room environment.</p> 
+			<p>The servo system in SSW involves two control loops: position control loop timing control loop. In the position control loop, a Voice Coil Motor (VCM) is controlled to maintain the heads over the target track centerline during the reading and writing operations. And in the timing control loop, a Phase Lock Loop (PLL) is generally used to generate the servo writing clock signal. Therefore, there are two critical control objectives in SSW process with desired accuracy:</p> 
+			<ol>
+				<li>All the servo tracks must be perfectly concentric. If not so, the data tracks will be squeezed, resulting in loss of off-track read margin or AC track squeeze. In the position control loop,the position of the write head with respect to the track centerline is controlled by controlling the VCM. Any disturbance and eccentricity present during this process will appear as written-in Repeatable Run-Out (RRO) for the head positioning servomechanism of HDD. This written-in RRO increases TMR that must be compensated for by the servomechanism of an operational HDD. Naturally, the requirements on the accuracy in positioning the write head is more stringent in SSW than in HDD servo system. </li> 
+				<li>The servo sectors of any track must be written perfectly radially aligned (radially coherent) with those in the adjacent tracks. If not so, reading of servo data will be degraded or corrupted. In the SSW process, this is done by controlling a Phase Lock Loop (PLL) to generate the clock signal to write the timing marks in the servo patterns. The misalignment between the written timing marks and the desired timing marks can be measured by timing jitter. Excessive timing jitter causes distortion in read back signal and warping of the servo sectors. </li> 
+			</ol>
+
+			<!--
+			<br>
+			<h3>Adaptive Compensation of Multiple Narrow-Band Disturbances</h3>
+			<p>The track following control in a hard disk drive (HDD) system aims at precisely regulating the read/write head on the data track and reducing the Track Mis-Registration (TMR). One important source of TMR is the vibration/flutter of disks at their resonant frequencies. This behavior is driven by the turbulent air flow within the hard disk assembly, and creates the so-called non-repeatable multiple narrow-band disturbances, whose energy is highly concentrated at several unknown frequencies, as shown in Figure 1. These disturbances differ from track to track and disk to disk in nature, and may appear at frequencies higher than the open loop servo bandwidth. The above characteristics of narrowband disturbances lead to the difficulty of rejecting them using traditional feedback control methods. With the rapid growth in HDD's storage density, compensation of the non-repeatable multiple narrow-band disturbances is becoming more and more an important issue.</p>
+			<p align="center"><img src="images/fig1.png" width="400"></p>
+			<p align="center">Figure 1. A typical frequency spectrum of the Position Error Signal.<br></p>
+			<p>The current research in UC Berkeley focuses on developing adaptive control schemes that compensate any number of unknown narrow-band disturbances in NRRO. The essential idea is that the unknown/time varying feature of the disturbance can be learned via carefully designed adaptive controllers. Depending on how we adjust the coefficients of the controllers, direct and indirect adaptive control schemes have been designed. Figures 2 and 3 show two examples of how the frequencies of two narrow-band disturbances can be learned online via customized parameter adaptation algorithms (PAA). Figures 4 and 5 show respectively the time and frequency domain improvements using the proposed control algorithms.</p>
+			<p align="center"><img src="images/fig2.png" width="400"></p>
+			<p align="center">Figure 2. Frequency identification for two unknown narrow-band disturbances.<br></p>
+			<p align="center"><img src="images/fig3.png" width="400"></p>
+			<p align="center">Figure 3. Frequency identification for two time-varying narrow-band disturbances.<br>Note there was a step change of parameters at the 15th revolution.<br></p>
+			<p align="center"><img src="images/fig4.png" width="400"></p>
+			<p align="center">Figure 4. Time trace of the position error signal with compensation.<br></p>
+			<p align="center"><img src="images/fig5.png" width="400"></p>
+			<p align="center">Figure 5. Spectra of the position error signals with and without the compensator.</p>
+
+
+			<br>
+			<h3>Spiral Servowriting</h3>
+			<p>To obtain adequate servo pattern quality is the key to achieve high TPI (track per inch) of the hard disk drive products, thus improvement of the servo track writer performance becomes increasingly important. As the TPI gets higher and higher, servo writing takes a longer and longer time. This requires additional investment on servo track writer which translate to increase of the product cost. One way to solve the problem is to write spirals on the servo track writer and perform in-drive fill later in the self test chamber. The latter process is called self servo writing.</p>
+			<p>Since spiral writes takes much shorter time on servo write, this greatly reduces the servo track writing time, thus the servo track writer cost. During the spiral write on servo track writer, the positioned accelerates to establish the desired spiral speed before starting to write. The stroke before speed is established will be thrown away. So reducing the length of this stroke is important to achieve the total capacity. It is equally important to ensure smooth settling after the desired speed is achieved. Speed variation will result TPI change, thus also result in lost capacity.</p>
+			<p>During the servo writing process (on servo track writers), the position control is based on the positioned control system in which feedback signal is from the optical encoder which is attached on the shaft of the VCM actuator. However, encoder feedback signal does not reflect true position signal of the head which includes the head motion and disk motion. Also between the encoder location and head tips, there are other structure resonance modes which are reflected in the positioned control system. This limits the effectiveness of the feedback loop control system performance.</p>
+			<p>To reduce the disturbance and to improve the servo accuracy, the following control algorithms have been developed for the HDD system:</p>
+			<ol>
+					<li>Single spiral writing: Zero Phase Error Tracking Control (ZPET) + optimal Disturbance Observer (DOB) based on plant shaping;</li>
+					<li>Multiple spiral writing: optimal Disturbance Observer (DOB) + Iterative Learning Control (ILC) based on ZPET error learning.</li>
+			</ol>  
+			-->
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img src="images/publication.jpg" ALT="Publications"></p>
+			</div>
+				
+			<div class="content_left">
+				<h2><a name="Publications"></a>Related Publications</h2>
+			</div>
+			
+			<br><br>
+			<p>Please refer to the <a href="../../publications/papers_disk.html" target="new">publication list page</a> for related publications.</p>
+			<!--
+			<ol>
+				<li>
+					Q. Zheng and M. Tomizuka, "Compensation of dominant frequency components of non-repeatable disturbance in hard disk drives," <i>IEEE Transactions on  Magnetics</i>, vol. 43, no. 9, pp. 3756-3762, Sep. 2007.
+					<br>
+					<div class="comments">
+						<font color="red"><b>Journal</b></font> | Abstract | <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4292326" target="new">HTML</a> | <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=04292326" target="new">PDF</a>
+					</div>
+				</li>
+				<li>
+					Q. Zheng and M. Tomizuka, "A disturbance observer approach to detecting and rejecting narrow-band disturbances in hard disk drives," <i>Proceedings 10th International Workshop on Advanced Motion Control</i>, Part vol.1, pp. 254-9, Mar 2008.
+					<br>
+					<div class="comments">
+						Conference | Abstract | <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4516075 " target="new">HTML</a> | <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=04516075" target="new">PDF</a>
+					</div>
+				</li>
+				<li>
+					Q. Zheng and M. Tomizuka, "Direct adaptive rejection of narrow-band disturbances based on the Youla-Kucera parameterization," <i>CML Technical Report</i>, 07-014, Dec 2007.
+					<br>
+					<div class="comments">
+						Report | Abstract | HTML | PDF
+					</div>
+				</li>
+				<li>
+					Q. Zheng and M. Tomizuka, "Direct adaptive disturbance observer design for the rejection of narrow-band disturbances in hard disk drives," presented at <i>the CML 21st Annual Sponsors' Meeting</i>, Jan 2009.
+					<br>
+					<div class="comments">
+						Presentation | Abstract | HTML | PDF
+					</div>
+				</li>
+				<li>
+					F. Dong and M. Tomizuka, "An Iterative Learning Control design for Self-Servowriting in Hard Disk Drives Using L_1 Optimal Control," Accepted by <i>ACC 2009</i>.
+					<br>
+					<div class="comments">
+						Conference | Abstract | HTML | PDF
+					</div>
+				</li>
+				<li>
+					X. Chen and M. Tomizuka, "Optimal Plant Shaping for High Bandwidth Disturbance Rejection in Discrete Disturbance Observers," <i>2010 American Control Conference</i>, June 30-July 02, 2010, Baltimore, MD, USA.
+					<br>
+					<div class="comments">
+						Conference | Abstract | HTML | PDF
+					</div>
+				</li>
+				<li>
+					X. Chen and M. Tomizuka, "An Indirect Adaptive Approach to Reject Multiple Narrow-Band Disturbances in Hard Disk Drives," <i>2010 IFAC Symposium on Mechatronic Systems</i>, September 13-15, 2010, Cambridge, Massachusetts, USA.
+					<br>
+					<div class="comments">
+						Conference | Abstract | HTML | PDF
+					</div>
+				</li>
+				<li>
+					X. Chen and M. Tomizuka, "Unknown Multiple Narrow-Band Disturbance Rejection in Hard Disk Drives - an Adaptive Notch Filter and Perfect Disturbance Observer Approach," <i>2010 ASME Dynamic Systems and Control Conference</i>, September 13-15, 2010, Cambridge, Massachusetts, USA. 
+					<br>
+					<div class="comments">
+						Conference | Abstract | HTML | PDF
+					</div>
+				</li>
+				<li>
+					X. Chen and M. Tomizuka, "An Indirect Adaptive Approach to Reject Multiple Narrow-Band Disturbances in Hard Disk Drives," <i>CML Technical Report</i>, May 2010.
+					<br>
+					<div class="comments">
+						Report | Abstract | HTML | PDF
+					</div>
+				</li>
+				<li>
+					X. Chen and M. Tomizuka, "High Precision Tracking Control Applied to Spiral Servo Writing in Hard Disk Drives," <i>CML Technical Report</i>, May 2010.
+					<br>
+					<div class="comments">
+						Report | Abstract | HTML | PDF
+					</div>
+				</li>
+			</ol>
+			-->
+					
+		</div>
+			
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="researcher.jpg" ALT="Researchers"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Researchers"></a>Researchers</h2>
+				<ul>
+					<li><p><b>Chen, Xu (Max)</b> &nbsp; | <a href="http://www.me.berkeley.edu/~maxchen/" target="new">Homepage</a> | <a href="mailto:maxchen@me.berkeley.edu">Email</a></p></li>
+                    <li>
+                      <p><b>Zheng, Minghui</b> &nbsp; | Homepage | <a href="mailto:minghuizheng@berkeley.edu">Email</a></p></li>
+					<li><p><b>Dong, Feng Dan (Nancy) </b> (Graduated) &nbsp; | Homepage | <a href="mailto:nancy@me.berkeley.edu">Email</a></p></li>
+					<li><p><b>Zheng, Qixing (Steve) </b> (Graduated) &nbsp; | Homepage | <a href="mailto:qiz@me.berkeley.edu">Email</a></p></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="footer">
+			<p><a href="http://www.me.berkeley.edu/">ME Department Home</a> | <a href="http://www.berkeley.edu/">UC Berkeley Home</a></p>	
+			<p>Copyright &copy; 2008-2010, Mechanical Systems Control Laboratory, UC Berkeley | <a href="../../contact/contact.html">Contact Us</a></p>
+			<p>Designed & Maintained by Wenjie Chen | <a href="mailto:wjchen@me.berkeley.edu">Comments to the website</a></p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../style.css" media="all" />
+	<title>MSC Lab - Precision Motion Control</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../people/students.html">Students</a></li>
+                    <li><a href="../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../robotics.html">Robotics</a></li>
+                    <li><a href="../human.html">Human Mechatronics</a></li>
+                    <li><a href="../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../research.html">Research</a> &gt; <a href="../precision.html">Precision Motion Control</a> &gt; <a href="satellite.html">Satellite Attitude Determination</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Jump to:</h3>
+				<ul class="sidemenu">
+					<li><a href="#overview">Overview</a></li>
+                    <li><a href="#researchers">Researchers</a></li>
+                    <li><a href="#acknowledgements">Acknowledgements</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>MEMS Gyroscope Calibration for Satellite Attitude Determination Systems</h2>
+		  <h3 id="overview">Overview</h3>
+		  <p>Modern satellites depend on accurate knowledge of attitude (rotational orientation) for navigation and pointing of antennae, solar panels, and scientific equipment.  Thus, satellites are equipped with an Attitude Determination and Control System (ADCS) to estimate and control the
+attitude of the spacecraft.  Normally, an ADCS on the spacecraft consists of relative attitude sensors, absolute attitude sensors, actuators and
+algorithms.  Sensors on board an ADCS include rate sensors (gyroscopes) and star trackers. Recently, due to the improving performance of MEMS
+sensors, there has been increased interest in using MEMS gyroscopes in ADCS systems as replacements for fiber-optics gyros, or as complementary
+sensors.  MEMS sensors have advantages of being low-cost, light weight, and low power consumption.</p>
+          <p>In the case of employing MEMS sensors in ADCS, several challenges arise. The noise levels of these sensors are high, and gyroscope bias drifts over time.  The gyroscope parameters are also sensitive to conditions such as temperature and operating voltage. In practice, optimal attitude estimates are calculated using an extended Kalman filter (EKF) filtering algorithms.</p>
+          <p>The aims of this research include the calibration and modeling of an array of MEMS gyroscopes, development of estimation algorithms,  and use of sensor fusion to improve estimation accuracy.  Another aim is to built an experimental testbed for researching attitude determination and navigation systems. The experimental testbed is used for evaluating the developed models and methods.</p>
+			<p>&nbsp;</p>
+		  <h3 id="researchers">Researchers</h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="40%"><p>Wang, Yizhou<br />
+                Stearns, Hoday (graduated)</p></td>
+              <td width="10%"><p><a href="mailto:yzhwang@berkeley.edu" target="_new">Email</a><br />
+              <a href="mailto:hodayx@uclink.berkeley.edu" target="_new">Email</a></p></td>
+              <td width="50%"><p>&nbsp;</p></td>
+            </tr>
+          </table>
+			<p>&nbsp;</p>
+			<h3 id="acknowledgements">Acknowledgements</h3>
+			<p>This project is a collaboration with <a href="http://www.kacst.edu.sa/en/Pages/default.aspx", target="_new">King Abdulaziz City for Science and Technology University (KACST)</a>.</p>
+	  </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Soichi Ibaraki">
+   <title>Resourses</title>
+<link REL=STYLESHEET TYPE="text/css" HREF="../mschomepage.css">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+
+<center>
+<br><b><tt><font face="arial, helvetica"><font color="#999999"><font size=-1>Mechanical Systems Control Laboratory Homepage</font></font></font></tt></b>
+<br><img SRC="pixel.gif" ALT="" height=1 width=500></center>
+
+<p>
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+<caption>
+<center><font face="arial, helvetica"><font size=-1>Resources</font></font>
+<br><font face="arial, helvetica"><font color="#999999"><font size=-1>
+<a href="../index.html" class="base">Home</a> | 
+<a href="../people/people.html" class="base">People</a> | 
+<a href="../research/research.html" class="base">Research</a> | 
+<a href="../publications/publications.html" class="base">Publications</a> | 
+<a href="../resources/resources.html" class="base">Resources</a> | 
+<a href="../misc/misc.html" class="base">Misc</a>
+</font></font></font></center>
+<p>&nbsp;
+<p>&nbsp;
+
+<center>
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="400" colspan=2>
+<a href="announce.html">
+<img SRC="menu_announce.jpg" ALT="Announcements and Updates" BORDER=0 height=90 width=280></a>
+</td>
+</tr>
+
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="80"></td>
+<td ALIGN=left VALIGN=center WIDTH="320">
+<font face="arial, helvetica" color="#999999">
+<a href="announce.html" class="base">
+Announcements and Updates from MSC Lab. Computer Facilities Administrators.</a><br>
+&nbsp;<br>
+</font>
+</td>
+</tr>
+
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="400" colspan=2>
+<img SRC="menu_newmember.jpg" ALT="Information for New Members" BORDER=0 height=90 width=280>
+</td>
+</tr>
+
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="80"></td>
+<td ALIGN=left VALIGN=center WIDTH="320">
+<font face="arial, helvetica" color="#999999">
+<a href="new_grad.html" class="base">
+For New Graduate Students.<br>
+</a>
+<a href="new_visit.html" class="base">
+For New Visiting Scholars.</a><br>
+&nbsp;<br>
+</font>
+</td>
+</tr>
+
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="400" colspan=2>
+<img SRC="menu_computers.jpg" ALT="General Information about Computers in the Lab" BORDER=0 height=90 width=400>
+</td>
+</tr>
+
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="80"></td>
+<td ALIGN=left VALIGN=center WIDTH="320">
+<font face="arial, helvetica" color="#999999">
+<a href="computers_unix.html" class="base">
+About UNIX Machines.<br>
+</a>
+<a href="computers_win.html" class="base">
+About Windows Machines.<br>
+</a>
+<a href="sysad.html" class="base">
+About MSC Lab. Computer Facilities Administrators.<br>
+</a>
+<a href="printing.html" class="base">
+Printing in the MSC Lab.<br>
+</a>
+&nbsp;<br>
+
+</font>
+</td>
+</tr>
+
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="400" colspan=2>
+<img SRC="menu_primers.jpg" ALT="Online Primers" BORDER=0 height=90 width=200>
+</td>
+</tr>
+
+<tr>
+<td ALIGN=right VALIGN=center WIDTH="100"></td>
+<td ALIGN=left VALIGN=center WIDTH="80"></td>
+<td ALIGN=left VALIGN=center WIDTH="320">
+<font face="arial, helvetica" color="#999999">
+<a href="http://www.isu.edu/departments/comcom/unix/workshop/unixindex.html" class="base">
+UNIX Primer.<br>
+</a>
+<a href="http://www2.ocean.washington.edu/unix.tutorial.html" class="base">
+UNIX Tutorial.<br>
+</a>
+<a href="http://www.swcp.com/~dodrill/cdoc/clist.htm" class="base">
+C/C++ Primer.<br>
+</a>
+<a href="http://www.engin.umich.edu/group/ctm/" class="base">
+Matlab Primer.</a><br>
+</a>
+<a href="/old2/resources/latex_resources/latex" class="base">
+Latex Resources on mechatro2</a><br>
+</a>
+Latex Styles (zipped) for download<br>
+&nbsp;<br>
+
+</font>
+</td>
+</tr>
+
+</center>
+
+<tr>
+<td></td>
+</tr>
+</table></center>
+
+<p>&nbsp;
+
+<center><img SRC="pixel.gif" ALT="" height=1 width=500>
+<br><font face="arial, helvetica" font color="#666666" size=1>MSC
+Lab. Homepage is created and maintained by Soichi Ibaraki and Shashikanth
+Suryanarayanan.<br>
+Feel free to send your comments to <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+</center>
+
+<p><br>
+</body>
+</html>

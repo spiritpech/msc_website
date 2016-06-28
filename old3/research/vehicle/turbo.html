@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="Description" content="MSC Lab. Homepage" />
+	<meta name="Keywords" content="mechanical, control, systems" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="Distribution" content="Global" />
+	<meta name="Author" content="Wenjie Chen" />
+    <link rel="icon" href="../../mscicon.ico" />
+	<link rel="stylesheet" type="text/css" href="../../images/style.css" />
+	<title>Mechanical Systems Control Laboratory, Adaptive Cruise Control</title>
+</head>
+<body>
+	<div id="content">
+		<div class="header">
+				<h1><a name="Top"></a><a href="../../index.html"><img src="../../images/msclogo_2dc.jpg" alt="" border="none" /><a href="../../index.html">Mechanical Systems Control Laboratory</a></h1>
+		</div>
+
+		<div class="subheader">
+			<div class="subheader_right">
+				<a href="../../index.html">Home</a>
+				<a href="../../people/people.html">People</a>
+				<a href="../../research/research.html">Research</a>
+				<a href="../../publications/publications.html">Publication</a>
+				<a href="../../resources/resources.html">Resources</a>
+				<a href="../../misc/misc.html">Miscellaneous</a>
+				<a href="../../contact/contact.html">Contact Us</a>
+			</div>
+			<div class="subheader_left">
+				<a href="http://www.me.berkeley.edu/">ME Department</a>
+			</div>
+		</div>
+  		
+		<div class="left">
+			<h2 align="left">Current Projects</h2>
+			<ul>
+				<li><div class="left_currentpage"><h3><a href="../vehicle/vehicle.html">Advanced Vehicle Control Systems</a></h3></div></li>
+				<li><h3><a href="../disk/disk.html">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../human/human.html">Human Mechatronics</a></h3></li>
+				<li><h3><a href="../precision/precision.html">Precision Motion Control</a></h3></li>
+				<li><h3><a href="../robot/robot.html">Robotics</a></h3></li>
+			</ul>
+			<h2 align="left">Past Projects</h2>
+			<ul>
+				<li><h3><a href="../../old2/research/vehicle/vehicle.html" target="new">Advanced Vehicle Control Systems</a></h3></li>
+				<li><h3><a href="../../old2/research/copy/copy.html" target="new">Copier Paperpath Control</a></h3></li>
+				<li><h3><a href="../../old2/research/disk/disk.html" target="new">Disk Drive Control</a></h3></li>
+				<li><h3><a href="../../old2/research/machine/machine.html" target="new">Intelligent Machining</a></h3></li>
+				<li><h3><a href="../../old2/research/ilp97/index.html" target="new">ILP Summary '96-'97</a></h3></li>
+			</ul>		
+			<div class="line"></div>
+			<p><center><font size="1">Last updated on May 15, 2011</font></center></p>						
+		</div>
+			
+		<div class="right">
+
+			<h4 style="padding:5px 0 20px 0; margin:0;">
+				<img src="../../images/comment.gif" alt="" /><a href="vehicle.html">Advanced Vehicle Control Systems</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="acc.html">Adaptive Cruise Control Systems with Stop-and-Go</a><br>
+				--><img src="../../images/comment.gif" alt="" /><a href="turbo.html">Turbocharged Spark-Ignition Engine Control</a><br>
+			</h4>
+			<h2>Turbocharged Spark-Ignition Engine Control</h2>
+			<h4 class="bottomline">
+				<img src="../../images/comment.gif" alt="" /><a href="#Overview">Overview</a> 
+				| <img src="../../images/comment.gif" alt="" /><a href="#Researchers">Researchers</a>
+				| <img src="../../images/comment.gif" alt="" /><a href="#Sponsor">Sponsor</a>
+				<br><br>
+			</h4>
+			
+		</div>
+			
+		<div class="right">
+
+			<div class="content_right">
+				<p><img src="ico_turbo.jpg"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Overview"></a>Overview</h2>
+			</div>
+			
+			<br><br><br>
+			<p>Due to ever-growing concerns about the depletion of the world's oil supply, a critical area of development in the automotive industry is the improvement of fuel efficiency in commercial vehicles. Turbocharging a downsized (smaller) engine has emerged as an effective method of reducing fuel consumption with minimal sacrifices to performance. This method also offers the benefits of lower manufacturing and maintenance costs compared to other fuel efficient schemes (e.g. electric or hybrid vehicles).</p>
+			<p>However, forced induction presents some interesting estimation and control problems, since the air dynamics of a turbocharged setup are significantly more complex than a naturally aspirated setup. Additional control valves are also needed in order to maintain the intake/exhaust manifold pressures in their respective desired operating ranges. Furthermore, strict emissions standards require the use of exhaust gas recirculation and variable valve timing, introducing even more control variables and further complicating the system dynamics.</p>
+			<p>It is important to inject the appropriate amount of fuel into the combustion chamber for a stoichiometric mixture with the air; too much fuel increases fuel consumption, too little fuel can cause damage to the engine, and deviations either way result in undesirable emissions. A time-delayed air/fuel ratio measurement requires most of the fuel control to be done in feed forward. Thus, accurate estimation of the mass of air entering the combustion chamber is crucial. Controlling this quantity is also necessary for torque control, particularly in the case of tracking a transient torque profile.</p>
+			<p align="center"><a href="fig 1_air_schematic.png" target="new"><img src="fig 1_air_schematic.png" height="301"></a><br>Figure 1: Air Schematic</p>
+
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="researcher.jpg" ALT="Researchers"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Researchers"></a>Researchers</h2>
+				<ul>
+					<li><p><b>Tan, Raechel</b> &nbsp; | <a href="http://www.ocf.berkeley.edu/~raechel/", target="new">Homepage</a> | <a href="mailto:tanraechel@berkeley.edu">Email</a></p></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="right">
+
+			<div class="content_right">
+				<p><img SRC="sponsor.jpg" ALT="Acknowledgement"></p>
+			</div>
+		
+			<div class="content_left">
+				<h2><a name="Sponsor"></a>Sponsor</h2>
+				<ul><li><p><b><a href="http://www.toyota.com/">Toyota, Ltd.</a></b></p></li></ul>
+			</div>
+			
+		</div>
+
+		<div class="right">
+			<h4 class="date"><img src="../../images/comment.gif" alt="" /><a href="#Top">Top</a></h4>
+		</div>
+
+		<div class="footer">
+			<p><a href="http://www.me.berkeley.edu/">ME Department Home</a> | <a href="http://www.berkeley.edu/">UC Berkeley Home</a></p>	
+			<p>Copyright &copy;  2008-2010, Mechanical Systems Control Laboratory, UC Berkeley | <a href="../../contact/contact.html">Contact Us</a></p>
+			<p>Designed & Maintained by Wenjie Chen | <a href="mailto:wjchen@me.berkeley.edu">Comments to the website</a></p>
+		</div>
+	</div>
+</body>
+</html>

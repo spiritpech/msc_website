@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../style.css" media="all" />
+	<title>MSC Lab - Human Mechatronics</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../people/students.html">Students</a></li>
+                    <li><a href="../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../robotics.html">Robotics</a></li>
+                    <li><a href="../human.html">Human Mechatronics</a></li>
+                    <li><a href="../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../research.html">Research</a> &gt; <a href="../human.html">Human Mechatronics</a> &gt; <a href="eps.html">Intelligent Power Assist Steering System</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Jump to:</h3>
+				<ul class="sidemenu">
+					<li><a href="#intro">Introduction</a></li>
+                    <li><a href="#steering">Steering System</a></li>
+                    <li><a href="#setup">Experimental Setup</a></li>
+                    <li><a href="#topics">Research Topics</a></li>
+                    <li><a href="#pub">Related Publications</a></li>
+                    <li><a href="#researchers">Researchers</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Intelligent Power Assist Steering System</h2>
+		  <h3 id="intro">Introduction</h3>
+		  <p>Electric power steering (EPS) systems have recently become a popular choice for automotive steering, particularly in small and medium-sized cars. Compared to conventional hydraulic power steering, EPS has several advantages, such as an electronically variable steering boost function, improved operational efficiency and reduced environmental emission. Although steer-by-wire possesses similar advantages, it has only found limited acceptance in the automotive industry. Consequently, EPS will remain the predominantly used steering system technology for the next decade.</p>
+          <p>Currently, EPS systems are equipped with a torque sensor to measure the driver's steering effort. A torsion bar element, as shown in Fig.1, is widely used to detect the driver's intention. However, the measured torque is not exactly equal to the applied torque. This discrepancy is caused by the physical connection between the driver and front wheels, and the steering column dynamics. In addition, disturbances such as road-tire interaction contribute to the difference between sensed and actual torque values.</p>
+          <p>Upon receiving the torque signal, the controller computes the desired motor current to assist the driver. The conventional EPS controller determines the required motor current by amplifying the torque sensor signal by a certain non-linear gain.</p>
+          <p align="center"><img src="eps_sys.jpg" alt="EPS system" width="428" height="222" border="0" /><br />
+          Fig. 1: Typical mechanism of electric power steering</p>
+          <p>&nbsp;</p>
+		  <h3 id="steering">Steering System</h3>
+		  <p>The primary limitation of conventional controllers lies in their indiscriminate amplification of the sensed torque.  Conventional EPS controllers do not take into account other factors that may affect steering performance, such as the road-tire interaction, and the history of steering assistance.</p>
+			<p>The proposed controller considers these factors as well, and accurately estimates the steering effort applied by the driver. Therefore, the new controller does not blindly assist driver, but evaluates how much assistance is required and then commands the motor to provide the appropriate torque.</p>
+		  <p>As a result, this <strong>Intelligent Power Assist Steering System</strong> is more sophisticated and delivers smoother performance than the conventional system.</p>
+		  <p>&nbsp;</p>
+		  <h3 id="setup">Experimental Setup</h3>
+		  <p>Combining National Instruments' FPGA board and software enables us to construct a feedback loop consisting of sensors, real-time control, and actuation. All control has been implemented on a modular experimental electric power steering test bench.  Features include driver steering wheel with brake and acceleration inputs, mechanical spring mass representation of road tire interaction, and visual road feedback through simulation. This test bench has the ability to be configured with a simple EPS steering system or even with a steer-by-wire system.</p>
+		  <p align="center"><img src="eps_setup.jpg" width="450" alt="EPS setup" /></p>
+		  <p align="center"><img src="eps_software.jpg" width="450" alt="EPS software" /></p>
+		  <p align="center"><img src="eps_fpga.jpg" width="428" height="291" alt="EPS FPGA" /></p>
+          <p>&nbsp;</p>
+          <h3 id="topics">Research Topics</h3>
+          <ol>
+            <li>Disturbance Observer</li>
+            <li>Friction Compensation</li>
+            <li>Nonlinear Sliding Mode Control</li>
+            <li>Passivity</li>
+            <li>H-Infinity Robust Control</li>
+          </ol>
+          <p>&nbsp;</p>
+          <h3 id="pub">Related Publications</h3>
+          <p>El-Shaer, S. Sugita, and M. Tomizuka, &quot;Robust Fixed-Structure Controller Design of
+Electric Power Steering Systems,&quot; <i>American Control Conference</i>, 2009.</p>
+          <p>S. Sugita, A. El-Shaer, and M. Tomizuka, &quot;Human Machine Interaction in Vehicle Steering,&quot; <i>SAE World Congress</i>, 2009.</p>
+          <p>&nbsp;</p>
+          <h3 id="researchers">Researchers</h3>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="40%"><p><strong>Visiting Scholars</strong><br />
+                Oshima, Atsushi<br />
+                Sugita, Sumio (departed)<br />
+                Matsuda, Yasuyuki (departed)<br />
+              Kawashima, Kiyotaka (departed)<br />
+              <br />
+              <strong>Graduate Students</strong><br />
+              Chang-Siu, Evan<br />
+              El-Shaer, Ahmed (graduated)<br />
+              <br />
+              <strong>Undergraduate Students</strong><br />
+              Subramanian, Anand (graduated)<br />
+              Wang, Jack (graduated)<br />
+              Yeung, Justus (graduated)<br />
+              Lomeli, Kevin (graduated)</p></td>
+              <td width="10%" valign="top"><p><br />
+              <a href="mailto:atsuoshi508@gmail.com" target="_new">Email</a><br />
+                <a href="mailto:sugitas@me.berkeley.edu" target="_new">Email</a><br />
+                <a href="mailto:ayasuyuki_matsuda@sbcglobal.net" target="_new">Email</a><br />
+                <a href="mailto:kawashima@horilab.iis.u-tokyo.ac.jp" target="_new">Email</a><br />
+                <br />
+                <br />
+              <a href="mailto:evancs@gmail.com" target="_new">Email</a><br />
+              <a href="mailto:ashaer@newton.berkeley.edu" target="_new">Email</a></p></td>
+              <td width="50%" valign="top"><p><br />
+                <br />
+                <br />
+                <br />
+                <br />
+              <br />
+              <br />
+              <a href="http://me.berkeley.edu/~evancs/" target="_new">Homepage</a><br />
+              </p></td>
+            </tr>
+          </table>
+          <p align="center"><img src="eps_researchers.jpg" width="450" alt="EPS researchers" /></p>
+          <p>&nbsp;</p>
+          <h3 id="sponsors">Sponsors</h3>
+          <p align="center"><a href="http://www.ni.com/" target="_new"><img src="ni.jpg" alt="NI" width="500" border="0" /></a></p>
+          <p align="center"><a href="http://www.nsk.com" target="_new"><img src="nsk.jpg" alt="NSK" width="281" height="225" border="0" /></a></p>
+      </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>

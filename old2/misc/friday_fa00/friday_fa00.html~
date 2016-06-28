@@ -1,0 +1,418 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Soichi Ibaraki">
+   <title>Friday Seminar Schedule</title>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../../mschomepage.css">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF" LINK="#3366cc" VLINK="#213f7d">
+<center>
+<br><b><tt><font face="arial, helvetica"><font color="#999999"><font size=-1>Mechanical Systems Control Laboratory Homepage</font></font></font></tt></b>
+<br><img SRC="pixel.gif" ALT="" height=1 width=500></center>
+
+<p>
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+<caption>
+<center><font face="arial, helvetica" size=-1>Group Seminar Schedule<br></font></center>
+<center><font face="arial, helvetica" font color="#999999">
+<a href="../../index.html" class="base">Home</a> | 
+<a href="../../people/people.html" class="base">People</a> | 
+<a href="../../research/research.html" class="base">Research</a> | 
+<a href="../../publications/publications.html" class="base">Publications</a> | 
+<a href="../../resources/resources.html" class="base">Resources</a> | 
+<a href="../misc.html" class="base">Misc</a><br>
+</font></center>
+
+<p><br>
+<br>&nbsp;
+<center><table CELLSPACING=0 CELLPADDING=0 WIDTH="500" >
+
+<tr>
+<td VALIGN=TOP WIDTH="120"><center>
+<img SRC="../butterfly.gif" ALT="Group Seminar Schedule" height=84 width=110>
+<br><b><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+Group Seminar Schedule</font></b></center>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="120" BGCOLOR="#F9F9FF" BORDER=0 CELLSPACING=0 CELLPADDING=0>
+
+<tr><td>&nbsp;</td><td>
+<font color="#000066" FACE="helvetica,arial" SIZE=1>
+<b>Backnumber</b></font><br>
+</td><td>&nbsp;</td></tr>
+
+<tr>
+<td VALIGN=TOP WIDTH="10">&nbsp;</td>
+<td VALIGN=TOP WIDTH="100">
+<div align=left><FONT FACE="helvetica,arial" SIZE="2" COLOR="#000000">
+<font size=1><a href="../friday.html">
+Spring, 2000</a></font><br>
+</div></td>
+<td VALIGN=TOP WIDTH="10">&nbsp;</td></tr>
+</table>
+
+</td>
+
+<td WIDTH="30"></td>
+
+<td VALIGN=TOP WIDTH="340">
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="260" align="right">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+Mechanical Systems Control Laboratory<br>
+Group Seminar Schedule</br>
+<b>Fall, 2000</b></br></font>
+&nbsp;<br>
+&nbsp;<br>
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>Time: </b>
+<FONT color="#000000">
+10:00am - 11:00am, Fridays<br></font>
+<b>Place: </b>
+<FONT color="#000000">
+3110 Etcheverry Hall<br></font>
+<b>Organizer: </b>
+<FONT color="#000000">
+Meihua Tai<br>
+<font size="1">
+<a href="mailto:meihua@mechatro2.me.berkeley.edu" class="base"> e-mail</a>
+</font></font>
+<br>
+
+</font></font>
+<p><br>
+</td>
+
+<td VALIGN=TOP WIDTH="5"></td>
+
+<td VALIGN=TOP WIDTH="75">
+<a href="wuphoto.jpg" >
+<img SRC="wuphoto2.jpg" ALT="Wu's photo" height=142 width=75 BORDER=0></a>
+</td>
+</table>
+
+<p><br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>September 1, 2000</b>
+</br>
+<FONT color="#000000">
+Jiagen Ding<br>
+"Milli-actuator Design for Hard Disk Drive Control"<br>
+</font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+Industry forecasts predict that future generation hard disk drives will 
+use two-stage actuator architectures in order to achieve higher track densities. Piezo milli-actuators are being proposed ...
+<font size=1><a href="jiagen_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>September 8, 2000</b>
+</br>
+<FONT color="#000000">
+Meihua Tai<br>
+"Robust Controllers Based on Feedback Linearization 
+for Automated Lane Guidance of Heavy Vehicles"<br>
+</font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+The first part of the presentation talks about the design of nonlinear 
+lateral controllers for tractor- semitrailer vehicles on automated 
+highway systems. ...
+<font size=1><a href="meihua_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>September 15, 2000</b>
+</br>
+<FONT color="#000000">
+Erwin Satrya Budiman<br>
+"Aplication of Linear Conditioning for an Indirect Drive Unit with Actuator Saturation"<br>
+</font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+From the mechanical design point of view, maximizing the payload to
+manipulator inertia ratio is desirable. This can be done by using a gear
+reduction mechanism ... 
+<font size=1><a href="erwin_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>September 22, 2000</b>
+</br>
+<FONT color="#000000">
+Soichi Ibaraki<br>
+"H-infinity State Observers: H-infinity Optimization of Matched 
+and Mismatched Observers and Its Applications"<br>
+</font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+My main research interest is in the extension of numerical 
+algorithms to solve the H-infinity optimization problems 
+and its application to practical control-related optimization 
+problems, ...
+<font size=1><a href="soichi_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>September 29, 2000</b>
+</br>
+<FONT color="#000000">
+Ryan White<br>
+"Autonomous Following of Heavy Vehicles Using the IRIS-2 Visual Sensor"
+<br></font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+Autonomous following of heavy vehicles has the potential to greatly
+reduce the costs of operating platoons of trucks. Computer
+controlled following allows a vehicle to follow another vehicle at close
+range, ...
+<font size=1><a href="ryan_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>October 6, 2000</b>
+</br>
+<FONT color="#000000">
+Prof. Doyoung Jeon<br>
+"The Application of MR (Magneto Rheological) Fluids"
+<br></font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+The MR (Magneto Rheological) fluids have a property that their yield 
+strength changes according to the intensity of applied magnetic fields. ...
+<font size=1><a href="jeon_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>October 13, 2000</b>
+</br>
+<FONT color="#000000">
+Bo Zhu<br>
+"A new statistical model for direct PES minimization of hard disk drives"
+<br></font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+Tuning controller parameters for mass- produced hard disk drives is an
+iterative process. ...
+<font size=1><a href="bo_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>October 20, 2000</b>
+</br>
+<FONT color="#000000">
+Shahrum Shahruz<br>
+"Study of Lasers as Nonlinear Dynamical Systems"
+<br></font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+The rate equations of a large class of lasers are considered.
+These equations represent the evolution of photon ...
+<font size=1><a href="shahram_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>October 27, 2000</b>
+</br>
+<FONT color="#000000">
+1. Jeng-Yu Wang<br>
+"Reachability Analysis of Hybrid Lateral Control Problem for
+Automated Heavy Vehicles"
+<br></font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+Since the lateral control problem for heavy vehicles (HVs) consists of
+lane following and lane changing,
+switching between these operating modes gives the closed-loop system a
+hybrid nature. ...
+<font size=1><a href="jengyu_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+2. Carlo Cloet<br>
+"Optimal control of a copier paperpath using dynamic programming: a reachability analysis"
+<br></font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+The main idea behind optimal paperpath control using dynamic programming
+(DP) was presented earlier this year. ...
+<font size=1><a href="carlo_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000066">
+<b>November 3, 2000</b>
+</br>
+<FONT color="#000000">
+Shashikanth Suryanarayanan<br>
+"Fault management in automated systems"
+<br></font></font>
+&nbsp;<br>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="340">
+<tr><td VALIGN=TOP WIDTH="5"></td>
+<td VALIGN=TOP WIDTH="335">
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#000000">
+<b>Abstract:</b>
+Fault management in automated systems has attracted attention
+over the last couple of decades motivated by demands for safer and
+reliable automated systems for the future. ...
+<font size=1><a href="shashi_fa00.html">
+More</a></font> 
+</font></td></tr></table>
+&nbsp;<br>
+&nbsp;<br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#999999">
+<b>November 10, 2000</b>
+</br>
+S. Y. Kim<br>
+</font>
+<p><br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#999999">
+<b>November 17, 2000</b>
+</br>
+Lu Guang<br>
+</font>
+<p><br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#999999">
+<b>November 24, 2000</b>
+</br>
+Ye Sheng and Jihua Huang<br>
+</font>
+<p><br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#999999">
+<b>December 1, 2000</b>
+</br>
+Kun Zhou<br>
+</font>
+<p><br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#999999">
+<b>December 8, 2000</b>
+</br>
+Dong-Jun Lee<br>
+</font>
+<p><br>
+
+<FONT FACE="helvetica,arial" SIZE=2 COLOR="#999999">
+<b>December 15, 2000</b>
+</br>
+Takeshi Kimura<br>
+</font>
+<p><br>
+
+</td>
+</tr>
+
+</table></center>
+</caption>
+
+<tr>
+<td></td>
+</tr>
+</table></center>
+
+<center>
+<a href="../friday_secret.html" class="base">
+<img SRC="pixel.gif" ALT="" height=1 width=500 BORDER=0></a>
+<br><font face="arial, helvetica" font color="#666666" size=1>MSC
+Lab. Homepage is created and maintained by Soichi Ibaraki and Shashikanth
+Suryanarayanan.<br>
+Please feel free to send comments to us at <a href="mailto:www@mechatro2.me.berkeley.edu">www@mechatro2.me.berkeley.edu</a>
+</center>
+
+<p><br>
+</body>
+</html>

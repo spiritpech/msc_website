@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="MSC Lab Homepage" />
+	<meta name="keywords" content="mechanical,systems,control" />
+	<meta name="author" content="Raechel Tan" />
+    <link rel="icon" href="../../../mscicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Brawler' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../../../style.css" media="all" />
+	<title>MSC Lab - 6-DOF Passive Exoskeleton for Macaque Upper-limb</title>
+</head>
+
+<body>
+<div id="container980"><!-- Use"containerfull" for 100% width. For fixed width, use "container980", "container760" or "container600" (the number is the layout width in pixels). -->
+	<div id="header">
+    	<img src="../../../images/msclogo_white.png" alt="msclogo" />
+	</div>
+	<div id="menu"> 
+		<ul>     
+			<li><a href="../../../index.html">Home</a></li>
+			<li><a href="../../../people.html">People</a>
+            	<ul>
+                	<li><a href="../../../people/tomizuka.html">Prof. Masayoshi Tomizuka</a></li>
+                    <li><a href="../../../people/students.html">Students</a></li>
+                    <li><a href="../../../people/visitors.html">Visitors</a></li>
+                    <li><a href="../../../people/alumni.html">Alumni</a></li>
+                    <li><a href="../../../people/prev_visitors.html">Previous Visitors</a></li>
+                </ul>
+            </li>
+			<li><a class="current" href="../../../research.html">Research</a>
+            	<ul>
+                	<li><a href="../../robotics.html">Robotics</a></li>
+                    <li><a href="../../human.html">Human Mechatronics</a></li>
+                    <li><a href="../../disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="file:///C|/Users/Raechel 2/Dropbox/research.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../publications.html">Publications</a>
+            	<ul>
+                	<li><a href="../../../publications/papers_robotics.html">Robotics</a></li>
+                    <li><a href="../../../publications/papers_human.html">Human Mechatronics</a></li>
+                    <li><a href="../../../publications/papers_disk.html">Hard Disk Drive Control</a></li>
+                    <li><a href="../../../publications/papers_precision.html">Precision Motion Control</a></li>
+                    <li><a href="../../../publications/papers_automotive.html">Automotive Control Systems</a></li>
+                    <li><a href="../../../publications.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../resources.html">Resources</a>
+            	<ul>
+                	<li><a href="../../../resources/news.html">News and Announcements</a></li>
+                    <li><a href="../../../resources/network.html">Network and Printing</a></li>
+                    <li><a href="../../../resources/courses.html">Prof. Tomizuka's Courses</a></li>
+                    <li><a href="../../../resources/conferences.html">Upcoming Conferences</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../misc.html">Miscellaneous</a>
+            	<ul>
+                	<li><a href="../../../misc/logo.html">MSC Logo</a></li>
+                    <li><a href="../../../misc.html">more...</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+    	<div id="navtree">
+			<p><a href="../../../research.html">Research</a> &gt; <a href="../human.html">Human Mechatronics</a> &gt; <a href="human_assist.html">Mechatronics for Human Assistance</a> &gt; <a href="human_assist_exo.html">Design and Control of a Compact Rotary Series Elastic Actuator</a></p>
+		</div>
+    
+		<div id="content">
+        	<div id="sidebar">
+			<div class="sidebarbox">
+               <h3>Contents:</h3>
+				<ul class="sidemenu">
+					<li><a href="#motivation">Motivation and Approach</a></li>
+                    <li><a href="#results">Main Results</a></li>
+                    <li><a href="#pub">Recent Key Publications</a></li>
+				</ul>
+			</div>
+			</div>
+
+          <h2>Design and Control of a Compact Rotary Series Elastic Actuator (cRSEA)</h2>
+		  <h3 id="motivation">Motivation and Approach</h3>
+		  <p>In the NMAS, an actuator is essential for providing active assistance to users to facilitate their walking. Precise and large torque generation, back drivability, low output impedance, and compactness of hardware are important requirements for human assistive robots. Considering the requirements above, a compact rotary elastic actuator (cRSEA) was designed for knee joint assistance. To magnify the torque generated by an electric motor in the limited space of the compact device, a worm gear was utilized. There are backlash, friction, unmodelled dynamics, and disturbance from human-robot interactions in the control system of cRSEA, which makes the controller design challenging. A robust control technique was proposed for the cRSEA.</p>
+		  <p>&nbsp;</p>
+		  <h3 id="results">Main Results</h3>
+		  <p>With the worm gear mechanism, the cRSEA may generate assistive torque up to 10.86 Nm under normal situations and 130Nm under extreme situations for a short duration while achieving backdrivability. A PID control algorithm was combined with a disturbance observer (DOB) and torque feedforward control to provide robust and accurate torque control of the actuator [1]. Moreover, a ctitious gain method was proposed to calculate the desired assistive torque for the actuator to generate [1, 2]. The figures below show the controller structure and the frequency response of the torque error output, respectively.</p>
+		  <p align="center"><img src="Rehab_8.png" width="550" height="296" alt="block diagram" /></p>
+          <p align="center">Block diagram of the controller for cRSEA</p>
+          <p align="center">&nbsp;</p>
+          <p align="center"><img src="Rehab_FrequencyResponse.png" width="400" height="419" alt="freq response" /></p>
+          <p align="center">(upper) Frequency response from desired torque to torque error<br />
+            (lower) Frequency response from human joint motion to torque error</p>
+<p>&nbsp;</p>
+		  <h3 id="pub">Recent Key Publications</h3>
+		  <ol>
+		    <li>K. Kong, J. Bae and M. Tomizuka, &quot;A Compact Rotary Series Elastic Actuator for Human Assistive Systems,&quot; <em>IEEE/ASME Transactions on Mechatronics</em>, vol. 17, no. 2, pp. 288-297, 2012</li>
+		    <li>K. Kong and M. Tomizuka, &quot;Control of exoskeletons inspired by ctitious gain in human model,&quot; <em>IEEE/ASME Transactions on Mechatronics</em>, vol. 14, no. 6, pp. 689–698, 2009</li>
+	      </ol>
+      </div>
+		<div class="clear">&nbsp;</div>
+	</div>
+
+	<div id="credits">
+		<p>&copy; 2015 Mechanical Systems Control Laboratory &nbsp;&nbsp; | &nbsp;&nbsp; <a href="mailto:dwai213@berkeley.edu" target="_blank">Contact the Webmaster</a></p>
+	</div>
+</div>
+</body>
+</html>
